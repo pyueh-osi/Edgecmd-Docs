@@ -1,4 +1,4 @@
-- name: Install EdgeCmd utility
-  href: Install EdgeCmd utility.md
+- name: Configure EdgeCmd utility
+  href: Configure EdgeCmd utility.md
 - name: EdgeCmd commands
   href: EdgeCmd commands.md
