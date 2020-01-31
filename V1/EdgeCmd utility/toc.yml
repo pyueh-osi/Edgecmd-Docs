@@ -1,4 +1,10 @@
-- name: Configure EdgeCmd utility
-  href: Configure EdgeCmd utility.md
+- name: Access EdgeCmd utility
+  href: Access EdgeCmd utility.md
+- name: Retrieve EdgeCmd utility help
+  href: Retrieve EdgeCmd utility help.md
+- name: Retrieve existing system configuration
+  href: Retrieve existing system configuration.md
+- name: Delete configuration
+  href: Delete configuration.md
 - name: EdgeCmd commands
   href: EdgeCmd commands.md
