@@ -4,11 +4,11 @@ uid: RetreiveExistingSystemConfiguration
 
 # Retrieve existing system configuration
 
-You can use the EdgeCmd utility to view the configuration for each part of Edge Data Store.
+You can use the EdgeCmd utility to view the configuration for installed adapters.
 
 ## View components configuration
 
-Complete the following to view the configuration of every component in Edge Data Store:
+Complete the following to view the configuration of every installed adapter:
 
 1. Open command line.
 2. Type the following in the command line and press Enter.
@@ -20,13 +20,13 @@ Complete the following to view the configuration of every component in Edge Data
   
 ## View a specific component configuration
 
-Complete the following to view the configuration of a specific component:
+Complete the following to view the configuration of a specific adapter:
 
 1. Open command line.
-2. Type the following in the command line, replacing `<componentId>` with the ID of the component, and press Enter.
+2. Type the following in the command line, replacing `<adapterId>` with the ID of the component, and press Enter.
 
    ```bash
-   edgecmd Configuration <componentId>
+   edgecmd Configuration <adapterId>
    ```
    
    See example [View the configuration of the System component](#view-the-configuration-of-the-system-component).
@@ -36,10 +36,10 @@ Complete the following to view the configuration of a specific component:
 Complete the following to view the configuration of a specific facet of a component:
 
 1. Open command line.
-2. Type the following in the command line, replacing `<componentId>` and `<facetName>` with the ID of the component and the facet name, and press Enter.
+2. Type the following in the command line, replacing `<adapterId>` and `<facetName>` with the ID of the component and the facet name, and press Enter.
 
    ```bash
-   edgecmd Configuration <componentId> <facetName>
+   edgecmd Configuration <adapterId> <facetName>
    ```
    See example [View the configuration of the Logging facet within the Storage component](#view-the-configuration-of-the-logging-facet-within-the-storage-component).
    
@@ -48,10 +48,10 @@ Complete the following to view the configuration of a specific facet of a compon
 Complete the following to view the configuration of a specific facet entry of a component:
 
 1. Open command line.
-2. Type the following in the command line, replacing `<componentId>` and `<facetName>` with the ID of the component and the facet name.
+2. Type the following in the command line, replacing `<adapterId>` and `<facetName>` with the ID of the component and the facet name.
 
    ```bash
-   edgecmd Configuration <componentId> <facetName> id=IndexToRetrieve
+   edgecmd Configuration <adapterId> <facetName> id=IndexToRetrieve
    ```
 
 3. Add the key=value pairs for the facet to configure, for example `id=IndexToRetrieve`, and press Enter.
@@ -76,17 +76,17 @@ edgecmd Configuration System
   },
   "Components": [
     {
-      "componentId": "Storage",
-      "componentType": "EDS.Component"
+      "componentId": "OpcUa1",
+      "componentType": "Adapter"
     }
   ]
 }
 ```
 
-#### View the configuration of the Logging facet within the Storage component
+#### View the configuration of the Logging facet within OpcUa1 adapter
 
 ```bash
-edgecmd Configuration Storage Logging
+edgecmd Configuration OpcUa1 Logging
 {
   "logLevel": "Information",
   "logFileSizeLimitBytes": 34636833,
