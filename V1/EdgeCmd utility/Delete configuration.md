@@ -4,6 +4,8 @@ uid: DeleteConfiguration
 
 # Delete configuration
 
+Configuration can be deleted on an entry or a facet basis. Both options are described following.
+
 ## Delete configuration entry
 
 Complete the following to delete a configuration entry from a collection configuration in an OSIsoft adapter. For example, you can delete a single health endpoint of the 'HealthEndpoints' facet within the 'System' component.
