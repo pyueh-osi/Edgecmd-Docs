@@ -51,8 +51,6 @@ Complete the following to install the EdgeCmd utility on Linux:
     sudo apt install ./EdgeCmd_linux-arm.deb
     ```
 
-    ![Linux installation](../images/LinuxInstall1.jpg)
-
     **Debian 9 or later (Raspberry PI 3,4: Ubuntu ARM64 Server, Google Coral Dev Board, Nvidia Nano Jetson)**
 
     ```bash
