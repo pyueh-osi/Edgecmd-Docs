@@ -14,7 +14,7 @@ Complete the following to change all values of a facet:
    **Example:** Change all values in the 'Logging' facet:
 
    ```bash
-   edgecmd Configuration Storage Logging LogLevel=Warning LogFileSizeLimitBytes=32768 LogFileCountLimit=5
+   edgecmd Configuration Egress Logging LogLevel=Warning LogFileSizeLimitBytes=32768 LogFileCountLimit=5
    ```
 
 ## Configure key=value pairs in a facet
@@ -27,7 +27,7 @@ Complete the following to configure any number of valid key=value pairs in a fac
    **Example:** Change a single value in the 'Logging' facet:
 
    ```bash
-   edgecmd Configuration Storage Logging LogFileCountLimit=5
+   edgecmd Configuration Egress Logging LogFileCountLimit=5
    ```
 
 ## Add an entry to a collection configuration
@@ -46,7 +46,7 @@ Complete the following to add an entry to a collection configuration:
 
 ## Configure with JSON Files
 
-You can also configure Edge Data Store by a JSON file input into the EdgeCmd application. A file import completely replaces the existing configurations; therefore, you cannot use it to change individual values in a facet without modifying others.
+You can also configure the adapter by a JSON file input into the EdgeCmd application. A file import completely replaces the existing configurations; therefore, you cannot use it to change individual values in a facet without modifying others.
 
 ### Import bulk configuration
 
@@ -76,37 +76,34 @@ Complete the following to import a file with configuration for individual facets
 	**Note:** The file must contain only information for the given component ID. 
 	
 1. Open command line.
-2. Type the file name as shown in the _Bulk_Storage_Runtime.json_ example and press Enter.
+2. Type the file name as shown in the _Logging.json_ example and press Enter.
 
    ```bash
-   edgecmd Configuration file="~/Bulk_Storage_Runtime.json"
+   edgecmd Configuration file="~/Logging.json"
    ```
 
    **Example:**
 
    ```JSON
    {
-      		"Storage": {
-			"Runtime": {
-				"StreamStorageLimitMb": 66,
-				"StreamStorageTargetMb": 33,
-				"IngressDebugExpiration": "2020-07-08T01:00:00",
-				"CheckpointRateInSec": 6,
-				"TransactionLogLimitMB": 350,
-				"EnableTransactionLog": true
+      		"Egress": {
+		  "Logging": {
+		    "logLevel": "Warning",
+      		    "logFileSizeLimitBytes": 19283,
+      		    "logFileCountLimit": 999
 			}
 		}
 	}
-	```
+   ```
 
-	**Note:** The command only affects the specified key-value pairs for the 'Runtime' facet in the 'Storage' component, it does not change any other components or facets; however, import affects all key-value pairs in the facet. If you import the following example JSON file, the 'StreamStorageLimitMb' and 'StreamStorageTargetMb' values will be modified and the remaining values in the 'Runtime' facet will be reset to their default values (IngressDebugExpiration, CheckpointRateInSec, TransactionLogLimitMB, and EnableTransactionLog).
+	**Note:** The command only affects the specified key-value pairs for the 'Logging' facet in the 'Egress' component, it does not change any other components or facets. However, import affects all key-value pairs in the facet. If you import the following example JSON file, the 'logLevel' and 'logFileSizeLimitBytes' values will be modified and the remaining values in the 'Logging' facet will be reset to their default values (logFileCountLimit).
 
 	```JSON
 	{
-		"Storage": {
-			"Runtime": {
-				"StreamStorageLimitMb": 66,
-				"StreamStorageTargetMb": 33,
+		"Egress": {
+		  "Logging": {
+		    "logLevel": "Warning",
+		    "logFileSizeLimitBytes": 19283
 			}
 		}
 	}
