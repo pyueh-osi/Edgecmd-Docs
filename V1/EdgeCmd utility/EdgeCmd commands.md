@@ -34,7 +34,7 @@ The following tables provide an overview of available edgecmd commands that you 
 |`edgecmd Configuration <componentId> <facetName> id=<IndexToRetrieve>`| Display the configuration of a specific entry of a facet. | `edgecmd Configuration System HealthEndpoints id=Endpoint1` |
 |`edgecmd Configuration <componentId> DataSource` | Configure the data source for the adapter. | For examples, see [OSIsoft Adapter for OPC UA data source configuration](https://osisoft.github.io/OSIsoft-Adapter-OPC-UA-Docs/V1/Configuration/OSIsoft%20Adapter%20for%20OPC%20UA%20data%20source%20configuration.html) and [OSIsoft Adapter For Modbus TCP data source configuration](https://osisoft.github.io/OSIsoft-Adapter-Modbus-Docs/V1/Configuration/OSIsoft%20Adapter%20for%20Modbus%20TCP%20data%20source%20configuration.html).|
 |`edgecmd Configuration <componentId> DataSelection` | Configure the data selection for the adapter. | For examples, see [OSIsoft Adapter for OPC UA data selection configuration](https://osisoft.github.io/OSIsoft-Adapter-OPC-UA-Docs/V1/Configuration/OSIsoft%20Adapter%20for%20OPC%20UA%20data%20selection%20configuration.html) and [OSIsoft Adapter for Modbus TCP data selection configuration](https://osisoft.github.io/OSIsoft-Adapter-Modbus-Docs/V1/Configuration/OSIsoft%20Adapter%20for%20Modbus%20TCP%20data%20selection%20configuration.html).|
-|`edgecmd Configuration <componentId> Logging` | Configure logging for a component. | edgecmd Configuration OpcUa1 Logging |
+|`edgecmd Configuration <componentId> Logging` | Configure logging for a component. | `edgecmd Configuration OpcUa1 Logging` |
 
 ## Configuration with JSON files
 | edgecmd command | Description | Examples |
