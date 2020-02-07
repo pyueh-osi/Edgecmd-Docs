@@ -8,7 +8,7 @@ The EdgeCmd utility provides a 'Help' utility with instructions on how to use Ed
 
 ## View general help instructions
 
-Complete the following to view help instructions on how to use the Edgecmd utility:
+Complete the following procedure to view help instructions on how to use the Edgecmd utility:
 
 1. Open command line.
 2. Type the following in the command line and press Enter.
@@ -19,7 +19,7 @@ Complete the following to view help instructions on how to use the Edgecmd utili
 
 ## View component help instructions
 
-Complete the following to view help instructions for a registered component that the adapter supports:
+Complete the following procedure to view help instructions for a registered component that the adapter supports:
 
 1. Open command line.
 2. Type the following in the command line, replacing `<componentId>` with the value that you want, and press Enter.
@@ -35,7 +35,7 @@ Complete the following to view help instructions for a registered component that
 	
 ## View specific configuration facet help instructions
 
-Complete the following to view help instructions for a specific facet within a component that the adapter supports:
+Complete the following procedure to view help instructions for a specific facet within a component that the adapter supports:
 
 1. Open command line.
 2. Type the following in the command line, replacing `<componentId>` and `<facetName>` with the value that you want, and press Enter.
