@@ -10,5 +10,7 @@
   href: Configure adapter component.md
 - name: Delete configuration
   href: Delete configuration.md
+- name: Start or stop a component
+  href: Start or stop a component.md
 - name: EdgeCmd commands
   href: EdgeCmd commands.md
