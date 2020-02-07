@@ -6,7 +6,7 @@ uid: Configure adapter
 
 ## Change all values of a facet
 
-Complete the following to change all values of a facet:
+Complete the following procedure to change all values of a facet:
 
 1. Open command line.
 2. Type the `componentId` and `facetName`, followed by key=value pairs that you want to change. Then press Enter.
@@ -19,7 +19,7 @@ Complete the following to change all values of a facet:
 
 ## Configure key=value pairs in a facet
 
-Complete the following to configure any number of valid key=value pairs in a facet:
+Complete the following procedure to configure any number of valid key=value pairs in a facet:
 
 1. Open command line.
 2. Type the `componentId` and `facetName` followed by the key=value pairs that you want to change, and press Enter.
@@ -32,7 +32,7 @@ Complete the following to configure any number of valid key=value pairs in a fac
 
 ## Add an entry to a collection configuration
 
-Complete the following to add an entry to a collection configuration:
+Complete the following procedure to add an entry to a collection configuration:
 
 1. Open command line.
 2. Type the `componentId` and `facetName` followed by the key=value pairs, and press Enter.
@@ -50,7 +50,7 @@ You can also configure the adapter by a JSON file input into the EdgeCmd applica
 
 ### Import bulk configuration
 
-Complete the following to import a bulk configuration:
+Complete the following procedure to import a bulk configuration:
 	
 1. Open command line.
 2. Type the following in the command line, replacing `<PathToJsonFile>` with the path to the file, and press Enter.
@@ -61,7 +61,7 @@ Complete the following to import a bulk configuration:
 
 ### Import facet specific configuration
 
-Complete the following to import a facet specific configuration file for a component:
+Complete the following procedure to import a facet specific configuration file for a component:
 	
 1. Open command line.
 2. Type the following in the command line, replacing `<componentId>` with the ID of the component, `<facetName>` with the name of the facet, and `<PathToJsonFile>` with the path to the file. Then press Enter.
@@ -72,7 +72,7 @@ Complete the following to import a facet specific configuration file for a compo
 
 ### Import facets configuration in bulk
 
-Complete the following to import a file with configuration for individual facets as a bulk file import operation:
+Complete the following procedure to import a file with configuration for individual facets as a bulk file import operation:
 	**Note:** The file must contain only information for the given component ID. 
 	
 1. Open command line.
