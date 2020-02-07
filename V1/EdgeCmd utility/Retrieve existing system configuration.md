@@ -6,9 +6,9 @@ uid: RetreiveExistingSystemConfiguration
 
 You can use the EdgeCmd utility to view the configuration for each part of the adapter.
 
-## View system configuration
+## View adapter configuration
 
-Complete the following to view the configuration for the system:
+Complete the following to view the configuration for the adapter:
 
 1. Open command line.
 2. Type the following in the command line and press Enter.
@@ -16,6 +16,7 @@ Complete the following to view the configuration for the system:
    ```bash
    edgecmd Configuration
    ```
+   See example [View the configuration of the adapter](#view-the-configuration-of-the-adapter).
   
   
 ## View a specific component configuration
@@ -23,10 +24,10 @@ Complete the following to view the configuration for the system:
 Complete the following to view the configuration of a specific component:
 
 1. Open command line.
-2. Type the following in the command line, replacing `<adapterId>` with the ID of the component, and press Enter.
+2. Type the following in the command line, replacing `<componentId>` with the ID of the component, and press Enter.
 
    ```bash
-   edgecmd Configuration <adapterId>
+   edgecmd Configuration <componentId>
    ```
    
    See example [View the configuration of the System component](#view-the-configuration-of-the-system-component).
@@ -36,10 +37,10 @@ Complete the following to view the configuration of a specific component:
 Complete the following to view the configuration of a specific facet of an adapter component:
 
 1. Open command line.
-2. Type the following in the command line, replacing `<adapterId>` and `<facetName>` with the ID of the component and the facet name, and press Enter.
+2. Type the following in the command line, replacing `<componentId>` and `<facetName>` with the ID of the component and the facet name, and press Enter.
 
    ```bash
-   edgecmd Configuration <adapterId> <facetName>
+   edgecmd Configuration <componentId> <facetName>
    ```
    See example [View the configuration of the Logging facet within the Egress component](#view-the-configuration-of-the-logging-facet-within-the-egress-component).
    
@@ -48,10 +49,10 @@ Complete the following to view the configuration of a specific facet of an adapt
 Complete the following to view the configuration of a specific facet entry of a component:
 
 1. Open command line.
-2. Type the following in the command line, replacing `<adapterId>` and `<facetName>` with the ID of the component and the facet name.
+2. Type the following in the command line, replacing `<componentId>` and `<facetName>` with the ID of the component and the facet name.
 
    ```bash
-   edgecmd Configuration <adapterId> <facetName> id=IndexToRetrieve
+   edgecmd Configuration <componentId> <facetName> id=IndexToRetrieve
    ```
 
 3. Add the key=value pairs for the facet to configure, for example `id=IndexToRetrieve`, and press Enter.
@@ -60,7 +61,7 @@ Complete the following to view the configuration of a specific facet entry of a 
 
 ### Examples
 
-#### View the configuration of the system
+#### View the configuration of the adapter
 
 ```
 edgecmd Configuration
