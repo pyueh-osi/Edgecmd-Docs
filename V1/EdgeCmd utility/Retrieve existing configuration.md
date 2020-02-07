@@ -8,7 +8,7 @@ You can use the EdgeCmd utility to view the configuration for each part of the a
 
 ## View adapter configuration
 
-Complete the following to view the configuration for the adapter:
+Complete the following procedure to view the configuration for the adapter:
 
 1. Open command line.
 2. Type the following in the command line and press Enter.
@@ -21,7 +21,7 @@ Complete the following to view the configuration for the adapter:
   
 ## View a specific component configuration
 
-Complete the following to view the configuration of a specific component:
+Complete the following procedure to view the configuration of a specific component:
 
 1. Open command line.
 2. Type the following in the command line, replacing `<componentId>` with the ID of the component, and press Enter.
@@ -34,7 +34,7 @@ Complete the following to view the configuration of a specific component:
 
 ## View a specific facet configuration
 
-Complete the following to view the configuration of a specific facet of an adapter component:
+Complete the following procedure to view the configuration of a specific facet of an adapter component:
 
 1. Open command line.
 2. Type the following in the command line, replacing `<componentId>` and `<facetName>` with the ID of the component and the facet name, and press Enter.
@@ -46,7 +46,7 @@ Complete the following to view the configuration of a specific facet of an adapt
    
 ## View a specific facet entry configuration
 
-Complete the following to view the configuration of a specific facet entry of a component:
+Complete the following procedure to view the configuration of a specific facet entry of a component:
 
 1. Open command line.
 2. Type the following in the command line, replacing `<componentId>` and `<facetName>` with the ID of the component and the facet name.
