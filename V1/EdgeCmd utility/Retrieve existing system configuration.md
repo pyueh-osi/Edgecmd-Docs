@@ -1,8 +1,8 @@
 ---
-uid: RetreiveExistingSystemConfiguration
+uid: RetreiveExistingConfiguration
 ---
 
-# Retrieve existing system configuration
+# Retrieve existing configuration
 
 You can use the EdgeCmd utility to view the configuration for each part of the adapter.
 
