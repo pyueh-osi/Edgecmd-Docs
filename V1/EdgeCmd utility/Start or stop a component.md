@@ -13,6 +13,6 @@ Complete the following to either start or stop a component. You can only start o
    ./edgecmd Administration <ComponentId> Stop
    ```
   
-  ```
-  ./edgecmd Administration <ComponentId> Start
-  ```
+   ```
+   ./edgecmd Administration <ComponentId> Start
+   ```
