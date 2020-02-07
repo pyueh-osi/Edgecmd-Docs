@@ -4,11 +4,11 @@ uid: RetreiveExistingSystemConfiguration
 
 # Retrieve existing system configuration
 
-You can use the EdgeCmd utility to view the configuration for installed adapters.
+You can use the EdgeCmd utility to view the configuration for each part of the adapter.
 
-## View components configuration
+## View system configuration
 
-Complete the following to view the configuration of every installed adapter:
+Complete the following to view the configuration for the system:
 
 1. Open command line.
 2. Type the following in the command line and press Enter.
@@ -20,7 +20,7 @@ Complete the following to view the configuration of every installed adapter:
   
 ## View a specific component configuration
 
-Complete the following to view the configuration of a specific adapter:
+Complete the following to view the configuration of a specific component:
 
 1. Open command line.
 2. Type the following in the command line, replacing `<adapterId>` with the ID of the component, and press Enter.
@@ -33,7 +33,7 @@ Complete the following to view the configuration of a specific adapter:
 
 ## View a specific facet configuration
 
-Complete the following to view the configuration of a specific facet of a component:
+Complete the following to view the configuration of a specific facet of an adapter component:
 
 1. Open command line.
 2. Type the following in the command line, replacing `<adapterId>` and `<facetName>` with the ID of the component and the facet name, and press Enter.
@@ -41,7 +41,7 @@ Complete the following to view the configuration of a specific facet of a compon
    ```bash
    edgecmd Configuration <adapterId> <facetName>
    ```
-   See example [View the configuration of the Logging facet within the Storage component](#view-the-configuration-of-the-logging-facet-within-the-storage-component).
+   See example [View the configuration of the Logging facet within the Egress component](#view-the-configuration-of-the-logging-facet-within-the-egress-component).
    
 ## View a specific facet entry configuration
 
@@ -56,13 +56,68 @@ Complete the following to view the configuration of a specific facet entry of a 
 
 3. Add the key=value pairs for the facet to configure, for example `id=IndexToRetrieve`, and press Enter.
 
-   See example [View the configuration of a specific entry in the PeriodicEgressEndpoint facet within the Storage component](#view-the-configuration-of-a-specific-entry-in-the-periodicegressendpoint-facet-within-the-storage-component).
+   See example [View the configuration of a specific entry in the HealthEndpoints facet within the System component](#view-the-configuration-of-a-specific-entry-in-the-healthendpoints-facet-within-the-system-component).
 
 ### Examples
 
+#### View the configuration of the system
+
+```
+edgecmd Configuration
+{
+  "System": {
+    "Logging": {
+      "logLevel": "Information",
+      "logFileSizeLimitBytes": 34636833,
+      "logFileCountLimit": 31
+    },
+    "HealthEndpoints": [],
+    "Diagnostics": {
+      "enableDiagnostics": true
+    },
+    "Components": [
+      {
+        "componentId": "Modbus1",
+        "componentType": "Modbus"
+      },
+      {
+        "componentId": "Egress",
+        "componentType": "OmfEgress"
+      }
+    ],
+    "Buffering": {
+      "bufferLocation": "C:/ProgramData/OSIsoft/Adapters/Modbus/Modbus/Buffers",
+      "maxBufferSizeMB": -1,
+      "enableBuffering": true
+    }
+  },
+  "Modbus1": {
+    "Logging": {
+      "logLevel": "Information",
+      "logFileSizeLimitBytes": 34636833,
+      "logFileCountLimit": 31
+    },
+    "DataSource": {},
+    "DataSelection": []
+  },
+  "Egress": {
+    "Logging": {
+      "logLevel": "Information",
+      "logFileSizeLimitBytes": 34636833,
+      "logFileCountLimit": 31
+    },
+    "DataEndpoints": [],
+    "Buffering": {
+      "onDiskBufferLocation": "C:/ProgramData/OSIsoft/Adapters/Modbus/Modbus/Buffers",
+      "onDiskMaxBufferSizeMB": -1
+    }
+  }
+}
+```
+
 #### View the configuration of the System component
 
-```bash
+```
 edgecmd Configuration System
 {
   "Logging": {
@@ -71,22 +126,31 @@ edgecmd Configuration System
     "logFileCountLimit": 31
   },
   "HealthEndpoints": [],
-  "Port": {
-    "port": 5590
+  "Diagnostics": {
+    "enableDiagnostics": true
   },
   "Components": [
     {
-      "componentId": "OpcUa1",
-      "componentType": "Adapter"
+      "componentId": "Modbus1",
+      "componentType": "Modbus"
+    },
+    {
+      "componentId": "Egress",
+      "componentType": "OmfEgress"
     }
-  ]
+  ],
+  "Buffering": {
+    "bufferLocation": "C:/ProgramData/OSIsoft/Adapters/Modbus/Modbus/Buffers",
+    "maxBufferSizeMB": -1,
+    "enableBuffering": true
+  }
 }
 ```
 
-#### View the configuration of the Logging facet within OpcUa1 adapter
+#### View the configuration of the Logging facet within the Egress component
 
-```bash
-edgecmd Configuration OpcUa1 Logging
+```
+edgecmd Configuration Egress Logging
 {
   "logLevel": "Information",
   "logFileSizeLimitBytes": 34636833,
@@ -94,28 +158,18 @@ edgecmd Configuration OpcUa1 Logging
 }
 ```
 
-#### View the configuration of a specific entry in the PeriodicEgressEndpoint facet within the Storage component
+#### View the configuration of a specific entry in the HealthEndpoints facet within the System component
 
-```bash
-edgecmd Configuration Storage PeriodicEgressEndpoints id=Endpoint_1
+```
+edgecmd Configuration System Healthendpoints id=Endpoint_1
 {
   "id": "Endpoint_1",
-  "executionPeriod": "2.00:00:00",
-  "name": null,
-  "description": null,
-  "enabled": true,
-  "endpoint": "http://localhost:5590",
-  "clientId": null,
-  "clientSecret": null,
+  "endpoint": "https://localhost:5821",
   "userName": "user_54",
   "password": "***************",
-  "validateEndpointCertificate": true,
+  "clientId": null,
+  "clientSecret": null,
   "tokenEndpoint": null,
-  "debugExpiration": null,
-  "namespaceId": "default",
-  "backfill": false,
-  "egressFilter": null,
-  "streamPrefix": null,
-  "typePrefix": null
+  "validateEndpointCertificate": true
 }
 ```
