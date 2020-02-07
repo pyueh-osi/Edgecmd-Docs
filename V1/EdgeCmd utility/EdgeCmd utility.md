@@ -16,7 +16,7 @@ The following sections provide instructions to install the EdgeCmd utility on Wi
 
 **Note:** You must have administrative privileges to run the installer. 
 
-Complete the following to install the EdgeCmd utility on Windows:
+Complete the following procedure to install the EdgeCmd utility on Windows:
 
 1. Copy the _EdgeCmd.msi_ file to the file system of the device.
 2. To start the installer, double-click the _EdgeCmd.msi_ file in Windows Explorer.
@@ -35,7 +35,7 @@ The EdgeCmd utility is installed on your device.
 
 **Note:** You must have administrative privileges to install the software, for example root or sudo privilege. 
 
-Complete the following to install the EdgeCmd utility on Linux:
+Complete the following procedure to install the EdgeCmd utility on Linux:
 
 1. Open a terminal window and type the sudo command for the appropriate EdgeCmd deb file for your processor:
 
