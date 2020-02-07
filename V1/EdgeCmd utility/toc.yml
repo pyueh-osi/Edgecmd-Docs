@@ -2,8 +2,8 @@
   href: Access EdgeCmd utility.md
 - name: Retrieve EdgeCmd utility help
   href: Retrieve EdgeCmd utility help.md
-- name: Retrieve existing system configuration
-  href: Retrieve existing system configuration.md
+- name: Retrieve existing configuration
+  href: Retrieve existing configuration.md
 - name: Configure adapter
   href: Configure adapter.md
 - name: Configure adapter component
