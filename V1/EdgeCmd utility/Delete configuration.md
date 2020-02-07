@@ -8,7 +8,7 @@ Configuration can be deleted on an entry or a facet basis. Both options are desc
 
 ## Delete configuration entry
 
-Complete the following to delete a configuration entry from a collection configuration in an OSIsoft adapter. For example, you can delete a single health endpoint of the 'HealthEndpoints' facet within the 'System' component.
+Complete the following to delete a configuration entry from a collection configuration. For example, you can delete a single health endpoint of the 'HealthEndpoints' facet within the 'System' component.
 
 1. Open command line. 
 2. Type the `componentId` and `facetName` followed by the ID of the entry to be removed.
@@ -22,7 +22,7 @@ Complete the following to delete a configuration entry from a collection configu
 
 ## Delete configuration file
 
-Complete the following to delete a configuration file from an OSIsoft adapter. For example, you can delete the configuration file of the 'HealthEndpoints' facet within the 'System' component.
+Complete the following to delete a configuration file. For example, you can delete the configuration file of the 'HealthEndpoints' facet within the 'System' component.
 
 1. Open command line. 
 2. Type the `componentId` and `facetName`.
