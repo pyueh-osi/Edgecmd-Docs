@@ -4,7 +4,7 @@ uid: AccessEdgeCmdUtility
 
 # Access EdgeCmd utility
 
-The following EdgeCmd utility locations are based on the installation instructions in [EdgeCmd utility](xref:EdgecmdUtility).
+The EdgeCmd utility locations used in the following procedures are based on the installation instructions in [EdgeCmd utility](xref:EdgecmdUtility).
 
 ## Windows
 
