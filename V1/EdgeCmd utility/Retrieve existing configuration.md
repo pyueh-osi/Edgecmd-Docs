@@ -4,7 +4,7 @@ uid: RetreiveExistingConfiguration
 
 # Retrieve existing configuration
 
-You can use the EdgeCmd utility to view the configuration for each part of the adapter.
+EdgeCmd utility provides the possibility to view the configuration for each part of the adapter.
 
 ## View adapter configuration
 
