@@ -4,6 +4,8 @@ uid: Configure adapter
 
 # Configure adapter
 
+OSIsoft adapters provide several configuration options, including configuration with JSON files and bulk configurations.
+
 ## Change all values of a facet
 
 Complete the following procedure to change all values of a facet:
