@@ -92,7 +92,7 @@ Complete the following procedure to import a file with configuration for individ
 	  "Logging": {
 	    "logLevel": "Warning",
       	    "logFileSizeLimitBytes": 19283,
-      	    "logFileCountLimit": 999
+   	    "logFileCountLimit": 999
 		     }
 	    }
     }
