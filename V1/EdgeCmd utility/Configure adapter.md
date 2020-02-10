@@ -15,7 +15,9 @@ Complete the following procedure to change all values of a facet:
 
    **Example:** Change all values in the 'Logging' facet:
 
-   `edgecmd Configuration Egress Logging LogLevel=Warning LogFileSizeLimitBytes=32768 LogFileCountLimit=5`
+   ```
+   edgecmd Configuration Egress Logging LogLevel=Warning LogFileSizeLimitBytes=32768 LogFileCountLimit=5
+   ```
 
 ## Configure key=value pairs in a facet
 
@@ -26,7 +28,9 @@ Complete the following procedure to configure any number of valid key=value pair
 
    **Example:** Change a single value in the 'Logging' facet:
 
-   `edgecmd Configuration Egress Logging LogFileCountLimit=5`
+   ```
+   edgecmd Configuration Egress Logging LogFileCountLimit=5
+   ```
 
 ## Add an entry to a collection configuration
 
@@ -37,7 +41,9 @@ Complete the following procedure to add an entry to a collection configuration:
 
    **Example:** Add the 'Health Endpoints' facet to the 'System' component:
 
-   `edgecmd Configuration System HealthEndpoints Id=endpoint_1 Endpoint=endpointURL UserName=UserName Password=Password`
+   ```
+   edgecmd Configuration System HealthEndpoints Id=endpoint_1 Endpoint=endpointURL UserName=UserName Password=Password
+   ```
    
 	**Note:** If an entry with the specified ID already exists, it will be updated based on the new key=value pairs.
 
@@ -52,7 +58,9 @@ Complete the following procedure to import a bulk configuration:
 1. Open command line.
 2. Type the following in the command line, replacing `<PathToJsonFile>` with the path to the file, and press Enter.
 
-   `edgecmd Configuration file=<PathToJsonFile>`
+   ```
+   edgecmd Configuration file=<PathToJsonFile>
+   ```
 
 ### Import facet specific configuration
 
@@ -61,7 +69,9 @@ Complete the following procedure to import a facet specific configuration file f
 1. Open command line.
 2. Type the following in the command line, replacing `<componentId>` with the ID of the component, `<facetName>` with the name of the facet, and `<PathToJsonFile>` with the path to the file. Then press Enter.
 
-   `edgecmd Configuration <componentId> <facetName> file=<PathToJsonFile>`
+   ```
+   edgecmd Configuration <componentId> <facetName> file=<PathToJsonFile>
+   ```
 
 ### Import facets configuration in bulk
 
@@ -71,7 +81,9 @@ Complete the following procedure to import a file with configuration for individ
 1. Open command line.
 2. Type the file name as shown in the _Logging.json_ example and press Enter.
 
-   `edgecmd Configuration file="~/Logging.json"`
+   ```
+   edgecmd Configuration file="~/Logging.json"
+   ```
 
    **Example:**
 
