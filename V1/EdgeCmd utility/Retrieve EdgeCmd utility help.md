@@ -13,7 +13,9 @@ Complete the following procedure to view help instructions on how to use the Edg
 1. Open command line.
 2. Type the following in the command line and press Enter.
 
-	`edgecmd Help`
+	```
+	edgecmd Help
+	```
 
 ## View component help instructions
 
@@ -22,7 +24,9 @@ Complete the following procedure to view help instructions for a registered comp
 1. Open command line.
 2. Type the following in the command line, replacing `<componentId>` with the value that you want, and press Enter.
 
-	`edgecmd Help <componentId>`
+	```
+	edgecmd Help <componentId>
+	```
 
 	See the example [Help for the System component](#help-for-the-system-component).
 	
@@ -36,7 +40,9 @@ Complete the following procedure to view help instructions for a specific facet 
 1. Open command line.
 2. Type the following in the command line, replacing `<componentId>` and `<facetName>` with the value that you want, and press Enter.
 
-	`edgecmd Help <componentId> <facetName>`
+	```
+	edgecmd Help <componentId> <facetName>
+	```
 	
 	See the example [Help for the Diagnostics facet within the System component](#help-for-the-diagnostics-facet-within-the-system-component).
 
