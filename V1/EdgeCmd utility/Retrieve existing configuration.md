@@ -13,9 +13,8 @@ Complete the following procedure to view the configuration for the adapter:
 1. Open command line.
 2. Type the following in the command line and press Enter.
 
-   ```bash
-   edgecmd Configuration
-   ```
+   `edgecmd Configuration`
+   
    See example [View the configuration of the adapter](#view-the-configuration-of-the-adapter).
   
   
@@ -26,9 +25,7 @@ Complete the following procedure to view the configuration of a specific compone
 1. Open command line.
 2. Type the following in the command line, replacing `<componentId>` with the ID of the component, and press Enter.
 
-   ```bash
-   edgecmd Configuration <componentId>
-   ```
+   `edgecmd Configuration <componentId>`
    
    See example [View the configuration of the System component](#view-the-configuration-of-the-system-component).
 
@@ -39,9 +36,8 @@ Complete the following procedure to view the configuration of a specific facet o
 1. Open command line.
 2. Type the following in the command line, replacing `<componentId>` and `<facetName>` with the ID of the component and the facet name, and press Enter.
 
-   ```bash
-   edgecmd Configuration <componentId> <facetName>
-   ```
+   `edgecmd Configuration <componentId> <facetName>`
+   
    See example [View the configuration of the Logging facet within the Egress component](#view-the-configuration-of-the-logging-facet-within-the-egress-component).
    
 ## View a specific facet entry configuration
@@ -51,9 +47,7 @@ Complete the following procedure to view the configuration of a specific facet e
 1. Open command line.
 2. Type the following in the command line, replacing `<componentId>` and `<facetName>` with the ID of the component and the facet name.
 
-   ```bash
-   edgecmd Configuration <componentId> <facetName> id=IndexToRetrieve
-   ```
+   `edgecmd Configuration <componentId> <facetName> id=IndexToRetrieve`
 
 3. Add the key=value pairs for the facet to configure, for example `id=IndexToRetrieve`, and press Enter.
 
