@@ -16,9 +16,7 @@ Complete the following procedure to delete a configuration entry from a collecti
 
    **Example:** Delete endpoint_1 of the HealthEndpoints facet from the System:
 
-   ```bash
-   edgecmd Configuration System HealthEndpoints Id=endpoint_1 delete
-   ```
+   `edgecmd Configuration System HealthEndpoints Id=endpoint_1 delete`
 
 ## Delete configuration file
 
@@ -30,7 +28,5 @@ Complete the following procedure to delete a configuration file. For example, yo
 
    **Example:** Delete the HealthEndpoints facet configuration file:
 
-   ```bash
-   edgecmd Configuration System HealthEndpoints delete
-   ```
+   `edgecmd Configuration System HealthEndpoints delete`
 
