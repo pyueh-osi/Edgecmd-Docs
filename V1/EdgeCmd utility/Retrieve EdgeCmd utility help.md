@@ -33,7 +33,7 @@ Complete the following procedure to view help instructions for a registered comp
 	**Note:** The help output also provides examples of commands that you can run to configure the component.
 	
 	
-## View specific configuration facet help instructions
+## View component facet help instructions
 
 Complete the following procedure to view help instructions for a specific facet within a component that the adapter supports:
 
