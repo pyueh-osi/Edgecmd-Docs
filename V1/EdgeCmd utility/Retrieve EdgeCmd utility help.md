@@ -14,48 +14,49 @@ Complete the following procedure to view help instructions on how to use the Edg
 2. Type the following in the command line and press Enter.
 
 	```
-	edgecmd Help
+	edgecmd -help
 	```
 
 ## View component help instructions
 
-Complete the following procedure to view help instructions for a registered component that the adapter supports:
+Complete the following procedure to view configuration help instructions for a registered component that the adapter supports:
 
 1. Open command line.
 2. Type the following in the command line, replacing `<componentId>` with the value that you want, and press Enter.
 
 	```
-	edgecmd Help <componentId>
+	edgecmd -help configuration <componentId>
 	```
 
-	See the example [Help for the System component](#help-for-the-system-component).
+	For more information, see the example [Help for the System component](#help-for-the-system-component).
 	
 	**Note:** The help output also provides examples of commands that you can run to configure the component.
 	
 	
 ## View component facet help instructions
 
-Complete the following procedure to view help instructions for a specific facet within a component that the adapter supports:
+Complete the following procedure to view configuration help instructions for a specific facet within a component that the adapter supports:
 
 1. Open command line.
 2. Type the following in the command line, replacing `<componentId>` and `<facetName>` with the value that you want, and press Enter.
 
 	```
-	edgecmd Help <componentId> <facetName>
+	edgecmd -help configuration <componentId> <facetName>
 	```
 	
-	See the example [Help for the Diagnostics facet within the System component](#help-for-the-diagnostics-facet-within-the-system-component).
+	For more information, see the example [Help for the port facet within the System component](#help-for-the-port-facet-within-the-system-component).
 
 ### Examples
 
-#### Help for the System component:
+#### Configuration help for the System component:
 
-```
-edgecmd Help System
+```bash
+edgecmd -help configuration System
+
 ---------------------------------------------------------------------------------------------------------
 Component System command-line options => 'Logging'
 ---------------------------------------------------------------------------------------------------------
-LogLevel                    [Required] Desired log level settings. Options: Trace, Debug, Information, Warning, Error, Critical, None.
+LogLevel                    [Required] Desired log level settings. Options: Verbose, Information, Warning, Error, Fatal.
 LogFileSizeLimitBytes       [Required] Maximum size in bytes of log files that the service will create for this component. Must be no less than 1000.
 LogFileCountLimit           [Required] Maximum number of log files that the service will create for this component. Must be a positive integer.
 
@@ -67,34 +68,26 @@ Example: ./edgecmd Configuration System Logging LogFileCountLimit=5
 ---------------------------------------------------------------------------------------------------------
 Component System command-line options => 'HealthEndpoints'
 ---------------------------------------------------------------------------------------------------------
-Id                           [Optional] Id of existing configuration to be edited or removed.
+Id                           [Optional] Id of existing configuration to be edited of removed.
 Endpoint                     [Required] URL of OMF destination
-UserName                     [Required group 1]  User name used for authentication to PI Web API OMF endpoint.          
+UserName                     [Required group 1]  User name used for authentication to PI Web API OMF endpoint.
 Password                     [Required group 1]  Password used for authentication to PI Web API OMF endpoint.
 ClientId                     [Required group 2]  Client ID used for authentication to OSIsoft Cloud Services.
 ClientSecret                 [Required group 2]  Client Secret used for authentication to OSIsoft Cloud Services.
-TokenEndpoint                [Optional group 2] URL of OMF destination's token service.
+Buffering                    [Optional] Set the buffering type for messages to this endpoint. Options are 'memory', 'disk' or 'none'. Defaults to 'none'.
+MaxBufferSizeMB              [Optional] If an integer >0, this is the limit on the maximum megabytes of data to buffer for messages to this endpoint. Useful for limiting memory or disk usage growth in the event of disconnection to the endpoint. If the buffer is full, old messages will be discarded for new messages. Defaults to 0.
 ValidateEndpointCertificate  [Optional] If true, endpoint certificate will be validated (recommended). If false, any endpoint certificate will be accepted. OSIsoft strongly recommends using disabled endpoint certificate validation for testing purposes only.
 
 Note: Only one Required group must be specified. Group 1 for PI Web API or Group 2 for OCS.
-Example:
-Add a new endpoint:
-  ./edgecmd Configuration System HealthEndpoints Endpoint=endpointURL UserName=UserName Password=Password
-Update fields of an existing endpoint:
-  ./edgecmd Configuration System HealthEndpoints Id=Endpoint1 Password=newPassword
-View existing endpoints:
-  ./edgecmd Configuration System HealthEndpoints
-File Import (replaces current endpoints):
-  ./edgecmd Configuration System HealthEndpoints File=endpoints.json
-Delete an endpoint:
-  ./edgecmd Configuration System HealthEndpoints Id=Endpoint1 Delete
+Example: ./edgecmd Configuration System HealthEndpoints Endpoint=endpointURL UserName=UserName Password=Password
+
 
 ---------------------------------------------------------------------------------------------------------
-Component System command-line options => 'Diagnostics'
+Component System command-line options => 'Port'
 ---------------------------------------------------------------------------------------------------------
-EnableDiagnostics                       [Required] Enable global diagnostics.
+Port                        [Required] The TCP port to bind this application host to (Range [1024,65535])
 
-Example: ./edgecmd Configuration System Diagnostics EnableDiagnostics=True
+Example: ./edgecmd Configuration System Port Port=5590
 
 
 ---------------------------------------------------------------------------------------------------------
@@ -104,25 +97,17 @@ ComponentId                        [Required] ID of the hosted component.
 ComponentType                      [Required] Type of the hosted component.
 
 Example: ./edgecmd Configuration System Components ComponentId=Modus1 ComponentType=Modbus
-
-
----------------------------------------------------------------------------------------------------------
-Component System command-line options => 'Buffering'
----------------------------------------------------------------------------------------------------------
-BufferLocation                 Location of the on-disk buffers
-MaxBufferSizeMB                Maximum size of the on-disk buffers (-1 = restricted only by available free disk space)
-EnableBuffering                Enable or disable buffering
 ```
 
-#### Help for the Diagnostics facet within the System component
+#### Help for the port facet within the System component
 
-```
-edgecmd Help System Diagnostics
+```bash
+edgecmd Help System Port
 
 ---------------------------------------------------------------------------------------------------------
-Component System command-line options => 'Diagnostics'
+Component System command-line options => 'Port'
 ---------------------------------------------------------------------------------------------------------
-EnableDiagnostics                       [Required] Enable global diagnostics.
+Port                        [Required] The TCP port to bind this application host to (Range [1024,65535])
 
-Example: ./edgecmd Configuration System Diagnostics EnableDiagnostics=True
+Example: ./edgecmd Configuration System Port Port=5590
 ```
