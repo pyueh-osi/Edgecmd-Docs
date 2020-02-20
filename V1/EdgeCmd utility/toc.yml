@@ -8,8 +8,6 @@
   href: Configure adapter.md
 - name: Configure adapter component
   href: Configure adapter component.md
-- name: Configure port
-  href: Configure port.md
 - name: Delete configuration
   href: Delete configuration.md
 - name: Start or stop a component
