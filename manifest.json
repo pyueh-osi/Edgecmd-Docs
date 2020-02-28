@@ -25,12 +25,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "UidNotFound"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1.1/Access EdgeCmd utility_1-1.md",
       "output": {
         ".html": {
           "relative_path": "V1.1/Access EdgeCmd utility_1-1.html",
-          "hash": "AaC97a+stJQ8/7AskbYT1w=="
+          "hash": "d3AmXcwqJtilXQc0mx18Aw=="
         }
       },
       "is_incremental": false,
@@ -86,6 +89,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "V1.1/EdgeCmd_utility_1-1.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1.1/EdgeCmd_utility_1-1.html",
+          "hash": "iAbyEkm8AqbU0qkE5F8pcg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "V1.1/Retrieve EdgeCmd utility help_1-1.md",
       "output": {
         ".html": {
@@ -121,18 +136,6 @@
       "version": ""
     },
     {
-      "type": "Conceptual",
-      "source_relative_path": "V1/EdgeCmd_utility.md",
-      "output": {
-        ".html": {
-          "relative_path": "V1/EdgeCmd_utility.html",
-          "hash": "9CHGwvV9tkwuLOS5dNgdWg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
       "type": "Resource",
       "source_relative_path": "V1/images/LinuxInstall1.jpg",
       "output": {
@@ -155,24 +158,16 @@
       "version": ""
     },
     {
-      "type": "Conceptual",
-      "source_relative_path": "V1/readme.md",
-      "output": {
-        ".html": {
-          "relative_path": "V1/readme.html",
-          "hash": "PTQTP2BQQydfR+2PgsL0Jg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
+      "log_codes": [
+        "InvalidTocInclude",
+        "InvalidFileLink"
+      ],
       "type": "Toc",
       "source_relative_path": "V1/toc.yml",
       "output": {
         ".html": {
           "relative_path": "V1/toc.html",
-          "hash": "RlYpmu+9oydQvNtobyfF5Q=="
+          "hash": "Wnefub/a2JFz45FZQqAFeA=="
         }
       },
       "is_incremental": false,
@@ -191,12 +186,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "iOAgEKfZA96yfp67ckXPmQ=="
+          "hash": "dnJhLiXPyB0jEj6M0iCR5Q=="
         }
       },
       "is_incremental": false,
@@ -214,13 +212,6 @@
         "full_build_reason_code": "NoAvailableBuildCache"
       },
       "processors": {
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
-          "skipped_file_count": 0
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -231,7 +222,14 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 12,
+          "total_file_count": 11,
+          "skipped_file_count": 0
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
           "skipped_file_count": 0
         }
       }

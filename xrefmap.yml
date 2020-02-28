@@ -16,9 +16,9 @@ references:
 - uid: EdgeCmdCommands1-1
   name: EdgeCmd commands
   href: V1.1/EdgeCmd%20commands_1-1.html
-- uid: EdgecmdUtility
+- uid: EdgecmdUtility1-1
   name: EdgeCmd utility
-  href: V1/EdgeCmd_utility.html
+  href: V1.1/EdgeCmd_utility_1-1.html
 - uid: index
   name: Edgecmd
   href: index.html
