@@ -18,6 +18,17 @@ Complete the following procedure to view the configuration for the adapter:
    ```
    
    See example [View the configuration of the adapter](#view-the-configuration-of-the-adapter).
+   
+## View configured components
+
+Complete the following procedure to view the components currently configured on the adapter:
+
+1. Open command line.
+2. Type the following in the command line and press Enter.
+
+	```
+	edgecmd Configuration System Components
+	```
   
   
 ## View a specific component configuration
