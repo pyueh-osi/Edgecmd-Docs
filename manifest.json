@@ -136,44 +136,6 @@
       "version": ""
     },
     {
-      "type": "Resource",
-      "source_relative_path": "V1/images/LinuxInstall1.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "V1/images/LinuxInstall1.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "V1/images/atlas_icon.png",
-      "output": {
-        "resource": {
-          "relative_path": "V1/images/atlas_icon.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "InvalidTocInclude",
-        "InvalidFileLink"
-      ],
-      "type": "Toc",
-      "source_relative_path": "V1/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "V1/toc.html",
-          "hash": "Wnefub/a2JFz45FZQqAFeA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
@@ -223,13 +185,6 @@
           "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 11,
-          "skipped_file_count": 0
-        },
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
           "skipped_file_count": 0
         }
       }
