@@ -1,0 +1,4 @@
+- name: Configure adapter
+  href: Configure adapter.md
+- name: Configure adapter component
+  href: Configure adapter component.md
