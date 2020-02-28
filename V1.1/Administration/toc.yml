@@ -1,0 +1,4 @@
+- name: Delete configuration
+  href: Delete configuration.md
+- name: Start or stop a component
+  href: Start or stop a component.md
