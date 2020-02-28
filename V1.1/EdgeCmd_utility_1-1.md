@@ -72,7 +72,7 @@ Complete the following procedure to install the EdgeCmd utility on Linux:
 
 ## Access EdgeCmd utility
 
-The EdgeCmd utility locations used in the following procedures are based on the installation instructions in [EdgeCmd utility](xref:EdgecmdUtility).
+The EdgeCmd utility locations used in the following procedures are based on the installation instructions in this topic. See [Install EdgeCmd utility](#install-edgecmd-utility).
 
 ### Windows
 
