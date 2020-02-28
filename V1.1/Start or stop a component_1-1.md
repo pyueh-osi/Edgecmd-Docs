@@ -1,5 +1,5 @@
 ---
-uid: StartOrStopAComponent
+uid: StartOrStopAComponent1-1
 ---
 
 # Start or stop a component
