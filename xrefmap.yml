@@ -1,0 +1,33 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: AccessEdgeCmdUtility
+  name: Access EdgeCmd utility
+  href: V1/EdgeCmd%20utility/Access%20EdgeCmd%20utility.html
+- uid: Configure adapter
+  name: Configure adapter
+  href: V1/EdgeCmd%20utility/Configure%20adapter.html
+- uid: ConfigureAdapterComponent
+  name: Configure adapter component
+  href: V1/EdgeCmd%20utility/Configure%20adapter%20component.html
+- uid: DeleteConfiguration
+  name: Delete configuration
+  href: V1/EdgeCmd%20utility/Delete%20configuration.html
+- uid: Edgecmd commands
+  name: EdgeCmd commands
+  href: V1/EdgeCmd%20utility/EdgeCmd%20commands.html
+- uid: EdgecmdUtility
+  name: EdgeCmd utility
+  href: V1/EdgeCmd_utility.html
+- uid: index
+  name: Edgecmd
+  href: index.html
+- uid: RetreiveExistingConfiguration
+  name: Retrieve existing configuration
+  href: V1/EdgeCmd%20utility/Retrieve%20existing%20configuration.html
+- uid: RetrieveEdgeCmdUtilityHelp
+  name: Retrieve EdgeCmd utility help
+  href: V1/EdgeCmd%20utility/Retrieve%20EdgeCmd%20utility%20help.html
+- uid: StartOrStopAComponent
+  name: Start or stop a component
+  href: V1/EdgeCmd%20utility/Start%20or%20stop%20a%20component.html
