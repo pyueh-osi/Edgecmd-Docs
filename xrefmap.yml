@@ -1,15 +1,15 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
-- uid: AccessEdgeCmdUtility
+- uid: AccessEdgeCmdUtility1-1
   name: Access EdgeCmd utility
-  href: V1/EdgeCmd%20utility/Access%20EdgeCmd%20utility.html
+  href: V1.1/Access%20EdgeCmd%20utility_1-1.html
 - uid: Configure adapter
   name: Configure adapter
   href: V1/EdgeCmd%20utility/Configure%20adapter.html
-- uid: ConfigureAdapterComponent
+- uid: ConfigureAdapterComponent1-1
   name: Configure adapter component
-  href: V1/EdgeCmd%20utility/Configure%20adapter%20component.html
+  href: V1.1/Configure%20adapter%20component_1-1.html
 - uid: DeleteConfiguration
   name: Delete configuration
   href: V1/EdgeCmd%20utility/Delete%20configuration.html
