@@ -1,11 +1,13 @@
+- name: EdgeCmd utility
+  href: EdgeCmd utility.md
 - name: Access EdgeCmd utility
   href: Access EdgeCmd utility_1-1.md
 - name: Configuration
-  href: ../Configuration/toc.yml
-  topicHref: ../Configuration/Configuration_1-1.md
+  href: Configuration/toc.yml
+  topicHref: Configuration/Configuration_1-1.md
 - name: Administration
-  href: ../Administration/toc.yml
-  topicHref: ../Administration/Administration_1-1.md
+  href: Administration/toc.yml
+  topicHref: Administration/Administration_1-1.md
 - name: Reference
-  href: ../Reference/toc.yml
-  topicHref: ../Reference/Reference_1-1.md
+  href: Reference/toc.yml
+  topicHref: Reference/Reference_1-1.md
