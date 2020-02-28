@@ -144,6 +144,17 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "V1/images/atlas_icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "V1/images/atlas_icon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "V1/readme.md",
       "output": {
