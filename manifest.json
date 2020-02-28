@@ -45,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.1/Administration/Administration_1-1.html",
-          "hash": "lNAEVLwq3M3quwLrJzXzpA=="
+          "hash": "7D8GGbF6iE6P0ZSidmhjEw=="
         }
       },
       "is_incremental": false,
@@ -57,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.1/Administration/Delete configuration_1-1.html",
-          "hash": "+0ePkCkE4hX+aHJurKM9GQ=="
+          "hash": "BmpRwMzCwpoGl52etjgVqw=="
         }
       },
       "is_incremental": false,
@@ -69,7 +69,22 @@
       "output": {
         ".html": {
           "relative_path": "V1.1/Administration/Start or stop a component_1-1.html",
-          "hash": "G8EtLVV0DZUw96h+FSISIQ=="
+          "hash": "LdsXEEJgoxsmNTXGmFep9A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Toc",
+      "source_relative_path": "V1.1/Administration/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "V1.1/Administration/toc.html",
+          "hash": "UtpYy2nEFvnYANrxEZHYjA=="
         }
       },
       "is_incremental": false,
@@ -81,7 +96,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.1/Configuration/Configuration_1-1.html",
-          "hash": "NgDdjjFCwBHUJYmcPRW86g=="
+          "hash": "PpjPtmyzAwDAWi0j7S34PQ=="
         }
       },
       "is_incremental": false,
@@ -93,7 +108,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.1/Configuration/Configure adapter component_1-1.html",
-          "hash": "G9Ql7kwZySRPj825fPmiRg=="
+          "hash": "vQFVIoamRXTzWY7jc8+Mig=="
         }
       },
       "is_incremental": false,
@@ -105,7 +120,22 @@
       "output": {
         ".html": {
           "relative_path": "V1.1/Configuration/Configure adapter_1-1.html",
-          "hash": "YzUkbwNICkVrZey6VX2HMQ=="
+          "hash": "aooiIwBAIeQleUEzXoR4WA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Toc",
+      "source_relative_path": "V1.1/Configuration/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "V1.1/Configuration/toc.html",
+          "hash": "cLYt9fvZNQ8Sh7voD6AbDQ=="
         }
       },
       "is_incremental": false,
@@ -246,6 +276,13 @@
         "full_build_reason_code": "NoAvailableBuildCache"
       },
       "processors": {
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -257,13 +294,6 @@
           "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 15,
-          "skipped_file_count": 0
-        },
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
           "skipped_file_count": 0
         }
       }
