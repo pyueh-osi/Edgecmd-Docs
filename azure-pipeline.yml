@@ -24,6 +24,8 @@ jobs:
           cd source
           git clone https://user:$(gitToken)@github.com/osisoft/$(gitRepo).git --recurse-submodules
           dir
+          cd $(gitRepo)
+          dir
 
           echo "Run DocFX"
           docfx.exe ./docfx.json --template ./_exported_templates/default
