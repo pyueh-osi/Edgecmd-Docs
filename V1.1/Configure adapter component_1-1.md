@@ -1,5 +1,5 @@
 ---
-uid: ConfigureAdapterComponent
+uid: ConfigureAdapterComponent1-1
 ---
 
 # Configure adapter component
