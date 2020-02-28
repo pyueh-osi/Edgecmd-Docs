@@ -6,17 +6,6 @@ uid: ConfigureAdapterComponent1-1
 
 The EdgeCmd utility enables you to add, configure, and delete adapter components.
 
-## View configured components
-
-Complete the following procedure to view the components currently configured on the adapter:
-
-1. Open command line.
-2. Type the following in the command line and press Enter.
-
-	```
-	edgecmd Configuration System Components
-	```
-
 ## Add components
 
 Complete the following procedure to add a new component:
