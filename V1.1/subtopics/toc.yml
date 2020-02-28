@@ -1,16 +1,16 @@
 - name: Access EdgeCmd utility
-  href: Access EdgeCmd utility.md
+  href: ../Access EdgeCmd utility_1-1.md
 - name: Retrieve EdgeCmd utility help
-  href: Retrieve EdgeCmd utility help.md
+  href: ../Retrieve EdgeCmd utility help_1-1.md
 - name: Retrieve existing configuration
-  href: Retrieve existing configuration.md
+  href: ../Retrieve existing configuration_1-1.md
 - name: Configure adapter
-  href: Configure adapter.md
+  href: ../Configure adapter_1-1.md
 - name: Configure adapter component
-  href: Configure adapter component.md
+  href: ../Configure adapter component_1-1.md
 - name: Delete configuration
-  href: Delete configuration.md
+  href: ../Delete configuration_1-1.md
 - name: Start or stop a component
-  href: Start or stop a component.md
+  href: ../Start or stop a component_1-1.md
 - name: EdgeCmd commands
-  href: EdgeCmd commands.md
+  href: ../EdgeCmd commands_1-1.md
