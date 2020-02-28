@@ -50,11 +50,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/EdgeCmd utility/Configure adapter.md",
+      "source_relative_path": "V1.1/Configure adapter_1-1.md",
       "output": {
         ".html": {
-          "relative_path": "V1/EdgeCmd utility/Configure adapter.html",
-          "hash": "CUaTRE4wzIk2c/Frk8LkAQ=="
+          "relative_path": "V1.1/Configure adapter_1-1.html",
+          "hash": "G1HgVSvfctQ/GjWqSMv2kA=="
         }
       },
       "is_incremental": false,
@@ -62,11 +62,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/EdgeCmd utility/Delete configuration.md",
+      "source_relative_path": "V1.1/Delete configuration_1-1.md",
       "output": {
         ".html": {
-          "relative_path": "V1/EdgeCmd utility/Delete configuration.html",
-          "hash": "4H5WKv+Ae4sX9P+we6LvLg=="
+          "relative_path": "V1.1/Delete configuration_1-1.html",
+          "hash": "ptjFrQBbXwdKDgrtmE+ihA=="
         }
       },
       "is_incremental": false,
@@ -172,7 +172,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/toc.html",
-          "hash": "Z4VJM67WCvsZCMboPmzsDA=="
+          "hash": "cbGyQT4tdVOIKFVZRvpOXg=="
         }
       },
       "is_incremental": false,
