@@ -159,12 +159,16 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidTocInclude",
+        "InvalidFileLink"
+      ],
       "type": "Toc",
       "source_relative_path": "V1.1/toc.yml",
       "output": {
         ".html": {
           "relative_path": "V1.1/toc.html",
-          "hash": "jKZ60+A4FCXtVUN3Xws4Tw=="
+          "hash": "A3uj9XX6Gc1WSYIpFadj2Q=="
         }
       },
       "is_incremental": false,
@@ -206,13 +210,6 @@
         "full_build_reason_code": "NoAvailableBuildCache"
       },
       "processors": {
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
-          "skipped_file_count": 0
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -224,6 +221,13 @@
           "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 12,
+          "skipped_file_count": 0
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
           "skipped_file_count": 0
         }
       }
