@@ -1,5 +1,5 @@
 ---
-uid: AccessEdgeCmdUtility
+uid: AccessEdgeCmdUtility1-1
 ---
 
 # Access EdgeCmd utility
