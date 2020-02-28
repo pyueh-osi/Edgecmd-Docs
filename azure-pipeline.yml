@@ -37,8 +37,6 @@ jobs:
           echo "Move output files"
           mv .\_site $(Build.ArtifactStagingDirectory)\_site
           git clean -fd
-          rmdir V1\main /s /q
-          rmdir V1\edgecmd /s /q
 
           echo "Check out gh-pages branch"
           git checkout gh-pages        
