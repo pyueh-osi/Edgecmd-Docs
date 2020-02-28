@@ -1,5 +1,5 @@
 ---
-uid: Configure adapter
+uid: ConfigureAdapter1-1
 ---
 
 # Configure adapter
