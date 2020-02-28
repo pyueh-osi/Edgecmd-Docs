@@ -1,7 +1,5 @@
 - name: EdgeCmd utility
   href: EdgeCmd_utility_1-1.md
-- name: Access EdgeCmd utility
-  href: Access EdgeCmd utility_1-1.md
 - name: Configuration
   href: Configuration/toc.yml
   topicHref: Configuration/Configuration_1-1.md
