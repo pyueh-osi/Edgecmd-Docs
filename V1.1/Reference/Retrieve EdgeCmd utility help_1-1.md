@@ -13,9 +13,9 @@ Complete the following procedure to view help instructions on how to use the Edg
 1. Open command line.
 2. Type the following in the command line and press Enter.
 
-	```
-	edgecmd -help
-	```
+    ```
+    edgecmd -help
+    ```
 
 ## View component help instructions
 
@@ -24,9 +24,9 @@ Complete the following procedure to view configuration help instructions for a r
 1. Open command line.
 2. Type the following in the command line, replacing `<componentId>` with the value that you want, and press Enter.
 
-	```
-	edgecmd -help configuration <componentId>
-	```
+   ```
+   edgecmd -help configuration <componentId>
+   ```
 
 	For more information, see the example [Configuration help for the System component](#configuration-help-for-the-system-component).
 	
@@ -40,9 +40,9 @@ Complete the following procedure to view configuration help instructions for a s
 1. Open command line.
 2. Type the following in the command line, replacing `<componentId>` and `<facetName>` with the value that you want, and press Enter.
 
-	```
-	edgecmd -help configuration <componentId> <facetName>
-	```
+   ```
+   edgecmd -help configuration <componentId> <facetName>
+   ```
 	
 	For more information, see the example [Help for the port facet within the System component](#help-for-the-port-facet-within-the-system-component).
 
