@@ -26,9 +26,9 @@ Complete the following procedure to view the components currently configured on 
 1. Open command line.
 2. Type the following in the command line and press Enter.
 
-	```
-	edgecmd Configuration System Components
-	```
+   ```
+   edgecmd Configuration System Components
+   ```
   
   
 ## View a specific component configuration
