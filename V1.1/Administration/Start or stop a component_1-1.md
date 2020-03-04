@@ -6,15 +6,19 @@ uid: StartOrStopAComponent1-1
 
 Complete the following procedure to either start or stop a component. 
 
-**Note:** You can only start or stop adapter components.
+**Note:** The examples in this topic are using the default port number `5590`. If you specified a different port number for your adapter, you need to add it in the command. For example:
+
+```
+edgecmd -port=5591 Administration <RestOfTheCommand>
+```
 
 1. Open command line.
 2. Type one of the following in the command line, replacing `<componentId>` with the ID of the component, and press Enter.
 
    ```
-   ./edgecmd Administration <ComponentId> Stop
+   edgecmd Administration <ComponentId> Stop
    ```
   
    ```
-   ./edgecmd Administration <ComponentId> Start
+   edgecmd Administration <ComponentId> Start
    ```
