@@ -17,8 +17,8 @@ edgecmd -port=5591 Configuration <RestOfTheCommand>
 | edgecmd command | Description | Examples |
 |-----------------|-------------|----------|
 |```edgecmd -help```| Display general instructions on how to use the edgecmd utility. | 
-|```edgecmd -help <componentName>```| Display help for a specific adapter component. | ```edgecmd Help System```|
-|```edgecmd -help <componentName> <facetName>```| Display help for a specific facet of an adapter component. | ```edgecmd Help System Port```|
+|```edgecmd -help Configuration <componentId>```| Display help for a specific adapter component.| ```edgecmd -help Configuration System```|
+|```edgecmd -help Configuration <componentId> <facetName>``` | Display help for a specific facet of an adapter component. | ```edgecmd -help Configuration System Logging```|
 
 
 ## Configuration
@@ -51,5 +51,5 @@ edgecmd -port=5591 Configuration <RestOfTheCommand>
 ## Administration
 | edgecmd command | Description | Examples |
 |-----------------|-------------|----------|
-| ```edgecmd Administration ComponentId Stop``` | Stops a component. Only applicable for adapter type components. | ```edgecmd Administration Modbus1 Stop```|
-| ```edgecmd Administration ComponentId Start``` | Starts a component. Only applicable for adapter type components. | ```edgecmd Administration Modbus1 Start```|
+| ```edgecmd Administration <componentId> Stop``` | Stops a component. Only applicable for adapter type components. | ```edgecmd Administration Modbus1 Stop```|
+| ```edgecmd Administration <componentId> Start``` | Starts a component. Only applicable for adapter type components. | ```edgecmd Administration Modbus1 Start```|
