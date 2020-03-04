@@ -1,9 +1,4 @@
 {
-  "index.html": {
-    "href": "index.html",
-    "title": "Edgecmd",
-    "keywords": "Edgecmd"
-  },
   "README.html": {
     "href": "README.html",
     "title": "Edgecmd",
@@ -46,8 +41,8 @@
   },
   "V1.1/index.html": {
     "href": "V1.1/index.html",
-    "title": "",
-    "keywords": ""
+    "title": "EdgeCmd utility",
+    "keywords": "EdgeCmd utility ======= EdgeCmd utility Configuration Configure adapter Configure adapter component Administration Delete configuration Start or stop a component Reference Retrieve EdgeCmd utility help Retrieve existing configuration EdgeCmd commands"
   },
   "V1.1/Reference/EdgeCmd commands_1-1.html": {
     "href": "V1.1/Reference/EdgeCmd commands_1-1.html",
