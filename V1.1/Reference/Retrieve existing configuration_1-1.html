@@ -111,7 +111,7 @@
 <li>Open command line.</li>
 <li><p>Type the following in the command line, replacing <code>&lt;componentId&gt;</code> and <code>&lt;facetName&gt;</code> with the ID of the component and the facet name, and press Enter.</p>
 <pre><code>edgecmd Configuration &lt;componentId&gt; &lt;facetName&gt;
-</code></pre><p>See example <a href="#view-the-configuration-of-the-logging-facet-within-the-egress-component">View the configuration of the Logging facet within the Egress component</a>.</p>
+</code></pre><p>See example <a href="#view-the-configuration-of-the-logging-facet-within-the-omfegress-component">View the configuration of the Logging facet within the OmfEgress component</a>.</p>
 </li>
 </ol>
 <h2 id="view-a-specific-facet-entry-configuration">View a specific facet entry configuration</h2>
@@ -164,7 +164,7 @@
     &quot;DataSource&quot;: {},
     &quot;DataSelection&quot;: []
   },
-  &quot;Egress&quot;: {
+  &quot;OmfEgress&quot;: {
     &quot;Logging&quot;: {
       &quot;logLevel&quot;: &quot;Information&quot;,
       &quot;logFileSizeLimitBytes&quot;: 34636833,
@@ -205,15 +205,15 @@
     &quot;enableBuffering&quot;: true
   }
 }
-</code></pre><h4 id="view-the-configuration-of-the-logging-facet-within-the-egress-component">View the configuration of the Logging facet within the Egress component</h4>
-<pre><code>edgecmd Configuration Egress Logging
+</code></pre><h4 id="view-the-configuration-of-the-logging-facet-within-the-omfegress-component">View the configuration of the Logging facet within the OmfEgress component</h4>
+<pre><code>edgecmd Configuration OmfEgress Logging
 {
   &quot;logLevel&quot;: &quot;Information&quot;,
   &quot;logFileSizeLimitBytes&quot;: 34636833,
   &quot;logFileCountLimit&quot;: 31
 }
 </code></pre><h4 id="view-the-configuration-of-a-specific-entry-in-the-healthendpoints-facet-within-the-system-component">View the configuration of a specific entry in the HealthEndpoints facet within the System component</h4>
-<pre><code>edgecmd Configuration System Healthendpoints id=Endpoint_1
+<pre><code>edgecmd Configuration System HealthEndpoints id=Endpoint_1
 {
   &quot;id&quot;: &quot;Endpoint_1&quot;,
   &quot;endpoint&quot;: &quot;https://localhost:5821&quot;,
