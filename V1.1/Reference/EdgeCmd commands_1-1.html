@@ -79,7 +79,9 @@
 <h1 id="edgecmd-commands">EdgeCmd commands</h1>
 
 <p>The following tables provide an overview of available edgecmd commands that you can use with components of the adapter. Every command that you use with the edgecmd utility has to be preceded by <code>edgecmd</code>.</p>
-<h2 id="help">Help</h2>
+<p><strong>Note:</strong> The examples in this topic are using the default port number <code>5590</code>. If you specified a different port number for your adapter, you need to add it in the command. For example:</p>
+<pre><code>edgecmd -port=5591 Configuration &lt;RestOfTheCommand&gt;
+</code></pre><h2 id="help">Help</h2>
 <table>
 <thead>
 <tr>
@@ -90,17 +92,17 @@
 </thead>
 <tbody>
 <tr>
-<td><code>edgecmd Help</code></td>
+<td><code>edgecmd -help</code></td>
 <td>Display general instructions on how to use the edgecmd utility.</td>
 <td></td>
 </tr>
 <tr>
-<td><code>edgecmd Help &lt;componentName&gt;</code></td>
+<td><code>edgecmd -help &lt;componentName&gt;</code></td>
 <td>Display help for a specific adapter component.</td>
 <td><code>edgecmd Help System</code></td>
 </tr>
 <tr>
-<td><code>edgecmd Help &lt;componentName&gt; &lt;facetName&gt;</code></td>
+<td><code>edgecmd -help &lt;componentName&gt; &lt;facetName&gt;</code></td>
 <td>Display help for a specific facet of an adapter component.</td>
 <td><code>edgecmd Help System Port</code></td>
 </tr>
@@ -152,7 +154,7 @@
 <tr>
 <td><code>edgecmd Configuration &lt;componentId&gt;</code></td>
 <td>Display component specific configuration.</td>
-<td><code>edgecmd Configuration System`&lt;br&gt;or&lt;br&gt;`edgecmd  Configuration OpcUa1</code></td>
+<td><code>edgecmd Configuration System</code><br>or<br><code>edgecmd  Configuration OpcUa1</code></td>
 </tr>
 <tr>
 <td><code>edgecmd Configuration &lt;componentId&gt; &lt;facetName&gt;</code></td>
