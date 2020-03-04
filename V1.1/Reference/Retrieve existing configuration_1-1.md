@@ -114,7 +114,7 @@ edgecmd Configuration
     "DataSource": {},
     "DataSelection": []
   },
-  "Egress": {
+  "OmfEgress": {
     "Logging": {
       "logLevel": "Information",
       "logFileSizeLimitBytes": 34636833,
@@ -164,7 +164,7 @@ edgecmd Configuration System
 #### View the configuration of the Logging facet within the Egress component
 
 ```
-edgecmd Configuration Egress Logging
+edgecmd Configuration OmfEgress Logging
 {
   "logLevel": "Information",
   "logFileSizeLimitBytes": 34636833,
@@ -175,7 +175,7 @@ edgecmd Configuration Egress Logging
 #### View the configuration of a specific entry in the HealthEndpoints facet within the System component
 
 ```
-edgecmd Configuration System Healthendpoints id=Endpoint_1
+edgecmd Configuration System HealthEndpoints id=Endpoint_1
 {
   "id": "Endpoint_1",
   "endpoint": "https://localhost:5821",
