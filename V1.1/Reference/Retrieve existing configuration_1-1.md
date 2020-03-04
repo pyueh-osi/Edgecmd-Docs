@@ -55,7 +55,7 @@ Complete the following procedure to view the configuration of a specific facet o
    edgecmd Configuration <componentId> <facetName>
    ```
    
-   See example [View the configuration of the Logging facet within the Egress component](#view-the-configuration-of-the-logging-facet-within-the-egress-component).
+   See example [View the configuration of the Logging facet within the OmfEgress component](#view-the-configuration-of-the-logging-facet-within-the-omfegress-component).
    
 ## View a specific facet entry configuration
 
@@ -161,7 +161,7 @@ edgecmd Configuration System
 }
 ```
 
-#### View the configuration of the Logging facet within the Egress component
+#### View the configuration of the Logging facet within the OmfEgress component
 
 ```
 edgecmd Configuration OmfEgress Logging
