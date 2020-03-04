@@ -87,7 +87,7 @@
 <li>Open command line.</li>
 <li><p>Type the <code>componentId</code> and <code>facetName</code>, followed by key=value pairs that you want to change. Then press Enter.</p>
 <p><strong>Example:</strong> Change all values in the &#39;Logging&#39; facet:</p>
-<pre><code>edgecmd Configuration Egress Logging LogLevel=Warning LogFileSizeLimitBytes=32768 LogFileCountLimit=5
+<pre><code>edgecmd Configuration OmfEgress Logging LogLevel=Warning LogFileSizeLimitBytes=32768 LogFileCountLimit=5
 </code></pre></li>
 </ol>
 <h2 id="configure-keyvalue-pairs-in-a-facet">Configure key=value pairs in a facet</h2>
@@ -96,7 +96,7 @@
 <li>Open command line.</li>
 <li><p>Type the <code>componentId</code> and <code>facetName</code> followed by the key=value pairs that you want to change, and press Enter.</p>
 <p><strong>Example:</strong> Change a single value in the &#39;Logging&#39; facet:</p>
-<pre><code>edgecmd Configuration Egress Logging LogFileCountLimit=5
+<pre><code>edgecmd Configuration OmfEgress Logging LogFileCountLimit=5
 </code></pre></li>
 </ol>
 <h2 id="add-an-entry-to-a-collection-configuration">Add an entry to a collection configuration</h2>
@@ -136,7 +136,7 @@
 <pre><code>edgecmd Configuration file=&quot;~/Logging.json&quot;
 </code></pre><p><strong>Example:</strong></p>
 <pre><code class="lang-JSON"> {
-     &quot;Egress&quot;: {
+     &quot;OmfEgress&quot;: {
        &quot;Logging&quot;: {
          &quot;logLevel&quot;: &quot;Warning&quot;,
          &quot;logFileSizeLimitBytes&quot;: 19283,
@@ -144,9 +144,9 @@
          }
      }
  }
-</code></pre><p> <strong>Note:</strong> The command only affects the specified key-value pairs for the &#39;Logging&#39; facet in the &#39;Egress&#39; component, it does not change any other components or facets. However, import affects all key-value pairs in the facet. If you import the following example JSON file, the &#39;logLevel&#39; and &#39;logFileSizeLimitBytes&#39; values will be modified and the remaining values in the &#39;Logging&#39; facet will be reset to their default values (logFileCountLimit).</p>
+</code></pre><p> <strong>Note:</strong> The command only affects the specified key-value pairs for the &#39;Logging&#39; facet in the &#39;OmfEgress&#39; component, it does not change any other components or facets. However, import affects all key-value pairs in the facet. If you import the following example JSON file, the &#39;logLevel&#39; and &#39;logFileSizeLimitBytes&#39; values will be modified and the remaining values in the &#39;Logging&#39; facet will be reset to their default values (logFileCountLimit).</p>
 <pre><code class="lang-JSON">{
-    &quot;Egress&quot;: {
+    &quot;OmfEgress&quot;: {
       &quot;Logging&quot;: {
         &quot;logLevel&quot;: &quot;Warning&quot;,
         &quot;logFileSizeLimitBytes&quot;: 19283
