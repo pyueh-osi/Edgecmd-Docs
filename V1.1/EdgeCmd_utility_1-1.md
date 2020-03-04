@@ -4,7 +4,7 @@ uid: EdgecmdUtility1-1
 
 # EdgeCmd utility
 
-With the EdgeCmd utility, you can configure and administer adapters on Linux and Windows just like with REST and command line arguments.
+EdgeCmd utility provides options to configure and administer adapters on Linux and Windows just like with REST and command line arguments.
 
 **Note:** Configuration and administrative REST interfaces are generally exposed through the command line.
 

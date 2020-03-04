@@ -6,6 +6,12 @@ uid: ConfigureAdapter1-1
 
 OSIsoft adapters provide several configuration options, including configuration with JSON files and bulk configurations.
 
+**Note:** The examples in this topic are using the default port number `5590`. If you specified a different port number for your adapter, you need to add it in the command. For example:
+
+```
+edgecmd -port=5591 Configuration <RestOfTheCommand>
+```
+
 ## Change all values of a facet
 
 Complete the following procedure to change all values of a facet:
@@ -16,7 +22,7 @@ Complete the following procedure to change all values of a facet:
    **Example:** Change all values in the 'Logging' facet:
 
    ```
-   edgecmd Configuration Egress Logging LogLevel=Warning LogFileSizeLimitBytes=32768 LogFileCountLimit=5
+   edgecmd Configuration OmfEgress Logging LogLevel=Warning LogFileSizeLimitBytes=32768 LogFileCountLimit=5
    ```
 
 ## Configure key=value pairs in a facet
@@ -29,7 +35,7 @@ Complete the following procedure to configure any number of valid key=value pair
    **Example:** Change a single value in the 'Logging' facet:
 
    ```
-   edgecmd Configuration Egress Logging LogFileCountLimit=5
+   edgecmd Configuration OmfEgress Logging LogFileCountLimit=5
    ```
 
 ## Add an entry to a collection configuration
@@ -89,7 +95,7 @@ Complete the following procedure to import a file with configuration for individ
 
    ```JSON
 	{
-		"Egress": {
+		"OmfEgress": {
 		  "Logging": {
 		    "logLevel": "Warning",
 		    "logFileSizeLimitBytes": 19283,
@@ -99,11 +105,11 @@ Complete the following procedure to import a file with configuration for individ
 	}
     ```
 
-	**Note:** The command only affects the specified key-value pairs for the 'Logging' facet in the 'Egress' component, it does not change any other components or facets. However, import affects all key-value pairs in the facet. If you import the following example JSON file, the 'logLevel' and 'logFileSizeLimitBytes' values will be modified and the remaining values in the 'Logging' facet will be reset to their default values (logFileCountLimit).
+	**Note:** The command only affects the specified key-value pairs for the 'Logging' facet in the 'OmfEgress' component, it does not change any other components or facets. However, import affects all key-value pairs in the facet. If you import the following example JSON file, the 'logLevel' and 'logFileSizeLimitBytes' values will be modified and the remaining values in the 'Logging' facet will be reset to their default values (logFileCountLimit).
 
 	```JSON
 	{
-		"Egress": {
+		"OmfEgress": {
 		  "Logging": {
 		    "logLevel": "Warning",
 		    "logFileSizeLimitBytes": 19283

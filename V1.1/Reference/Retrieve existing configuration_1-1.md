@@ -1,10 +1,16 @@
 ---
-uid: RetreiveExistingConfiguration1-1
+uid: RetrieveExistingConfiguration1-1
 ---
 
 # Retrieve existing configuration
 
 EdgeCmd utility provides the possibility to view the configuration for each part of the adapter.
+
+**Note:** The examples in this topic are using the default port number `5590`. If you specified a different port number for your adapter, you need to add it in the command. For example:
+
+```
+edgecmd -port=5591 Configuration <RestOfTheCommand>
+```
 
 ## View adapter configuration
 
@@ -26,9 +32,9 @@ Complete the following procedure to view the components currently configured on 
 1. Open command line.
 2. Type the following in the command line and press Enter.
 
-	```
-	edgecmd Configuration System Components
-	```
+   ```
+   edgecmd Configuration System Components
+   ```
   
   
 ## View a specific component configuration
@@ -55,7 +61,7 @@ Complete the following procedure to view the configuration of a specific facet o
    edgecmd Configuration <componentId> <facetName>
    ```
    
-   See example [View the configuration of the Logging facet within the Egress component](#view-the-configuration-of-the-logging-facet-within-the-egress-component).
+   See example [View the configuration of the Logging facet within the OmfEgress component](#view-the-configuration-of-the-logging-facet-within-the-omfegress-component).
    
 ## View a specific facet entry configuration
 
@@ -114,7 +120,7 @@ edgecmd Configuration
     "DataSource": {},
     "DataSelection": []
   },
-  "Egress": {
+  "OmfEgress": {
     "Logging": {
       "logLevel": "Information",
       "logFileSizeLimitBytes": 34636833,
@@ -161,10 +167,10 @@ edgecmd Configuration System
 }
 ```
 
-#### View the configuration of the Logging facet within the Egress component
+#### View the configuration of the Logging facet within the OmfEgress component
 
 ```
-edgecmd Configuration Egress Logging
+edgecmd Configuration OmfEgress Logging
 {
   "logLevel": "Information",
   "logFileSizeLimitBytes": 34636833,
@@ -175,7 +181,7 @@ edgecmd Configuration Egress Logging
 #### View the configuration of a specific entry in the HealthEndpoints facet within the System component
 
 ```
-edgecmd Configuration System Healthendpoints id=Endpoint_1
+edgecmd Configuration System HealthEndpoints id=Endpoint_1
 {
   "id": "Endpoint_1",
   "endpoint": "https://localhost:5821",

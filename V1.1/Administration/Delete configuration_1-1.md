@@ -6,6 +6,12 @@ uid: DeleteConfiguration1-1
 
 Configuration can be deleted on an entry or a facet basis. Both options are described following.
 
+**Note:** The examples in this topic are using the default port number `5590`. If you specified a different port number for your adapter, you need to add it in the command. For example:
+
+```
+edgecmd -port=5591 Configuration <RestOfTheCommand>
+```
+
 ## Delete configuration entry
 
 Complete the following procedure to delete a configuration entry from a collection configuration. For example, you can delete a single health endpoint of the 'HealthEndpoints' facet within the 'System' component.
