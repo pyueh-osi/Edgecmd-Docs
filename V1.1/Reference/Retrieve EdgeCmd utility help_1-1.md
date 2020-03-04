@@ -4,7 +4,13 @@ uid: RetrieveEdgeCmdUtilityHelp1-1
 
 # Retrieve EdgeCmd utility help
 
-The EdgeCmd utility provides a 'Help' utility with instructions on how to use EdgeCmd utility. 
+The EdgeCmd utility provides a 'Help' utility with instructions on how to use EdgeCmd utility.
+
+**Note:** The examples in this topic are using the default port number `5590`. If you specified a different port number for your adapter, you need to add it in the command. For example:
+
+```
+edgecmd -help -port=5591 Configuration <RestOfTheCommand>
+```
 
 ## View general help instructions
 
@@ -25,7 +31,7 @@ Complete the following procedure to view configuration help instructions for a r
 2. Type the following in the command line, replacing `<componentId>` with the value that you want, and press Enter.
 
    ```
-   edgecmd -help configuration <componentId>
+   edgecmd -help Configuration <componentId>
    ```
 
 	For more information, see the example [Configuration help for the System component](#configuration-help-for-the-system-component).
@@ -41,17 +47,17 @@ Complete the following procedure to view configuration help instructions for a s
 2. Type the following in the command line, replacing `<componentId>` and `<facetName>` with the value that you want, and press Enter.
 
    ```
-   edgecmd -help configuration <componentId> <facetName>
+   edgecmd -help Configuration <componentId> <facetName>
    ```
 	
-	For more information, see the example [Help for the port facet within the System component](#help-for-the-port-facet-within-the-system-component).
+	For more information, see the example [Configuration help for the buffering facet within the System component](#configuration-help-for-the-buffering-facet-within-the-system-component).
 
 ### Examples
 
 #### Configuration help for the System component:
 
 ```bash
-edgecmd -help configuration System
+edgecmd -help Configuration System
 
 ---------------------------------------------------------------------------------------------------------
 Component System command-line options => 'Logging'
@@ -99,15 +105,15 @@ ComponentType                      [Required] Type of the hosted component.
 Example: ./edgecmd Configuration System Components ComponentId=Modus1 ComponentType=Modbus
 ```
 
-#### Help for the port facet within the System component
+#### Configuration help for the Buffering facet within the System component
 
 ```bash
-edgecmd Help System Port
+edgecmd -help Configuration System Buffering
 
 ---------------------------------------------------------------------------------------------------------
-Component System command-line options => 'Port'
+Component System command-line options => 'Buffering'
 ---------------------------------------------------------------------------------------------------------
-Port                        [Required] The TCP port to bind this application host to (Range [1024,65535])
-
-Example: ./edgecmd Configuration System Port Port=5590
+BufferLocation                 Location of the on-disk buffers
+MaxBufferSizeMB                Maximum size of the on-disk buffers (-1 = restricted only by available free disk space)
+EnableBuffering                Enable or disable buffering
 ```
