@@ -6,6 +6,12 @@ uid: ConfigureAdapterComponent1-1
 
 The EdgeCmd utility enables you to add, configure, and delete adapter components.
 
+**Note:** The examples in this topic are using the default port number `5590`. If you specified a different port number for your adapter, you need to add it in the command. For example:
+
+```
+edgecmd -port=5591 Configuration <RestOfTheCommand>
+```
+
 ## Add components
 
 Complete the following procedure to add a new component:
