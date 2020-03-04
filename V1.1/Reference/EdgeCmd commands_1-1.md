@@ -6,13 +6,19 @@ uid: EdgeCmdCommands1-1
 
 The following tables provide an overview of available edgecmd commands that you can use with components of the adapter. Every command that you use with the edgecmd utility has to be preceded by `edgecmd`.
 
+**Note:** The examples in this topic are using the default port number `5590`. If you specified a different port number for your adapter, you need to add it in the command. For example:
+
+```
+edgecmd -port=5591 Configuration <RestOfTheCommand>
+```
+
 ## Help
 
 | edgecmd command | Description | Examples |
 |-----------------|-------------|----------|
-|```edgecmd Help```| Display general instructions on how to use the edgecmd utility. | 
-|```edgecmd Help <componentName>```| Display help for a specific adapter component. | ```edgecmd Help System```|
-|```edgecmd Help <componentName> <facetName>```| Display help for a specific facet of an adapter component. | ```edgecmd Help System Port```|
+|```edgecmd -help```| Display general instructions on how to use the edgecmd utility. | 
+|```edgecmd -help <componentName>```| Display help for a specific adapter component. | ```edgecmd Help System```|
+|```edgecmd -help <componentName> <facetName>```| Display help for a specific facet of an adapter component. | ```edgecmd Help System Port```|
 
 
 ## Configuration
@@ -29,7 +35,7 @@ The following tables provide an overview of available edgecmd commands that you 
 ### Components
 | edgecmd command | Description | Examples |
 |-----------------|-------------|----------|
-|```edgecmd Configuration <componentId>``` | Display component specific configuration. | ```edgecmd Configuration System`<br>or<br>`edgecmd  Configuration OpcUa1```|
+|```edgecmd Configuration <componentId>``` | Display component specific configuration. | ```edgecmd Configuration System```<br>or<br>```edgecmd  Configuration OpcUa1```|
 |```edgecmd Configuration <componentId> <facetName>``` | Display facet specific configuration of a component. | ```edgecmd Configuration System Logging```|
 |```edgecmd Configuration <componentId> <facetName> id=<IndexToRetrieve>```| Display the configuration of a specific entry of a facet. | ```edgecmd Configuration System HealthEndpoints id=Endpoint1``` |
 |```edgecmd Configuration <componentId> DataSource``` | Configure the data source for the adapter. | For examples, see [OSIsoft Adapter for OPC UA data source configuration](https://osisoft.github.io/OSIsoft-Adapter-OPC-UA-Docs/V1/Configuration/OSIsoft%20Adapter%20for%20OPC%20UA%20data%20source%20configuration.html) and [OSIsoft Adapter For Modbus TCP data source configuration](https://osisoft.github.io/OSIsoft-Adapter-Modbus-Docs/V1/Configuration/OSIsoft%20Adapter%20for%20Modbus%20TCP%20data%20source%20configuration.html).|
