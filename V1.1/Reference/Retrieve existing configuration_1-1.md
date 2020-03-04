@@ -6,6 +6,12 @@ uid: RetreiveExistingConfiguration1-1
 
 EdgeCmd utility provides the possibility to view the configuration for each part of the adapter.
 
+**Note:** The examples in this topic are using the default port number `5590`. If you specified a different port number for your adapter, you need to add it in the command. For example:
+
+```
+edgecmd -port=5591 Configuration <RestOfTheCommand>
+```
+
 ## View adapter configuration
 
 Complete the following procedure to view the configuration for the adapter:
