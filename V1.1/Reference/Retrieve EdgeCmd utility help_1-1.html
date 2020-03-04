@@ -78,8 +78,10 @@
             <article class="content wrap" id="_content" data-uid="RetrieveEdgeCmdUtilityHelp1-1">
 <h1 id="retrieve-edgecmd-utility-help">Retrieve EdgeCmd utility help</h1>
 
-<p>The EdgeCmd utility provides a &#39;Help&#39; utility with instructions on how to use EdgeCmd utility. </p>
-<h2 id="view-general-help-instructions">View general help instructions</h2>
+<p>The EdgeCmd utility provides a &#39;Help&#39; utility with instructions on how to use EdgeCmd utility.</p>
+<p><strong>Note:</strong> The examples in this topic are using the default port number <code>5590</code>. If you specified a different port number for your adapter, you need to add it in the command. For example:</p>
+<pre><code>edgecmd -help -port=5591 Configuration &lt;RestOfTheCommand&gt;
+</code></pre><h2 id="view-general-help-instructions">View general help instructions</h2>
 <p>Complete the following procedure to view help instructions on how to use the Edgecmd utility:</p>
 <ol>
 <li>Open command line.</li>
@@ -92,7 +94,7 @@
 <ol>
 <li>Open command line.</li>
 <li><p>Type the following in the command line, replacing <code>&lt;componentId&gt;</code> with the value that you want, and press Enter.</p>
-<pre><code>edgecmd -help configuration &lt;componentId&gt;
+<pre><code>edgecmd -help Configuration &lt;componentId&gt;
 </code></pre><p> For more information, see the example <a href="#configuration-help-for-the-system-component">Configuration help for the System component</a>.</p>
 <p> <strong>Note:</strong> The help output also provides examples of commands that you can run to configure the component.</p>
 </li>
@@ -102,13 +104,13 @@
 <ol>
 <li>Open command line.</li>
 <li><p>Type the following in the command line, replacing <code>&lt;componentId&gt;</code> and <code>&lt;facetName&gt;</code> with the value that you want, and press Enter.</p>
-<pre><code>edgecmd -help configuration &lt;componentId&gt; &lt;facetName&gt;
-</code></pre><p> For more information, see the example <a href="#help-for-the-port-facet-within-the-system-component">Help for the port facet within the System component</a>.</p>
+<pre><code>edgecmd -help Configuration &lt;componentId&gt; &lt;facetName&gt;
+</code></pre><p> For more information, see the example <a href="#configuration-help-for-the-buffering-facet-within-the-system-component">Configuration help for the buffering facet within the System component</a>.</p>
 </li>
 </ol>
 <h3 id="examples">Examples</h3>
 <h4 id="configuration-help-for-the-system-component">Configuration help for the System component:</h4>
-<pre><code class="lang-bash">edgecmd -help configuration System
+<pre><code class="lang-bash">edgecmd -help Configuration System
 
 ---------------------------------------------------------------------------------------------------------
 Component System command-line options =&gt; &#39;Logging&#39;
@@ -154,15 +156,15 @@ ComponentId                        [Required] ID of the hosted component.
 ComponentType                      [Required] Type of the hosted component.
 
 Example: ./edgecmd Configuration System Components ComponentId=Modus1 ComponentType=Modbus
-</code></pre><h4 id="help-for-the-port-facet-within-the-system-component">Help for the port facet within the System component</h4>
-<pre><code class="lang-bash">edgecmd Help System Port
+</code></pre><h4 id="configuration-help-for-the-buffering-facet-within-the-system-component">Configuration help for the Buffering facet within the System component</h4>
+<pre><code class="lang-bash">edgecmd -help Configuration System Buffering
 
 ---------------------------------------------------------------------------------------------------------
-Component System command-line options =&gt; &#39;Port&#39;
+Component System command-line options =&gt; &#39;Buffering&#39;
 ---------------------------------------------------------------------------------------------------------
-Port                        [Required] The TCP port to bind this application host to (Range [1024,65535])
-
-Example: ./edgecmd Configuration System Port Port=5590
+BufferLocation                 Location of the on-disk buffers
+MaxBufferSizeMB                Maximum size of the on-disk buffers (-1 = restricted only by available free disk space)
+EnableBuffering                Enable or disable buffering
 </code></pre></article>
           </div>
           
