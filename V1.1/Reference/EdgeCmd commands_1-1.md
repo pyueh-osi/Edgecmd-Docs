@@ -8,7 +8,7 @@ The following tables provide an overview of available edgecmd commands that you 
 
 **Note:** The examples in this topic are using the default port number `5590`. If you specified a different port number for your adapter, you need to add it in the command. For example:
 
-```
+```cmd
 edgecmd -port=5591 Configuration <RestOfTheCommand>
 ```
 
@@ -16,10 +16,9 @@ edgecmd -port=5591 Configuration <RestOfTheCommand>
 
 | edgecmd command | Description | Examples |
 |-----------------|-------------|----------|
-|```edgecmd -help```| Display general instructions on how to use the edgecmd utility. | 
+|```edgecmd -help```| Display general instructions on how to use the edgecmd utility. |
 |```edgecmd -help Configuration <componentId>```| Display help for a specific adapter component.| ```edgecmd -help Configuration System```|
 |```edgecmd -help Configuration <componentId> <facetName>``` | Display help for a specific facet of an adapter component. | ```edgecmd -help Configuration System Logging```|
-
 
 ## Configuration
 
@@ -28,11 +27,12 @@ edgecmd -port=5591 Configuration <RestOfTheCommand>
 | edgecmd command | Description | Examples |
 |-----------------|-------------|----------|
 |```edgecmd Configuration```| Display the entire configuration for every adapter component. |
-|```edgecmd Configuration System Components``` | Display the components that are currently configured. | 
+|```edgecmd Configuration System Components``` | Display the components that are currently configured. |
 |```edgecmd Configuration System Components componentId=<componentId> componentType=<componentType>``` | Add a new component.  | ```edgecmd Configuration System Components componentId=Modbus1 componentType=Modbus```|
 |```edgecmd Configuration System Components id=<componentId> delete``` | Delete a component. | ```edgecmd Configuration System Components id=Modbus1 delete``` |
 
 ### Components
+
 | edgecmd command | Description | Examples |
 |-----------------|-------------|----------|
 |```edgecmd Configuration <componentId>``` | Display component specific configuration. | ```edgecmd Configuration System```<br>or<br>```edgecmd  Configuration OpcUa1```|
@@ -43,12 +43,14 @@ edgecmd -port=5591 Configuration <RestOfTheCommand>
 |```edgecmd Configuration <componentId> Logging``` | Configure logging for a component. | ```edgecmd Configuration OpcUa1 Logging``` |
 
 ## Configuration with JSON files
+
 | edgecmd command | Description | Examples |
 |-----------------|-------------|----------|
 | ```edgecmd Configuration file=<PathToJsonFile>``` | Import a bulk configuration through a JSON file. | ```edgecmd Configuration file="~/Bulk_Storage_Runtime.json"```|
 | ```edgecmd Configuration <componentId> <facetName> file=<PathToJsonFile>``` | Import a facet specific configuration file for a component. | ```edgecmd Configuration Modbus1 DataSource file="~/System_Logging.json"```|
 
 ## Administration
+
 | edgecmd command | Description | Examples |
 |-----------------|-------------|----------|
 | ```edgecmd Administration <componentId> Stop``` | Stops a component. Only applicable for adapter type components. | ```edgecmd Administration Modbus1 Stop```|
