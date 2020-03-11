@@ -8,7 +8,7 @@ The EdgeCmd utility provides a 'Help' utility with instructions on how to use Ed
 
 **Note:** The examples in this topic are using the default port number `5590`. If you specified a different port number for your adapter, you need to add it in the command. For example:
 
-```
+```cmd
 edgecmd -help -port=5591 Configuration <RestOfTheCommand>
 ```
 
@@ -19,7 +19,7 @@ Complete the following procedure to view help instructions on how to use the Edg
 1. Open command line.
 2. Type the following in the command line and press Enter.
 
-    ```
+    ```cmd
     edgecmd -help
     ```
 
@@ -30,15 +30,14 @@ Complete the following procedure to view configuration help instructions for a r
 1. Open command line.
 2. Type the following in the command line, replacing `<componentId>` with the value that you want, and press Enter.
 
-   ```
+   ```cmd
    edgecmd -help Configuration <componentId>
    ```
 
 	For more information, see the example [Configuration help for the System component](#configuration-help-for-the-system-component).
-	
+
 	**Note:** The help output also provides examples of commands that you can run to configure the component.
-	
-	
+
 ## View component facet help instructions
 
 Complete the following procedure to view configuration help instructions for a specific facet within a component that the adapter supports:
@@ -46,15 +45,15 @@ Complete the following procedure to view configuration help instructions for a s
 1. Open command line.
 2. Type the following in the command line, replacing `<componentId>` and `<facetName>` with the value that you want, and press Enter.
 
-   ```
+   ```cmd
    edgecmd -help Configuration <componentId> <facetName>
    ```
-	
+
 	For more information, see the example [Configuration help for the buffering facet within the System component](#configuration-help-for-the-buffering-facet-within-the-system-component).
 
 ### Examples
 
-#### Configuration help for the System component:
+#### Configuration help for the System component
 
 ```bash
 edgecmd -help Configuration System
