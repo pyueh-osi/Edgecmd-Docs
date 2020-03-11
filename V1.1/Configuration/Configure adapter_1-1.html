@@ -80,14 +80,14 @@
 
 <p>OSIsoft adapters provide several configuration options, including configuration with JSON files and bulk configurations.</p>
 <p><strong>Note:</strong> The examples in this topic are using the default port number <code>5590</code>. If you specified a different port number for your adapter, you need to add it in the command. For example:</p>
-<pre><code>edgecmd -port=5591 Configuration &lt;RestOfTheCommand&gt;
+<pre><code class="lang-cmd">edgecmd -port=5591 Configuration &lt;RestOfTheCommand&gt;
 </code></pre><h2 id="change-all-values-of-a-facet">Change all values of a facet</h2>
 <p>Complete the following procedure to change all values of a facet:</p>
 <ol>
 <li>Open command line.</li>
 <li><p>Type the <code>componentId</code> and <code>facetName</code>, followed by key=value pairs that you want to change. Then press Enter.</p>
 <p><strong>Example:</strong> Change all values in the &#39;Logging&#39; facet:</p>
-<pre><code>edgecmd Configuration OmfEgress Logging LogLevel=Warning LogFileSizeLimitBytes=32768 LogFileCountLimit=5
+<pre><code class="lang-cmd">edgecmd Configuration OmfEgress Logging LogLevel=Warning LogFileSizeLimitBytes=32768 LogFileCountLimit=5
 </code></pre></li>
 </ol>
 <h2 id="configure-keyvalue-pairs-in-a-facet">Configure key=value pairs in a facet</h2>
@@ -96,7 +96,7 @@
 <li>Open command line.</li>
 <li><p>Type the <code>componentId</code> and <code>facetName</code> followed by the key=value pairs that you want to change, and press Enter.</p>
 <p><strong>Example:</strong> Change a single value in the &#39;Logging&#39; facet:</p>
-<pre><code>edgecmd Configuration OmfEgress Logging LogFileCountLimit=5
+<pre><code class="lang-cmd">edgecmd Configuration OmfEgress Logging LogFileCountLimit=5
 </code></pre></li>
 </ol>
 <h2 id="add-an-entry-to-a-collection-configuration">Add an entry to a collection configuration</h2>
@@ -105,7 +105,7 @@
 <li>Open command line.</li>
 <li><p>Type the <code>componentId</code> and <code>facetName</code> followed by the key=value pairs, and press Enter.</p>
 <p><strong>Example:</strong> Add the &#39;Health Endpoints&#39; facet to the &#39;System&#39; component:</p>
-<pre><code>edgecmd Configuration System HealthEndpoints Id=endpoint_1 Endpoint=endpointURL UserName=UserName Password=Password
+<pre><code class="lang-cmd">edgecmd Configuration System HealthEndpoints Id=endpoint_1 Endpoint=endpointURL UserName=UserName Password=Password
 </code></pre><p> <strong>Note:</strong> If an entry with the specified ID already exists, it will be updated based on the new key=value pairs.</p>
 </li>
 </ol>
@@ -116,7 +116,7 @@
 <ol>
 <li>Open command line.</li>
 <li><p>Type the following in the command line, replacing <code>&lt;PathToJsonFile&gt;</code> with the path to the file, and press Enter.</p>
-<pre><code>edgecmd Configuration file=&lt;PathToJsonFile&gt;
+<pre><code class="lang-cmd">edgecmd Configuration file=&lt;PathToJsonFile&gt;
 </code></pre></li>
 </ol>
 <h3 id="import-facet-specific-configuration">Import facet specific configuration</h3>
@@ -124,18 +124,18 @@
 <ol>
 <li>Open command line.</li>
 <li><p>Type the following in the command line, replacing <code>&lt;componentId&gt;</code> with the ID of the component, <code>&lt;facetName&gt;</code> with the name of the facet, and <code>&lt;PathToJsonFile&gt;</code> with the path to the file. Then press Enter.</p>
-<pre><code>edgecmd Configuration &lt;componentId&gt; &lt;facetName&gt; file=&lt;PathToJsonFile&gt;
+<pre><code class="lang-cmd">edgecmd Configuration &lt;componentId&gt; &lt;facetName&gt; file=&lt;PathToJsonFile&gt;
 </code></pre></li>
 </ol>
 <h3 id="import-facets-configuration-in-bulk">Import facets configuration in bulk</h3>
-<p>Complete the following procedure to import a file with configuration for individual facets as a bulk file import operation:
-    <strong>Note:</strong> The file must contain only information for the given component ID. </p>
+<p>Complete the following procedure to import a file with configuration for individual facets as a bulk file import operation:<br><br>
+<strong>Note:</strong> The file must contain only information for the given component ID.</p>
 <ol>
 <li>Open command line.</li>
 <li><p>Type the file name as shown in the <em>Logging.json</em> example and press Enter.</p>
-<pre><code>edgecmd Configuration file=&quot;~/Logging.json&quot;
+<pre><code class="lang-cmd">edgecmd Configuration file=&quot;~/Logging.json&quot;
 </code></pre><p><strong>Example:</strong></p>
-<pre><code class="lang-JSON"> {
+<pre><code class="lang-json"> {
      &quot;OmfEgress&quot;: {
        &quot;Logging&quot;: {
          &quot;logLevel&quot;: &quot;Warning&quot;,
@@ -145,7 +145,7 @@
      }
  }
 </code></pre><p> <strong>Note:</strong> The command only affects the specified key-value pairs for the &#39;Logging&#39; facet in the &#39;OmfEgress&#39; component, it does not change any other components or facets. However, import affects all key-value pairs in the facet. If you import the following example JSON file, the &#39;logLevel&#39; and &#39;logFileSizeLimitBytes&#39; values will be modified and the remaining values in the &#39;Logging&#39; facet will be reset to their default values (logFileCountLimit).</p>
-<pre><code class="lang-JSON">{
+<pre><code class="lang-json">{
     &quot;OmfEgress&quot;: {
       &quot;Logging&quot;: {
         &quot;logLevel&quot;: &quot;Warning&quot;,

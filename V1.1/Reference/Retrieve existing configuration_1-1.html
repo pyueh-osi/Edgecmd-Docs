@@ -80,13 +80,13 @@
 
 <p>EdgeCmd utility provides the possibility to view the configuration for each part of the adapter.</p>
 <p><strong>Note:</strong> The examples in this topic are using the default port number <code>5590</code>. If you specified a different port number for your adapter, you need to add it in the command. For example:</p>
-<pre><code>edgecmd -port=5591 Configuration &lt;RestOfTheCommand&gt;
+<pre><code class="lang-cmd">edgecmd -port=5591 Configuration &lt;RestOfTheCommand&gt;
 </code></pre><h2 id="view-adapter-configuration">View adapter configuration</h2>
 <p>Complete the following procedure to view the configuration for the adapter:</p>
 <ol>
 <li>Open command line.</li>
 <li><p>Type the following in the command line and press Enter.</p>
-<pre><code>edgecmd Configuration
+<pre><code class="lang-cmd">edgecmd Configuration
 </code></pre><p>See example <a href="#view-the-configuration-of-the-adapter">View the configuration of the adapter</a>.</p>
 </li>
 </ol>
@@ -95,7 +95,7 @@
 <ol>
 <li>Open command line.</li>
 <li><p>Type the following in the command line and press Enter.</p>
-<pre><code>edgecmd Configuration System Components
+<pre><code class="lang-cmd">edgecmd Configuration System Components
 </code></pre></li>
 </ol>
 <h2 id="view-a-specific-component-configuration">View a specific component configuration</h2>
@@ -103,7 +103,7 @@
 <ol>
 <li>Open command line.</li>
 <li><p>Type the following in the command line, replacing <code>&lt;componentId&gt;</code> with the ID of the component, and press Enter.</p>
-<pre><code>edgecmd Configuration &lt;componentId&gt;
+<pre><code class="lang-cmd">edgecmd Configuration &lt;componentId&gt;
 </code></pre><p>See example <a href="#view-the-configuration-of-the-system-component">View the configuration of the System component</a>.</p>
 </li>
 </ol>
@@ -112,7 +112,7 @@
 <ol>
 <li>Open command line.</li>
 <li><p>Type the following in the command line, replacing <code>&lt;componentId&gt;</code> and <code>&lt;facetName&gt;</code> with the ID of the component and the facet name, and press Enter.</p>
-<pre><code>edgecmd Configuration &lt;componentId&gt; &lt;facetName&gt;
+<pre><code class="lang-cmd">edgecmd Configuration &lt;componentId&gt; &lt;facetName&gt;
 </code></pre><p>See example <a href="#view-the-configuration-of-the-logging-facet-within-the-omfegress-component">View the configuration of the Logging facet within the OmfEgress component</a>.</p>
 </li>
 </ol>
@@ -121,7 +121,7 @@
 <ol>
 <li>Open command line.</li>
 <li><p>Type the following in the command line, replacing <code>&lt;componentId&gt;</code> and <code>&lt;facetName&gt;</code> with the ID of the component and the facet name.</p>
-<pre><code>edgecmd Configuration &lt;componentId&gt; &lt;facetName&gt; id=IndexToRetrieve
+<pre><code class="lang-cmd">edgecmd Configuration &lt;componentId&gt; &lt;facetName&gt; id=IndexToRetrieve
 </code></pre></li>
 <li><p>Add the key=value pairs for the facet to configure, for example <code>id=IndexToRetrieve</code>, and press Enter.</p>
 <p>See example <a href="#view-the-configuration-of-a-specific-entry-in-the-healthendpoints-facet-within-the-system-component">View the configuration of a specific entry in the HealthEndpoints facet within the System component</a>.</p>
@@ -129,7 +129,7 @@
 </ol>
 <h3 id="examples">Examples</h3>
 <h4 id="view-the-configuration-of-the-adapter">View the configuration of the adapter</h4>
-<pre><code>edgecmd Configuration
+<pre><code class="lang-cmd">edgecmd Configuration
 {
   &quot;System&quot;: {
     &quot;Logging&quot;: {
@@ -180,7 +180,7 @@
   }
 }
 </code></pre><h4 id="view-the-configuration-of-the-system-component">View the configuration of the System component</h4>
-<pre><code>edgecmd Configuration System
+<pre><code class="lang-cmd">edgecmd Configuration System
 {
   &quot;Logging&quot;: {
     &quot;logLevel&quot;: &quot;Information&quot;,
@@ -208,14 +208,14 @@
   }
 }
 </code></pre><h4 id="view-the-configuration-of-the-logging-facet-within-the-omfegress-component">View the configuration of the Logging facet within the OmfEgress component</h4>
-<pre><code>edgecmd Configuration OmfEgress Logging
+<pre><code class="lang-cmd">edgecmd Configuration OmfEgress Logging
 {
   &quot;logLevel&quot;: &quot;Information&quot;,
   &quot;logFileSizeLimitBytes&quot;: 34636833,
   &quot;logFileCountLimit&quot;: 31
 }
 </code></pre><h4 id="view-the-configuration-of-a-specific-entry-in-the-healthendpoints-facet-within-the-system-component">View the configuration of a specific entry in the HealthEndpoints facet within the System component</h4>
-<pre><code>edgecmd Configuration System HealthEndpoints id=Endpoint_1
+<pre><code class="lang-cmd">edgecmd Configuration System HealthEndpoints id=Endpoint_1
 {
   &quot;id&quot;: &quot;Endpoint_1&quot;,
   &quot;endpoint&quot;: &quot;https://localhost:5821&quot;,
