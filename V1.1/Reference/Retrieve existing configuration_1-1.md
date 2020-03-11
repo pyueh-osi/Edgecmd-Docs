@@ -8,7 +8,7 @@ EdgeCmd utility provides the possibility to view the configuration for each part
 
 **Note:** The examples in this topic are using the default port number `5590`. If you specified a different port number for your adapter, you need to add it in the command. For example:
 
-```
+```cmd
 edgecmd -port=5591 Configuration <RestOfTheCommand>
 ```
 
@@ -19,12 +19,12 @@ Complete the following procedure to view the configuration for the adapter:
 1. Open command line.
 2. Type the following in the command line and press Enter.
 
-   ```
+   ```cmd
    edgecmd Configuration
    ```
-   
+  
    See example [View the configuration of the adapter](#view-the-configuration-of-the-adapter).
-   
+  
 ## View configured components
 
 Complete the following procedure to view the components currently configured on the adapter:
@@ -32,10 +32,9 @@ Complete the following procedure to view the components currently configured on 
 1. Open command line.
 2. Type the following in the command line and press Enter.
 
-   ```
+   ```cmd
    edgecmd Configuration System Components
    ```
-  
   
 ## View a specific component configuration
 
@@ -44,10 +43,10 @@ Complete the following procedure to view the configuration of a specific compone
 1. Open command line.
 2. Type the following in the command line, replacing `<componentId>` with the ID of the component, and press Enter.
 
-   ```
+   ```cmd
    edgecmd Configuration <componentId>
    ```
-   
+  
    See example [View the configuration of the System component](#view-the-configuration-of-the-system-component).
 
 ## View a specific facet configuration
@@ -57,12 +56,12 @@ Complete the following procedure to view the configuration of a specific facet o
 1. Open command line.
 2. Type the following in the command line, replacing `<componentId>` and `<facetName>` with the ID of the component and the facet name, and press Enter.
 
-   ```
+   ```cmd
    edgecmd Configuration <componentId> <facetName>
    ```
-   
+  
    See example [View the configuration of the Logging facet within the OmfEgress component](#view-the-configuration-of-the-logging-facet-within-the-omfegress-component).
-   
+  
 ## View a specific facet entry configuration
 
 Complete the following procedure to view the configuration of a specific facet entry of a component:
@@ -70,7 +69,7 @@ Complete the following procedure to view the configuration of a specific facet e
 1. Open command line.
 2. Type the following in the command line, replacing `<componentId>` and `<facetName>` with the ID of the component and the facet name.
 
-   ```
+   ```cmd
    edgecmd Configuration <componentId> <facetName> id=IndexToRetrieve
    ```
 
@@ -82,7 +81,7 @@ Complete the following procedure to view the configuration of a specific facet e
 
 #### View the configuration of the adapter
 
-```
+```cmd
 edgecmd Configuration
 {
   "System": {
@@ -137,7 +136,7 @@ edgecmd Configuration
 
 #### View the configuration of the System component
 
-```
+```cmd
 edgecmd Configuration System
 {
   "Logging": {
@@ -169,7 +168,7 @@ edgecmd Configuration System
 
 #### View the configuration of the Logging facet within the OmfEgress component
 
-```
+```cmd
 edgecmd Configuration OmfEgress Logging
 {
   "logLevel": "Information",
@@ -180,7 +179,7 @@ edgecmd Configuration OmfEgress Logging
 
 #### View the configuration of a specific entry in the HealthEndpoints facet within the System component
 
-```
+```cmd
 edgecmd Configuration System HealthEndpoints id=Endpoint_1
 {
   "id": "Endpoint_1",
