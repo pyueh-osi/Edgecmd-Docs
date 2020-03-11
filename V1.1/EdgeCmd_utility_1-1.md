@@ -12,9 +12,9 @@ EdgeCmd utility provides options to configure and administer adapters on Linux a
 
 The following sections provide instructions to install the EdgeCmd utility on Windows or Linux.
 
-### Windows
+### Install EdgeCmd utility on Windows
 
-**Note:** You must have administrative privileges to run the installer. 
+**Note:** You must have administrative privileges to run the installer.
 
 Complete the following procedure to install the EdgeCmd utility on Windows:
 
@@ -22,7 +22,7 @@ Complete the following procedure to install the EdgeCmd utility on Windows:
 2. To start the installer, double-click the _EdgeCmd.msi_ file in Windows Explorer.
 
    **Note:** To change the install path from the default path of C:\Program Files\OSIsoft\EdgeCmd, enter the following command in the command prompt and update the <file_path>. OSIsoft recommends you use the default value.
-    
+
     ```bash
     msiexec /i EdgeCmd.msi INSTALLFOLDER=<file_path>
     ```
@@ -31,9 +31,9 @@ Complete the following procedure to install the EdgeCmd utility on Windows:
 
 The EdgeCmd utility is installed on your device.
 
-### Linux
+### Install EdgeCmd utility on Linux
 
-**Note:** You must have administrative privileges to install the software, for example root or sudo privilege. 
+**Note:** You must have administrative privileges to install the software, for example root or sudo privilege.
 
 Complete the following procedure to install the EdgeCmd utility on Linux:
 
@@ -57,8 +57,8 @@ Complete the following procedure to install the EdgeCmd utility on Linux:
     sudo apt install ./EdgeCmd_linux-arm64.deb
     ```
 
-    A validation check for prerequisites will be completed. 
- 
+    A validation check for prerequisites will be completed.
+
 2. After the check for prerequisites succeeds, you are prompted with the option to change the default port (5590).
 
     If the Linux OS is up to date, the install will succeed and the EdgeCmd utility will be running on your device.
@@ -74,7 +74,7 @@ Complete the following procedure to install the EdgeCmd utility on Linux:
 
 The EdgeCmd utility locations used in the following procedures are based on the installation instructions in this topic. See [Install EdgeCmd utility](#install-edgecmd-utility).
 
-### Windows
+### Access EdgeCmd utility on Windows
 
 Complete the following procedure to access EdgeCmd utility on Windows:
 
@@ -84,7 +84,7 @@ Complete the following procedure to access EdgeCmd utility on Windows:
 
    **Note:** Specify the full path when you use EdgeCmd utility on Windows.
 
-### Linux
+### Access EdgeCmd utility on Linux
 
 Complete the following procedure to access EdgeCmd utility on Linux:
 
@@ -95,5 +95,4 @@ Complete the following procedure to access EdgeCmd utility on Linux:
    /opt/OSIsoft/EdgeCmd/edgecmd
    ```
 
-   **Note:** You can access EdgeCmd utility without using the full path on Linux. 
-
+   **Note:** You can access EdgeCmd utility without using the full path on Linux.
