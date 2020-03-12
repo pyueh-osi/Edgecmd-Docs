@@ -51,7 +51,7 @@ Complete the following procedure to add an entry to a collection configuration:
    edgecmd Configuration System HealthEndpoints Id=endpoint_1 Endpoint=endpointURL UserName=UserName Password=Password
    ```
 
-	**Note:** If an entry with the specified ID already exists, it will be updated based on the new key=value pairs.
+   **Note:** If an entry with the specified ID already exists, it will be updated based on the new key=value pairs.
 
 ## Configure with JSON Files
 
@@ -94,26 +94,26 @@ Complete the following procedure to import a file with configuration for individ
    **Example:**
 
    ```json
-	{
-		"OmfEgress": {
-		  "Logging": {
-		    "logLevel": "Warning",
-		    "logFileSizeLimitBytes": 19283,
-		    "logFileCountLimit": 999
-			}
-		}
-	}
+   {
+      "OmfEgress": {
+        "Logging": {
+          "logLevel": "Warning",
+          "logFileSizeLimitBytes": 19283,
+          "logFileCountLimit": 999
+         }
+      }
+   }
     ```
 
-	**Note:** The command only affects the specified key-value pairs for the 'Logging' facet in the 'OmfEgress' component, it does not change any other components or facets. However, import affects all key-value pairs in the facet. If you import the following example JSON file, the 'logLevel' and 'logFileSizeLimitBytes' values will be modified and the remaining values in the 'Logging' facet will be reset to their default values (logFileCountLimit).
+   **Note:** The command only affects the specified key-value pairs for the 'Logging' facet in the 'OmfEgress' component, it does not change any other components or facets. However, import affects all key-value pairs in the facet. If you import the following example JSON file, the 'logLevel' and 'logFileSizeLimitBytes' values will be modified and the remaining values in the 'Logging' facet will be reset to their default values (logFileCountLimit).
 
-	```json
-	{
-		"OmfEgress": {
-		  "Logging": {
-		    "logLevel": "Warning",
-		    "logFileSizeLimitBytes": 19283
-			}
-		}
-	}
-	```
+   ```json
+   {
+      "OmfEgress": {
+        "Logging": {
+          "logLevel": "Warning",
+          "logFileSizeLimitBytes": 19283
+         }
+      }
+   }
+   ```
