@@ -34,9 +34,9 @@ Complete the following procedure to view configuration help instructions for a r
    edgecmd -help Configuration <componentId>
    ```
 
-	For more information, see the example [Configuration help for the System component](#configuration-help-for-the-system-component).
+  For more information, see the example [Configuration help for the System component](#configuration-help-for-the-system-component).
 
-	**Note:** The help output also provides examples of commands that you can run to configure the component.
+  **Note:** The help output also provides examples of commands that you can run to configure the component.
 
 ## View component facet help instructions
 
@@ -49,7 +49,7 @@ Complete the following procedure to view configuration help instructions for a s
    edgecmd -help Configuration <componentId> <facetName>
    ```
 
-	For more information, see the example [Configuration help for the buffering facet within the System component](#configuration-help-for-the-buffering-facet-within-the-system-component).
+  For more information, see the example [Configuration help for the buffering facet within the System component](#configuration-help-for-the-buffering-facet-within-the-system-component).
 
 ### Examples
 
