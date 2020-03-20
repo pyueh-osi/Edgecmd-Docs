@@ -17,7 +17,7 @@ edgecmd -port=5591 Configuration <RestOfTheCommand>
 Complete the following procedure to change all values of a facet:
 
 1. Open command line.
-2. Type the `componentId` and `facetName`, followed by key=value pairs that you want to change. Then press Enter.
+2. Type the `componentId` and `facetName`, followed by the key=value pairs that you want to change. Then press Enter.
 
    **Example:** Change all values in the 'Logging' facet:
 
@@ -55,7 +55,7 @@ Complete the following procedure to add an entry to a collection configuration:
 
 ## Configure with JSON Files
 
-You can also configure the adapter by a JSON file input into the EdgeCmd application. A file import completely replaces the existing configurations; therefore, you cannot use it to change individual values in a facet without modifying others.
+You can also configure the adapter by importing a JSON file into the EdgeCmd application. A file import completely replaces the existing configurations; therefore, you cannot use it to change individual values in a facet without modifying others.
 
 ### Import bulk configuration
 
@@ -105,7 +105,7 @@ Complete the following procedure to import a file with configuration for individ
    }
     ```
 
-   **Note:** The command only affects the specified key-value pairs for the 'Logging' facet in the 'OmfEgress' component, it does not change any other components or facets. However, import affects all key-value pairs in the facet. If you import the following example JSON file, the 'logLevel' and 'logFileSizeLimitBytes' values will be modified and the remaining values in the 'Logging' facet will be reset to their default values (logFileCountLimit).
+   **Note:** The command only affects the specified key=value pairs for the 'Logging' facet in the 'OmfEgress' component, it does not change any other components or facets. However, import affects all key=value pairs in the facet. If you import the following example JSON file, the 'logLevel' and 'logFileSizeLimitBytes' values will be modified and the remaining values in the 'Logging' facet will be reset to their default values (logFileCountLimit).
 
    ```json
    {
