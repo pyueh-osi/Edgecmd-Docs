@@ -19,7 +19,7 @@ Complete the following procedure to add a new component:
 1. Open command line.
 2. Type the following in the command line, replacing `<componentId>` and `<componentType>` with the values that you want and press Enter.
 
-	**Note:** The only valid component type is the adapter type. For example, if you are trying to register a new Modbus component, use `Modbus` and if you are trying to register an OPC UA component, use `OpcUa`. Refer to the specific adapter's user guide for that adapter's component type.
+	**Note:** The only valid component type is the adapter type. For example, if you are trying to register a new Modbus component, use `Modbus` and if you are trying to register an OPC UA component, use `OpcUa`. Refer to the specific adapter's user guide for the adapter's component type.
 
 	```cmd
 	edgecmd Configuration System Components componentId=<componentId> componentType=<componentType>
