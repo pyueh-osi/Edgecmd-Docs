@@ -8,7 +8,7 @@
     <title>Configure adapter </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Configure adapter ">
-    <meta name="generator" content="docfx 2.50.0.0">
+    <meta name="generator" content="docfx 2.51.0.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -85,7 +85,7 @@
 <p>Complete the following procedure to change all values of a facet:</p>
 <ol>
 <li>Open command line.</li>
-<li><p>Type the <code>componentId</code> and <code>facetName</code>, followed by key=value pairs that you want to change. Then press Enter.</p>
+<li><p>Type the <code>componentId</code> and <code>facetName</code>, followed by the key=value pairs that you want to change. Then press Enter.</p>
 <p><strong>Example:</strong> Change all values in the &#39;Logging&#39; facet:</p>
 <pre><code class="lang-cmd">edgecmd Configuration OmfEgress Logging LogLevel=Warning LogFileSizeLimitBytes=32768 LogFileCountLimit=5
 </code></pre></li>
@@ -110,7 +110,7 @@
 </li>
 </ol>
 <h2 id="configure-with-json-files">Configure with JSON Files</h2>
-<p>You can also configure the adapter by a JSON file input into the EdgeCmd application. A file import completely replaces the existing configurations; therefore, you cannot use it to change individual values in a facet without modifying others.</p>
+<p>You can also configure the adapter by importing a JSON file into the EdgeCmd application. A file import completely replaces the existing configurations; therefore, you cannot use it to change individual values in a facet without modifying others.</p>
 <h3 id="import-bulk-configuration">Import bulk configuration</h3>
 <p>Complete the following procedure to import a bulk configuration:</p>
 <ol>
@@ -144,7 +144,7 @@
       }
    }
 }
-</code></pre><p><strong>Note:</strong> The command only affects the specified key-value pairs for the &#39;Logging&#39; facet in the &#39;OmfEgress&#39; component, it does not change any other components or facets. However, import affects all key-value pairs in the facet. If you import the following example JSON file, the &#39;logLevel&#39; and &#39;logFileSizeLimitBytes&#39; values will be modified and the remaining values in the &#39;Logging&#39; facet will be reset to their default values (logFileCountLimit).</p>
+</code></pre><p><strong>Note:</strong> The command only affects the specified key=value pairs for the &#39;Logging&#39; facet in the &#39;OmfEgress&#39; component, it does not change any other components or facets. However, import affects all key=value pairs in the facet. If you import the following example JSON file, the &#39;logLevel&#39; and &#39;logFileSizeLimitBytes&#39; values will be modified and the remaining values in the &#39;Logging&#39; facet will be reset to their default values (logFileCountLimit).</p>
 <pre><code class="lang-json">{
    &quot;OmfEgress&quot;: {
      &quot;Logging&quot;: {
