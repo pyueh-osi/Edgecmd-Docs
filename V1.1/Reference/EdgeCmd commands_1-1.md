@@ -4,7 +4,7 @@ uid: EdgeCmdCommands1-1
 
 # EdgeCmd commands
 
-The following tables provide an overview of available edgecmd commands that you can use with components of the adapter. Every command that you use with the edgecmd utility has to be preceded by `edgecmd`.
+The following tables provide an overview of available edgecmd commands that you can use with components of the adapter. Every command that you use with the EdgeCmd utility has to be preceded by `edgecmd`.
 
 **Note:** The examples in this topic are using the default port number `5590`. If you specified a different port number for your adapter, you need to add it in the command. For example:
 
