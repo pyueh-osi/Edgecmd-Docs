@@ -87,7 +87,7 @@
 <li>Open command line.</li>
 <li><p>Type the following in the command line and press Enter.</p>
 <pre><code class="lang-cmd">edgecmd Configuration
-</code></pre><p>See example <a href="#view-the-configuration-of-the-adapter">View the configuration of the adapter</a>.</p>
+</code></pre><p>Under <a href="#examples">Examples</a>, see <strong>View the configuration of the adapter</strong>.</p>
 </li>
 </ol>
 <h2 id="view-configured-components">View configured components</h2>
@@ -104,7 +104,7 @@
 <li>Open command line.</li>
 <li><p>Type the following in the command line, replacing <code>&lt;componentId&gt;</code> with the ID of the component, and press Enter.</p>
 <pre><code class="lang-cmd">edgecmd Configuration &lt;componentId&gt;
-</code></pre><p>See example <a href="#view-the-configuration-of-the-system-component">View the configuration of the System component</a>.</p>
+</code></pre><p>Under <a href="#examples">Examples</a>, see <strong>View the configuration of the System component</strong>.</p>
 </li>
 </ol>
 <h2 id="view-a-specific-facet-configuration">View a specific facet configuration</h2>
@@ -113,7 +113,7 @@
 <li>Open command line.</li>
 <li><p>Type the following in the command line, replacing <code>&lt;componentId&gt;</code> and <code>&lt;facetName&gt;</code> with the ID of the component and the facet name, and press Enter.</p>
 <pre><code class="lang-cmd">edgecmd Configuration &lt;componentId&gt; &lt;facetName&gt;
-</code></pre><p>See example <a href="#view-the-configuration-of-the-logging-facet-within-the-omfegress-component">View the configuration of the Logging facet within the OmfEgress component</a>.</p>
+</code></pre><p>Under <a href="#examples">Examples</a>, see <strong>View the configuration of the Logging facet within the OmfEgress component</strong>.</p>
 </li>
 </ol>
 <h2 id="view-a-specific-facet-entry-configuration">View a specific facet entry configuration</h2>
@@ -124,109 +124,136 @@
 <pre><code class="lang-cmd">edgecmd Configuration &lt;componentId&gt; &lt;facetName&gt; id=IndexToRetrieve
 </code></pre></li>
 <li><p>Add the key=value pairs for the facet to configure, for example <code>id=IndexToRetrieve</code>, and press Enter.</p>
-<p>See example <a href="#view-the-configuration-of-a-specific-entry-in-the-healthendpoints-facet-within-the-system-component">View the configuration of a specific entry in the HealthEndpoints facet within the System component</a>.</p>
+<p>Under <a href="#examples">Examples</a>, see <strong>View the configuration of a specific entry in the HealthEndpoints facet within the System component</strong>.</p>
 </li>
 </ol>
 <h3 id="examples">Examples</h3>
-<h4 id="view-the-configuration-of-the-adapter">View the configuration of the adapter</h4>
-<pre><code class="lang-cmd">edgecmd Configuration
-{
-  &quot;System&quot;: {
-    &quot;Logging&quot;: {
-      &quot;logLevel&quot;: &quot;Information&quot;,
-      &quot;logFileSizeLimitBytes&quot;: 34636833,
-      &quot;logFileCountLimit&quot;: 31
-    },
-    &quot;HealthEndpoints&quot;: [],
-    &quot;Diagnostics&quot;: {
-      &quot;enableDiagnostics&quot;: true
-    },
-    &quot;Components&quot;: [
+<details>
+    <summary>View the configuration of the adapter</summary>
+    <pre>
+
+      edgecmd Configuration
       {
-        &quot;componentId&quot;: &quot;Modbus1&quot;,
-        &quot;componentType&quot;: &quot;Modbus&quot;
-      },
-      {
-        &quot;componentId&quot;: &quot;Egress&quot;,
-        &quot;componentType&quot;: &quot;OmfEgress&quot;
+        "System": {
+          "Logging": {
+            "logLevel": "Information",
+            "logFileSizeLimitBytes": 34636833,
+            "logFileCountLimit": 31
+          },
+          "HealthEndpoints": [],
+          "Diagnostics": {
+            "enableDiagnostics": true
+          },
+          "Components": [
+            {
+              "componentId": "Modbus1",
+              "componentType": "Modbus"
+            },
+            {
+              "componentId": "Egress",
+              "componentType": "OmfEgress"
+            }
+          ],
+          "Buffering": {
+            "bufferLocation": "C:/ProgramData/OSIsoft/Adapters/Modbus/Modbus/Buffers",
+            "maxBufferSizeMB": -1,
+            "enableBuffering": true
+          }
+        },
+        "Modbus1": {
+          "Logging": {
+            "logLevel": "Information",
+            "logFileSizeLimitBytes": 34636833,
+            "logFileCountLimit": 31
+          },
+          "DataSource": {},
+          "DataSelection": []
+        },
+        "OmfEgress": {
+          "Logging": {
+            "logLevel": "Information",
+            "logFileSizeLimitBytes": 34636833,
+            "logFileCountLimit": 31
+          },
+          "DataEndpoints": [],
+          "Buffering": {
+            "onDiskBufferLocation": "C:/ProgramData/OSIsoft/Adapters/Modbus/Modbus/Buffers",
+            "onDiskMaxBufferSizeMB": -1
+          }
+        }
       }
-    ],
-    &quot;Buffering&quot;: {
-      &quot;bufferLocation&quot;: &quot;C:/ProgramData/OSIsoft/Adapters/Modbus/Modbus/Buffers&quot;,
-      &quot;maxBufferSizeMB&quot;: -1,
-      &quot;enableBuffering&quot;: true
-    }
-  },
-  &quot;Modbus1&quot;: {
-    &quot;Logging&quot;: {
-      &quot;logLevel&quot;: &quot;Information&quot;,
-      &quot;logFileSizeLimitBytes&quot;: 34636833,
-      &quot;logFileCountLimit&quot;: 31
-    },
-    &quot;DataSource&quot;: {},
-    &quot;DataSelection&quot;: []
-  },
-  &quot;OmfEgress&quot;: {
-    &quot;Logging&quot;: {
-      &quot;logLevel&quot;: &quot;Information&quot;,
-      &quot;logFileSizeLimitBytes&quot;: 34636833,
-      &quot;logFileCountLimit&quot;: 31
-    },
-    &quot;DataEndpoints&quot;: [],
-    &quot;Buffering&quot;: {
-      &quot;onDiskBufferLocation&quot;: &quot;C:/ProgramData/OSIsoft/Adapters/Modbus/Modbus/Buffers&quot;,
-      &quot;onDiskMaxBufferSizeMB&quot;: -1
-    }
-  }
-}
-</code></pre><h4 id="view-the-configuration-of-the-system-component">View the configuration of the System component</h4>
-<pre><code class="lang-cmd">edgecmd Configuration System
-{
-  &quot;Logging&quot;: {
-    &quot;logLevel&quot;: &quot;Information&quot;,
-    &quot;logFileSizeLimitBytes&quot;: 34636833,
-    &quot;logFileCountLimit&quot;: 31
-  },
-  &quot;HealthEndpoints&quot;: [],
-  &quot;Diagnostics&quot;: {
-    &quot;enableDiagnostics&quot;: true
-  },
-  &quot;Components&quot;: [
+
+ </pre>
+</details>
+
+<details>
+    <summary>View the configuration of the System component</summary>
+    <pre>
+
+    edgecmd Configuration System
     {
-      &quot;componentId&quot;: &quot;Modbus1&quot;,
-      &quot;componentType&quot;: &quot;Modbus&quot;
-    },
-    {
-      &quot;componentId&quot;: &quot;Egress&quot;,
-      &quot;componentType&quot;: &quot;OmfEgress&quot;
+      "Logging": {
+        "logLevel": "Information",
+        "logFileSizeLimitBytes": 34636833,
+        "logFileCountLimit": 31
+      },
+      "HealthEndpoints": [],
+      "Diagnostics": {
+        "enableDiagnostics": true
+      },
+      "Components": [
+        {
+          "componentId": "Modbus1",
+          "componentType": "Modbus"
+        },
+        {
+          "componentId": "Egress",
+          "componentType": "OmfEgress"
+        }
+      ],
+      "Buffering": {
+        "bufferLocation": "C:/ProgramData/OSIsoft/Adapters/Modbus/Modbus/Buffers",
+        "maxBufferSizeMB": -1,
+        "enableBuffering": true
+      }
     }
-  ],
-  &quot;Buffering&quot;: {
-    &quot;bufferLocation&quot;: &quot;C:/ProgramData/OSIsoft/Adapters/Modbus/Modbus/Buffers&quot;,
-    &quot;maxBufferSizeMB&quot;: -1,
-    &quot;enableBuffering&quot;: true
-  }
-}
-</code></pre><h4 id="view-the-configuration-of-the-logging-facet-within-the-omfegress-component">View the configuration of the Logging facet within the OmfEgress component</h4>
-<pre><code class="lang-cmd">edgecmd Configuration OmfEgress Logging
-{
-  &quot;logLevel&quot;: &quot;Information&quot;,
-  &quot;logFileSizeLimitBytes&quot;: 34636833,
-  &quot;logFileCountLimit&quot;: 31
-}
-</code></pre><h4 id="view-the-configuration-of-a-specific-entry-in-the-healthendpoints-facet-within-the-system-component">View the configuration of a specific entry in the HealthEndpoints facet within the System component</h4>
-<pre><code class="lang-cmd">edgecmd Configuration System HealthEndpoints id=Endpoint_1
-{
-  &quot;id&quot;: &quot;Endpoint_1&quot;,
-  &quot;endpoint&quot;: &quot;https://localhost:5821&quot;,
-  &quot;userName&quot;: &quot;user_54&quot;,
-  &quot;password&quot;: &quot;***************&quot;,
-  &quot;clientId&quot;: null,
-  &quot;clientSecret&quot;: null,
-  &quot;tokenEndpoint&quot;: null,
-  &quot;validateEndpointCertificate&quot;: true
-}
-</code></pre></article>
+
+ </pre>
+</details>
+
+<details>
+    <summary>View the configuration of the Logging facet within the OmfEgress component</summary>
+    <pre>
+
+      edgecmd Configuration OmfEgress Logging
+      {
+        "logLevel": "Information",
+        "logFileSizeLimitBytes": 34636833,
+        "logFileCountLimit": 31
+      }
+
+ </pre>
+</details>
+
+<details>
+    <summary>View the configuration of a specific entry in the HealthEndpoints facet within the System component</summary>
+    <pre>
+
+      edgecmd Configuration System HealthEndpoints id=Endpoint_1
+      {
+        "id": "Endpoint_1",
+        "endpoint": "https://localhost:5821",
+        "userName": "user_54",
+        "password": "***************",
+        "clientId": null,
+        "clientSecret": null,
+        "tokenEndpoint": null,
+        "validateEndpointCertificate": true
+      }
+
+ </pre>
+</details>
+</article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
