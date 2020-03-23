@@ -23,7 +23,7 @@ Complete the following procedure to view the configuration for the adapter:
    edgecmd Configuration
    ```
   
-   See example [View the configuration of the adapter](#view-the-configuration-of-the-adapter).
+   Under [Examples](#examples), see **View the configuration of the adapter**.
   
 ## View configured components
 
@@ -47,7 +47,7 @@ Complete the following procedure to view the configuration of a specific compone
    edgecmd Configuration <componentId>
    ```
   
-   See example [View the configuration of the System component](#view-the-configuration-of-the-system-component).
+   Under [Examples](#examples), see **View the configuration of the System component**.
 
 ## View a specific facet configuration
 
@@ -60,7 +60,7 @@ Complete the following procedure to view the configuration of a specific facet o
    edgecmd Configuration <componentId> <facetName>
    ```
   
-   See example [View the configuration of the Logging facet within the OmfEgress component](#view-the-configuration-of-the-logging-facet-within-the-omfegress-component).
+   Under [Examples](#examples), see **View the configuration of the Logging facet within the OmfEgress component**.
   
 ## View a specific facet entry configuration
 
@@ -75,120 +75,132 @@ Complete the following procedure to view the configuration of a specific facet e
 
 3. Add the key=value pairs for the facet to configure, for example `id=IndexToRetrieve`, and press Enter.
 
-   See example [View the configuration of a specific entry in the HealthEndpoints facet within the System component](#view-the-configuration-of-a-specific-entry-in-the-healthendpoints-facet-within-the-system-component).
+   Under [Examples](#examples), see **View the configuration of a specific entry in the HealthEndpoints facet within the System component**.
 
 ### Examples
 
-#### View the configuration of the adapter
+<details>
+    <summary>View the configuration of the adapter</summary>
+    <pre>
 
-```cmd
-edgecmd Configuration
-{
-  "System": {
-    "Logging": {
-      "logLevel": "Information",
-      "logFileSizeLimitBytes": 34636833,
-      "logFileCountLimit": 31
-    },
-    "HealthEndpoints": [],
-    "Diagnostics": {
-      "enableDiagnostics": true
-    },
-    "Components": [
+      edgecmd Configuration
       {
-        "componentId": "Modbus1",
-        "componentType": "Modbus"
-      },
-      {
-        "componentId": "Egress",
-        "componentType": "OmfEgress"
+        "System": {
+          "Logging": {
+            "logLevel": "Information",
+            "logFileSizeLimitBytes": 34636833,
+            "logFileCountLimit": 31
+          },
+          "HealthEndpoints": [],
+          "Diagnostics": {
+            "enableDiagnostics": true
+          },
+          "Components": [
+            {
+              "componentId": "Modbus1",
+              "componentType": "Modbus"
+            },
+            {
+              "componentId": "Egress",
+              "componentType": "OmfEgress"
+            }
+          ],
+          "Buffering": {
+            "bufferLocation": "C:/ProgramData/OSIsoft/Adapters/Modbus/Modbus/Buffers",
+            "maxBufferSizeMB": -1,
+            "enableBuffering": true
+          }
+        },
+        "Modbus1": {
+          "Logging": {
+            "logLevel": "Information",
+            "logFileSizeLimitBytes": 34636833,
+            "logFileCountLimit": 31
+          },
+          "DataSource": {},
+          "DataSelection": []
+        },
+        "OmfEgress": {
+          "Logging": {
+            "logLevel": "Information",
+            "logFileSizeLimitBytes": 34636833,
+            "logFileCountLimit": 31
+          },
+          "DataEndpoints": [],
+          "Buffering": {
+            "onDiskBufferLocation": "C:/ProgramData/OSIsoft/Adapters/Modbus/Modbus/Buffers",
+            "onDiskMaxBufferSizeMB": -1
+          }
+        }
       }
-    ],
-    "Buffering": {
-      "bufferLocation": "C:/ProgramData/OSIsoft/Adapters/Modbus/Modbus/Buffers",
-      "maxBufferSizeMB": -1,
-      "enableBuffering": true
-    }
-  },
-  "Modbus1": {
-    "Logging": {
-      "logLevel": "Information",
-      "logFileSizeLimitBytes": 34636833,
-      "logFileCountLimit": 31
-    },
-    "DataSource": {},
-    "DataSelection": []
-  },
-  "OmfEgress": {
-    "Logging": {
-      "logLevel": "Information",
-      "logFileSizeLimitBytes": 34636833,
-      "logFileCountLimit": 31
-    },
-    "DataEndpoints": [],
-    "Buffering": {
-      "onDiskBufferLocation": "C:/ProgramData/OSIsoft/Adapters/Modbus/Modbus/Buffers",
-      "onDiskMaxBufferSizeMB": -1
-    }
-  }
-}
-```
 
-#### View the configuration of the System component
+ </pre>
+</details>
 
-```cmd
-edgecmd Configuration System
-{
-  "Logging": {
-    "logLevel": "Information",
-    "logFileSizeLimitBytes": 34636833,
-    "logFileCountLimit": 31
-  },
-  "HealthEndpoints": [],
-  "Diagnostics": {
-    "enableDiagnostics": true
-  },
-  "Components": [
+<details>
+    <summary>View the configuration of the System component</summary>
+    <pre>
+
+    edgecmd Configuration System
     {
-      "componentId": "Modbus1",
-      "componentType": "Modbus"
-    },
-    {
-      "componentId": "Egress",
-      "componentType": "OmfEgress"
+      "Logging": {
+        "logLevel": "Information",
+        "logFileSizeLimitBytes": 34636833,
+        "logFileCountLimit": 31
+      },
+      "HealthEndpoints": [],
+      "Diagnostics": {
+        "enableDiagnostics": true
+      },
+      "Components": [
+        {
+          "componentId": "Modbus1",
+          "componentType": "Modbus"
+        },
+        {
+          "componentId": "Egress",
+          "componentType": "OmfEgress"
+        }
+      ],
+      "Buffering": {
+        "bufferLocation": "C:/ProgramData/OSIsoft/Adapters/Modbus/Modbus/Buffers",
+        "maxBufferSizeMB": -1,
+        "enableBuffering": true
+      }
     }
-  ],
-  "Buffering": {
-    "bufferLocation": "C:/ProgramData/OSIsoft/Adapters/Modbus/Modbus/Buffers",
-    "maxBufferSizeMB": -1,
-    "enableBuffering": true
-  }
-}
-```
 
-#### View the configuration of the Logging facet within the OmfEgress component
+ </pre>
+</details>
 
-```cmd
-edgecmd Configuration OmfEgress Logging
-{
-  "logLevel": "Information",
-  "logFileSizeLimitBytes": 34636833,
-  "logFileCountLimit": 31
-}
-```
+<details>
+    <summary>View the configuration of the Logging facet within the OmfEgress component</summary>
+    <pre>
 
-#### View the configuration of a specific entry in the HealthEndpoints facet within the System component
+      edgecmd Configuration OmfEgress Logging
+      {
+        "logLevel": "Information",
+        "logFileSizeLimitBytes": 34636833,
+        "logFileCountLimit": 31
+      }
 
-```cmd
-edgecmd Configuration System HealthEndpoints id=Endpoint_1
-{
-  "id": "Endpoint_1",
-  "endpoint": "https://localhost:5821",
-  "userName": "user_54",
-  "password": "***************",
-  "clientId": null,
-  "clientSecret": null,
-  "tokenEndpoint": null,
-  "validateEndpointCertificate": true
-}
-```
+ </pre>
+</details>
+
+<details>
+    <summary>View the configuration of a specific entry in the HealthEndpoints facet within the System component</summary>
+    <pre>
+
+      edgecmd Configuration System HealthEndpoints id=Endpoint_1
+      {
+        "id": "Endpoint_1",
+        "endpoint": "https://localhost:5821",
+        "userName": "user_54",
+        "password": "***************",
+        "clientId": null,
+        "clientSecret": null,
+        "tokenEndpoint": null,
+        "validateEndpointCertificate": true
+      }
+
+ </pre>
+</details>
