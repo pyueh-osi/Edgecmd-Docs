@@ -12,6 +12,8 @@ EdgeCmd utility provides the possibility to view the configuration for each part
 edgecmd -port=5591 Configuration <RestOfTheCommand>
 ```
 
+**Note:** If you are using slashes in your commands, you must escape them. In *Windows*, add a second slash. Example: `JaneDoe\OilCompany` becomes `JaneDoe\\OilCompany`. In *Linux*, add three slashes. Example: `JaneDoe/OilCompany` becomes `JaneDoe////OilCompany`.
+
 ## View adapter configuration
 
 Complete the following procedure to view the configuration for the adapter:

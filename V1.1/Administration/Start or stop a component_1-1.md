@@ -12,6 +12,8 @@ Complete the following procedure to either start or stop a component.
 edgecmd -port=5591 Administration <RestOfTheCommand>
 ```
 
+**Note:** If you are using slashes in your commands, you must escape them. In *Windows*, add a second slash. Example: `JaneDoe\OilCompany` becomes `JaneDoe\\OilCompany`. In *Linux*, add three slashes. Example: `JaneDoe/OilCompany` becomes `JaneDoe////OilCompany`.
+
 1. Open command line.
 2. Type one of the following in the command line, replacing `<componentId>` with the ID of the component, and press Enter.
 

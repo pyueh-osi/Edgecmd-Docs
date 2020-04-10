@@ -12,6 +12,8 @@ OSIsoft adapters provide several configuration options, including configuration 
 edgecmd -port=5591 Configuration <RestOfTheCommand>
 ```
 
+**Note:** If you are using slashes in your commands, you must escape them. In *Windows*, add a second slash. Example: `JaneDoe\OilCompany` becomes `JaneDoe\\OilCompany`. In *Linux*, add three slashes. Example: `JaneDoe/OilCompany` becomes `JaneDoe////OilCompany`.
+
 ## Change all values of a facet
 
 Complete the following procedure to change all values of a facet:

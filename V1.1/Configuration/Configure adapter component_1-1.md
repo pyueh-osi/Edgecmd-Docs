@@ -12,6 +12,8 @@ The EdgeCmd utility enables you to add, configure, and delete adapter components
 edgecmd -port=5591 Configuration <RestOfTheCommand>
 ```
 
+**Note:** If you are using slashes in your commands, you must escape them. In *Windows*, add a second slash. Example: `JaneDoe\OilCompany` becomes `JaneDoe\\OilCompany`. In *Linux*, add three slashes. Example: `JaneDoe/OilCompany` becomes `JaneDoe////OilCompany`.
+
 ## Add components
 
 Complete the following procedure to add a new component:

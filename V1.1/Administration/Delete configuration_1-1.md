@@ -12,6 +12,8 @@ Configuration can be deleted on an entry or a facet basis. Both options are desc
 edgecmd -port=5591 Configuration <RestOfTheCommand>
 ```
 
+**Note:** If you are using slashes in your commands, you must escape them. In *Windows*, add a second slash. Example: `JaneDoe\OilCompany` becomes `JaneDoe\\OilCompany`. In *Linux*, add three slashes. Example: `JaneDoe/OilCompany` becomes `JaneDoe////OilCompany`.
+
 ## Delete configuration entry
 
 Complete the following procedure to delete a configuration entry from a collection configuration. For example, you can delete a single health endpoint of the 'HealthEndpoints' facet within the 'System' component.
