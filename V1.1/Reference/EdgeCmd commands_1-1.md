@@ -12,7 +12,9 @@ The following tables provide an overview of available edgecmd commands that you 
 edgecmd -port=5591 Configuration <RestOfTheCommand>
 ```
 
-**Note:** If you are using slashes in your commands, you must escape them. In *Windows*, add a second slash. Example: `JaneDoe\OilCompany` becomes `JaneDoe\\OilCompany`. In *Linux*, add three slashes. Example: `JaneDoe/OilCompany` becomes `JaneDoe////OilCompany`.
+**Note:** If you are using slashes in your commands, you must escape them as follows<br> 
+In *Windows*, add a second slash. Example: `TestUser\OilCompany` becomes `TestUser\\OilCompany`.<br>
+In *Linux*, add three slashes. Example: `TestUser/OilCompany` becomes `TestUser////OilCompany`.
 
 ## Help
 
