@@ -81,7 +81,15 @@
 <p>Configuration can be deleted on an entry or a facet basis. Both options are described following.</p>
 <p><strong>Note:</strong> The examples in this topic are using the default port number <code>5590</code>. If you specified a different port number for your adapter, you need to add it in the command. For example:</p>
 <pre><code class="lang-cmd">edgecmd -port=5591 Configuration &lt;RestOfTheCommand&gt;
-</code></pre><p><strong>Note:</strong> If you are using slashes in your commands, you must escape them. In <em>Windows</em>, add a second slash. Example: <code>JaneDoe\OilCompany</code> becomes <code>JaneDoe\\OilCompany</code>. In <em>Linux</em>, add three slashes. Example: <code>JaneDoe/OilCompany</code> becomes <code>JaneDoe////OilCompany</code>.</p>
+</code></pre><p><strong>Note:</strong> If you use slashes in your commands, you must escape them as follows:<br> </p>
+<ul>
+<li><p>In <em>Windows</em>, add a second slash.<br> 
+   Example: <code>TestUser\OilCompany</code> becomes <code>TestUser\\OilCompany</code></p>
+</li>
+<li><p>In <em>Linux</em>, add three slashes.<br>
+   Example: <code>TestUser\OilCompany</code> becomes <code>TestUser\\\\OilCompany</code></p>
+</li>
+</ul>
 <h2 id="delete-configuration-entry">Delete configuration entry</h2>
 <p>Complete the following procedure to delete a configuration entry from a collection configuration. For example, you can delete a single health endpoint of the &#39;HealthEndpoints&#39; facet within the &#39;System&#39; component.</p>
 <ol>
