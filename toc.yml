@@ -1,9 +1,6 @@
-- name: EdgeCmd Utility Docs
-  href: index.md
-  homepage: index.md
-- name: EdgeCmd Utility version
+- name: Versions
   dropdown: true
   items:
-  - name: EdgeCmd Utility 1.1
+  - name: EdgeCmd 1.1
     href: V1.1/
     topicHref: V1.1/EdgeCmd_utility_1-1.md
