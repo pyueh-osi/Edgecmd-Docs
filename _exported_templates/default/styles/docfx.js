@@ -1,7 +1,4 @@
 // Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root for full license information.
-
-const MINIMUM_QUERY_LENGTH = 2;
-
 $(function () {
   var active = 'active';
   var expanded = 'in';
@@ -226,7 +223,7 @@ $(function () {
         $("body").bind("queryReady", function () {
           worker.postMessage({ q: query });
         });
-        if (query && (query.length >= MINIMUM_QUERY_LENGTH)) {
+        if (query && (query.length >= 3)) {
           worker.postMessage({ q: query });
         }
       });
@@ -254,7 +251,7 @@ $(function () {
 
         $('#search-query').keyup(function () {
           query = $(this).val();
-          if (query.length < MINIMUM_QUERY_LENGTH) {
+          if (query.length < 3) {
             flipContents("show");
           } else {
             flipContents("hide");
@@ -350,6 +347,14 @@ $(function () {
     } else {
       $('#navbar ul a.active').parents('li').addClass(active);
       renderBreadcrumb();
+      showSearch();
+    }
+    
+    function showSearch() {
+      if ($('#search-results').length !== 0) {
+          $('#search').show();
+          $('body').trigger("searchEvent");
+      }
     }
 
     function loadNavbar() {
@@ -362,10 +367,7 @@ $(function () {
       if (tocPath) tocPath = tocPath.replace(/\\/g, '/');
       $.get(navbarPath, function (data) {
         $(data).find("#toc>ul").appendTo("#navbar");
-        if ($('#search-results').length !== 0) {
-          $('#search').show();
-          $('body').trigger("searchEvent");
-        }
+        showSearch();
         var index = navbarPath.lastIndexOf('/');
         var navrel = '';
         if (index > -1) {
@@ -380,7 +382,6 @@ $(function () {
             href = navrel + href;
             $(e).attr("href", href);
 
-            // TODO: currently only support one level navbar
             var isActive = false;
             var originalHref = e.name;
             if (originalHref) {
@@ -433,20 +434,39 @@ $(function () {
     }
 
     function registerTocEvents() {
+      var tocFilterInput = $('#toc_filter_input');
+      var tocFilterClearButton = $('#toc_filter_clear');
+        
       $('.toc .nav > li > .expand-stub').click(function (e) {
         $(e.target).parent().toggleClass(expanded);
       });
       $('.toc .nav > li > .expand-stub + a:not([href])').click(function (e) {
         $(e.target).parent().toggleClass(expanded);
       });
-      $('#toc_filter_input').on('input', function (e) {
+      tocFilterInput.on('input', function (e) {
         var val = this.value;
+        //Save filter string to local session storage
+        if (typeof(Storage) !== "undefined") {
+          sessionStorage.filterString = val;
+        }
         if (val === '') {
           // Clear 'filtered' class
           $('#toc li').removeClass(filtered).removeClass(hide);
+          tocFilterClearButton.fadeOut();
           return;
         }
+        tocFilterClearButton.fadeIn();
 
+        // set all parent nodes status
+        $('#toc li>a').filter(function (i, e) {
+          return $(e).siblings().length > 0
+        }).each(function (i, anchor) {
+          var parent = $(anchor).parent();
+          parent.addClass(hide);
+          parent.removeClass(show);
+          parent.removeClass(filtered);
+        })
+        
         // Get leaf nodes
         $('#toc li>a').filter(function (i, e) {
           return $(e).siblings().length === 0
@@ -487,6 +507,22 @@ $(function () {
           return false;
         }
       });
+      
+      // toc filter clear button
+      tocFilterClearButton.hide();
+      tocFilterClearButton.on("click", function(e){
+        tocFilterInput.val("");
+        tocFilterInput.trigger('input');
+        if (typeof(Storage) !== "undefined") {
+          sessionStorage.filterString = "";
+        }
+      });
+
+      //Set toc filter from local session storage on page load
+      if (typeof(Storage) !== "undefined") {
+        tocFilterInput.val(sessionStorage.filterString);
+        tocFilterInput.trigger('input');
+      }
     }
 
     function loadToc() {
@@ -550,7 +586,7 @@ $(function () {
       if ($('footer').is(':visible')) {
         $(".sideaffix").css("bottom", "70px");
       }
-      $('#affix a').click(function() {
+      $('#affix a').click(function(e) {
         var scrollspy = $('[data-spy="scroll"]').data()['bs.scrollspy'];
         var target = e.target.hash;
         if (scrollspy && target) {
@@ -1135,8 +1171,15 @@ $(function () {
     }
 
     $(window).on('hashchange', scrollToCurrent);
-    // Exclude tabbed content case
-    $('a:not([data-tab])').click(delegateAnchors);
-    scrollToCurrent();
+
+    $(window).on('load', function () {
+        // scroll to the anchor if present, offset by the header
+        scrollToCurrent();
+    });
+
+    $(document).ready(function () {
+        // Exclude tabbed content case
+        $('a:not([data-tab])').click(function (e) { delegateAnchors(e); });
+    });
   }
 });
