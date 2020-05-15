@@ -73,17 +73,17 @@ font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
 
 @media (max-width: 767px) {
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
-    color: #ffffff;
+    color: #ffffff; z-index: 9999;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #fafafa;
+    color: #fafafa; z-index: 9999;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #fafafa;
-    background-color: #2680a1;
+    background-color: #2680a1; z-index: 9999;
   }
 }
 
