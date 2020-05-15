@@ -182,7 +182,6 @@ header .navbar {
 }
 .subnav {
   min-height: 40px;
-  z-index: -1;
 }
 
 .inheritance h5, .inheritedMembers h5{
