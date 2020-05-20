@@ -1,0 +1,269 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/GitHub repos/Edgecmd-Docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html",
+          "hash": "WWkfkFdmEqxXFfvm8WxyeQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "V1.0/EdgeCmd_utility_1.0.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1.0/EdgeCmd_utility_1.0.html",
+          "hash": "Ivvo8p+TJUHCX+w13OMptw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "V1.1/Administration/Administration_1-1.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1.1/Administration/Administration_1-1.html",
+          "hash": "eZ/hviXlN3YfTxPKszloLw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "V1.1/Administration/Delete configuration_1-1.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1.1/Administration/Delete configuration_1-1.html",
+          "hash": "/LXcwjeAb22Y2tYqUjYFow=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "V1.1/Administration/Start or stop a component_1-1.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1.1/Administration/Start or stop a component_1-1.html",
+          "hash": "ODa5Ou/oqtgFtlG29FwYuA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "V1.1/Configuration/Configuration_1-1.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1.1/Configuration/Configuration_1-1.html",
+          "hash": "lxjfrGvNtObV9yazChr3bw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "V1.1/Configuration/Configure adapter component_1-1.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1.1/Configuration/Configure adapter component_1-1.html",
+          "hash": "FKPLqigPWup3gRn0ZxJz1w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "V1.1/Configuration/Configure adapter_1-1.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1.1/Configuration/Configure adapter_1-1.html",
+          "hash": "l8Ujk59jDL0irp6k9DfGGQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "V1.1/EdgeCmd_utility_1-1.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1.1/EdgeCmd_utility_1-1.html",
+          "hash": "s5t8NDQD9Wi9gnucEPUOqg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "V1.1/Reference/EdgeCmd commands_1-1.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1.1/Reference/EdgeCmd commands_1-1.html",
+          "hash": "kJl6sRbEDS8VXaBd+8Wfhg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "V1.1/Reference/Reference_1-1.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1.1/Reference/Reference_1-1.html",
+          "hash": "bACA6ptGUr3bSOVxKuoUXA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "V1.1/Reference/Retrieve EdgeCmd utility help_1-1.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1.1/Reference/Retrieve EdgeCmd utility help_1-1.html",
+          "hash": "hgyf/DesYvsG4segmAJf1A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "V1.1/Reference/Retrieve existing configuration_1-1.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1.1/Reference/Retrieve existing configuration_1-1.html",
+          "hash": "i8/83DGUY8C9jkQTAGK52g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "V1.1/images/atlas_icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "V1.1/images/atlas_icon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "V1.1/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1.1/index.html",
+          "hash": "9NnsmJh3ZSzPVdkKafXxZQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "V1.1/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "V1.1/toc.html",
+          "hash": "kD9pmIqoS6SJY83cYeLPIA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "UD9x1vdsZ8Hme28hL/53Vg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 14,
+          "skipped_file_count": 0
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
