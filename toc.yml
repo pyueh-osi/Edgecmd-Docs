@@ -1,4 +1,4 @@
-- name: Versions
+- name: EdgeCmd utility versions
   dropdown: true
   items:
   - name: EdgeCmd utility 1.1
