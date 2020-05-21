@@ -1,6 +1,6 @@
 - name: Versions
   dropdown: true
   items:
-  - name: EdgeCmd 1.1
+  - name: EdgeCmd utility 1.1
     href: V1.1/
     topicHref: V1.1/EdgeCmd_utility_1-1.md
