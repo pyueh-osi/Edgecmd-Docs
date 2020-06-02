@@ -4,7 +4,7 @@ uid: RetrieveExistingConfiguration1-1
 
 # Retrieve existing configuration
 
-EdgeCmd utility provides the possibility to view the configuration for each part of the adapter.
+Use EdgeCmd utility to view the configuration for each part of the adapter.
 
 **Note:** The examples in this topic are using the default port number `5590`. If you specified a different port number for your adapter, you need to add it in the command. For example:
 
@@ -12,7 +12,7 @@ EdgeCmd utility provides the possibility to view the configuration for each part
 edgecmd -port=5591 Configuration <RestOfTheCommand>
 ```
 
-**Note:** If you use slashes in your commands, you must escape them as follows:<br> 
+**Note:** If a command contains slashes, you must escape them as follows:<br> 
   - In *Windows*, add a second slash.<br> 
        Example: `TestUser\OilCompany` becomes `TestUser\\OilCompany`
 
@@ -21,9 +21,9 @@ edgecmd -port=5591 Configuration <RestOfTheCommand>
 
 ## View adapter configuration
 
-Complete the following procedure to view the configuration for the adapter:
+Complete the following steps to view the configuration for the adapter:
 
-1. Open command line.
+1. Access EdgeCmd utility through the command line.
 2. Type the following in the command line and press Enter.
 
    ```cmd
@@ -34,9 +34,9 @@ Complete the following procedure to view the configuration for the adapter:
   
 ## View configured components
 
-Complete the following procedure to view the components currently configured on the adapter:
+Complete the following steps to view the components currently configured on the adapter:
 
-1. Open command line.
+1. Access EdgeCmd utility through the command line.
 2. Type the following in the command line and press Enter.
 
    ```cmd
@@ -45,9 +45,9 @@ Complete the following procedure to view the components currently configured on 
   
 ## View a specific component configuration
 
-Complete the following procedure to view the configuration of a specific component:
+Complete the following steps to view the configuration of a specific component:
 
-1. Open command line.
+1. Access EdgeCmd utility through the command line.
 2. Type the following in the command line, replacing `<componentId>` with the ID of the component, and press Enter.
 
    ```cmd
@@ -58,9 +58,9 @@ Complete the following procedure to view the configuration of a specific compone
 
 ## View a specific facet configuration
 
-Complete the following procedure to view the configuration of a specific facet of an adapter component:
+Complete the following steps to view the configuration of a specific facet of an adapter component:
 
-1. Open command line.
+1. Access EdgeCmd utility through the command line.
 2. Type the following in the command line, replacing `<componentId>` and `<facetName>` with the ID of the component and the facet name, and press Enter.
 
    ```cmd
@@ -71,9 +71,9 @@ Complete the following procedure to view the configuration of a specific facet o
   
 ## View a specific facet entry configuration
 
-Complete the following procedure to view the configuration of a specific facet entry of a component:
+Complete the following steps to view the configuration of a specific facet entry of a component:
 
-1. Open command line.
+1. Access EdgeCmd utility through the command line.
 2. Type the following in the command line, replacing `<componentId>` and `<facetName>` with the ID of the component and the facet name.
 
    ```cmd

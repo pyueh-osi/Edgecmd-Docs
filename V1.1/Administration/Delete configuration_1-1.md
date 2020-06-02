@@ -4,7 +4,7 @@ uid: DeleteConfiguration1-1
 
 # Delete configuration
 
-Configuration can be deleted on an entry or a facet basis. Both options are described following.
+Use the EdgeCmd utility to delete adapter configuration entries or files that are no longer needed.
 
 **Note:** The examples in this topic are using the default port number `5590`. If you specified a different port number for your adapter, you need to add it in the command. For example:
 
@@ -12,7 +12,7 @@ Configuration can be deleted on an entry or a facet basis. Both options are desc
 edgecmd -port=5591 Configuration <RestOfTheCommand>
 ```
 
-**Note:** If you use slashes in your commands, you must escape them as follows:<br> 
+**Note:** If a command contains slashes, you must escape them as follows:<br> 
   - In *Windows*, add a second slash.<br> 
        Example: `TestUser\OilCompany` becomes `TestUser\\OilCompany`
 
@@ -21,9 +21,9 @@ edgecmd -port=5591 Configuration <RestOfTheCommand>
 
 ## Delete configuration entry
 
-Complete the following procedure to delete a configuration entry from a collection configuration. For example, you can delete a single health endpoint of the 'HealthEndpoints' facet within the 'System' component.
+Complete the following steps to delete a configuration entry from a collection configuration. For example, you can delete a single health endpoint of the 'HealthEndpoints' facet within the 'System' component.
 
-1. Open command line.
+1. Access EdgeCmd utility through the command line.
 2. Type the `componentId` and `facetName` followed by the ID of the entry to be removed.
 3. Add the `delete` keyword and press Enter.
 
@@ -35,9 +35,9 @@ Complete the following procedure to delete a configuration entry from a collecti
 
 ## Delete configuration file
 
-Complete the following procedure to delete a configuration file. For example, you can delete the configuration file of the 'HealthEndpoints' facet within the 'System' component.
+Complete the following steps to delete a configuration file. For example, you can delete the configuration file of the 'HealthEndpoints' facet within the 'System' component.
 
-1. Open command line.
+1. Access EdgeCmd utility through the command line.
 2. Type the `componentId` and `facetName`.
 3. Add the `delete` keyword and press Enter.
 
