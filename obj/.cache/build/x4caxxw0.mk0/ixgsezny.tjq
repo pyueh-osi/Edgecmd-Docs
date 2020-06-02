@@ -146,7 +146,7 @@
     ClientId                     [Required group 2]  Client ID used for authentication to OSIsoft Cloud Services.
     ClientSecret                 [Required group 2]  Client Secret used for authentication to OSIsoft Cloud Services.
     TokenEndpoint                [Optional group 2] URL of OMF destinations token service.
-    ValidateEndpointCertificate  [Optional] If true, endpoint certificate will be validated (recommended). If false, any endpoint certificate will be accepted. OSIsoft strongly recommends using disabled endpoint certificate validation for testing purposes only.
+    ValidateEndpointCertificate  [Optional] If true, endpoint certificate is validated (recommended). If false, any endpoint certificate is accepted. OSIsoft strongly recommends using disabled endpoint certificate validation for testing purposes only.
 
     Note: Only one Required group must be specified. Group 1 for PI Web API or Group 2 for OCS.
     Example:
