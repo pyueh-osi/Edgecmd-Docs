@@ -8,7 +8,7 @@
     <title>Delete configuration </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Delete configuration ">
-    <meta name="generator" content="docfx 2.53.1.0">
+    <meta name="generator" content="docfx 2.54.0.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -78,10 +78,10 @@
             <article class="content wrap" id="_content" data-uid="DeleteConfiguration1-1">
 <h1 id="delete-configuration">Delete configuration</h1>
 
-<p>Configuration can be deleted on an entry or a facet basis. Both options are described following.</p>
+<p>Use the EdgeCmd utility to delete adapter configuration entries or files that are no longer needed.</p>
 <p><strong>Note:</strong> The examples in this topic are using the default port number <code>5590</code>. If you specified a different port number for your adapter, you need to add it in the command. For example:</p>
 <pre><code class="lang-cmd">edgecmd -port=5591 Configuration &lt;RestOfTheCommand&gt;
-</code></pre><p><strong>Note:</strong> If you use slashes in your commands, you must escape them as follows:<br> </p>
+</code></pre><p><strong>Note:</strong> If a command contains slashes, you must escape them as follows:<br> </p>
 <ul>
 <li><p>In <em>Windows</em>, add a second slash.<br> 
    Example: <code>TestUser\OilCompany</code> becomes <code>TestUser\\OilCompany</code></p>
@@ -91,9 +91,9 @@
 </li>
 </ul>
 <h2 id="delete-configuration-entry">Delete configuration entry</h2>
-<p>Complete the following procedure to delete a configuration entry from a collection configuration. For example, you can delete a single health endpoint of the &#39;HealthEndpoints&#39; facet within the &#39;System&#39; component.</p>
+<p>Complete the following steps to delete a configuration entry from a collection configuration. For example, you can delete a single health endpoint of the &#39;HealthEndpoints&#39; facet within the &#39;System&#39; component.</p>
 <ol>
-<li>Open command line.</li>
+<li>Access EdgeCmd utility through the command line.</li>
 <li>Type the <code>componentId</code> and <code>facetName</code> followed by the ID of the entry to be removed.</li>
 <li><p>Add the <code>delete</code> keyword and press Enter.</p>
 <p><strong>Example:</strong> Delete endpoint_1 of the HealthEndpoints facet from the System:</p>
@@ -101,9 +101,9 @@
 </code></pre></li>
 </ol>
 <h2 id="delete-configuration-file">Delete configuration file</h2>
-<p>Complete the following procedure to delete a configuration file. For example, you can delete the configuration file of the &#39;HealthEndpoints&#39; facet within the &#39;System&#39; component.</p>
+<p>Complete the following steps to delete a configuration file. For example, you can delete the configuration file of the &#39;HealthEndpoints&#39; facet within the &#39;System&#39; component.</p>
 <ol>
-<li>Open command line.</li>
+<li>Access EdgeCmd utility through the command line.</li>
 <li>Type the <code>componentId</code> and <code>facetName</code>.</li>
 <li><p>Add the <code>delete</code> keyword and press Enter.</p>
 <p><strong>Example:</strong> Delete the HealthEndpoints facet configuration file:</p>

@@ -8,7 +8,7 @@
     <title>Retrieve existing configuration </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Retrieve existing configuration ">
-    <meta name="generator" content="docfx 2.53.1.0">
+    <meta name="generator" content="docfx 2.54.0.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -78,10 +78,10 @@
             <article class="content wrap" id="_content" data-uid="RetrieveExistingConfiguration1-1">
 <h1 id="retrieve-existing-configuration">Retrieve existing configuration</h1>
 
-<p>EdgeCmd utility provides the possibility to view the configuration for each part of the adapter.</p>
+<p>Use EdgeCmd utility to view the configuration for each part of the adapter.</p>
 <p><strong>Note:</strong> The examples in this topic are using the default port number <code>5590</code>. If you specified a different port number for your adapter, you need to add it in the command. For example:</p>
 <pre><code class="lang-cmd">edgecmd -port=5591 Configuration &lt;RestOfTheCommand&gt;
-</code></pre><p><strong>Note:</strong> If you use slashes in your commands, you must escape them as follows:<br> </p>
+</code></pre><p><strong>Note:</strong> If a command contains slashes, you must escape them as follows:<br> </p>
 <ul>
 <li><p>In <em>Windows</em>, add a second slash.<br> 
    Example: <code>TestUser\OilCompany</code> becomes <code>TestUser\\OilCompany</code></p>
@@ -91,44 +91,44 @@
 </li>
 </ul>
 <h2 id="view-adapter-configuration">View adapter configuration</h2>
-<p>Complete the following procedure to view the configuration for the adapter:</p>
+<p>Complete the following steps to view the configuration for the adapter:</p>
 <ol>
-<li>Open command line.</li>
+<li>Access EdgeCmd utility through the command line.</li>
 <li><p>Type the following in the command line and press Enter.</p>
 <pre><code class="lang-cmd">edgecmd Configuration
 </code></pre><p>Under <a href="#examples">Examples</a>, see <strong>View the configuration of the adapter</strong>.</p>
 </li>
 </ol>
 <h2 id="view-configured-components">View configured components</h2>
-<p>Complete the following procedure to view the components currently configured on the adapter:</p>
+<p>Complete the following steps to view the components currently configured on the adapter:</p>
 <ol>
-<li>Open command line.</li>
+<li>Access EdgeCmd utility through the command line.</li>
 <li><p>Type the following in the command line and press Enter.</p>
 <pre><code class="lang-cmd">edgecmd Configuration System Components
 </code></pre></li>
 </ol>
 <h2 id="view-a-specific-component-configuration">View a specific component configuration</h2>
-<p>Complete the following procedure to view the configuration of a specific component:</p>
+<p>Complete the following steps to view the configuration of a specific component:</p>
 <ol>
-<li>Open command line.</li>
+<li>Access EdgeCmd utility through the command line.</li>
 <li><p>Type the following in the command line, replacing <code>&lt;componentId&gt;</code> with the ID of the component, and press Enter.</p>
 <pre><code class="lang-cmd">edgecmd Configuration &lt;componentId&gt;
 </code></pre><p>Under <a href="#examples">Examples</a>, see <strong>View the configuration of the System component</strong>.</p>
 </li>
 </ol>
 <h2 id="view-a-specific-facet-configuration">View a specific facet configuration</h2>
-<p>Complete the following procedure to view the configuration of a specific facet of an adapter component:</p>
+<p>Complete the following steps to view the configuration of a specific facet of an adapter component:</p>
 <ol>
-<li>Open command line.</li>
+<li>Access EdgeCmd utility through the command line.</li>
 <li><p>Type the following in the command line, replacing <code>&lt;componentId&gt;</code> and <code>&lt;facetName&gt;</code> with the ID of the component and the facet name, and press Enter.</p>
 <pre><code class="lang-cmd">edgecmd Configuration &lt;componentId&gt; &lt;facetName&gt;
 </code></pre><p>Under <a href="#examples">Examples</a>, see <strong>View the configuration of the Logging facet within the OmfEgress component</strong>.</p>
 </li>
 </ol>
 <h2 id="view-a-specific-facet-entry-configuration">View a specific facet entry configuration</h2>
-<p>Complete the following procedure to view the configuration of a specific facet entry of a component:</p>
+<p>Complete the following steps to view the configuration of a specific facet entry of a component:</p>
 <ol>
-<li>Open command line.</li>
+<li>Access EdgeCmd utility through the command line.</li>
 <li><p>Type the following in the command line, replacing <code>&lt;componentId&gt;</code> and <code>&lt;facetName&gt;</code> with the ID of the component and the facet name.</p>
 <pre><code class="lang-cmd">edgecmd Configuration &lt;componentId&gt; &lt;facetName&gt; id=IndexToRetrieve
 </code></pre></li>

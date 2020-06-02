@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Start or stop a component </title>
+    <title>Configure an adapter with JSON Files </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Start or stop a component ">
+    <meta name="title" content="Configure an adapter with JSON Files ">
     <meta name="generator" content="docfx 2.54.0.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -75,26 +75,54 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="StartOrStopAComponent1-1">
-<h1 id="start-or-stop-a-component">Start or stop a component</h1>
+            <article class="content wrap" id="_content" data-uid="ConfigureAnAdapterWithJsonFiles">
+<h1 id="configure-an-adapter-with-json-files">Configure an adapter with JSON Files</h1>
 
-<p>Complete the following steps to either start or stop a component.</p>
+<p>Use EdgeCmd utility to  import a JSON file that contains the adapter configuration into the adapter. A file import completely replaces the existing configurations; therefore, you cannot use it to change individual values in a facet without modifying others.</p>
 <p><strong>Note:</strong> The examples in this topic are using the default port number <code>5590</code>. If you specified a different port number for your adapter, you need to add it in the command. For example:</p>
-<pre><code class="lang-cmd">edgecmd -port=5591 Administration &lt;RestOfTheCommand&gt;
-</code></pre><p><strong>Note:</strong> If a command contains slashes, you must escape them as follows:<br> </p>
-<ul>
-<li><p>In <em>Windows</em>, add a second slash.<br> 
-   Example: <code>TestUser\OilCompany</code> becomes <code>TestUser\\OilCompany</code></p>
-</li>
-<li><p>In <em>Linux</em>, add three slashes.<br>
-   Example: <code>TestUser\OilCompany</code> becomes <code>TestUser\\\\OilCompany</code></p>
-</li>
-</ul>
+<pre><code class="lang-cmd">edgecmd -port=5591 Configuration &lt;RestOfTheCommand&gt;
+</code></pre><h2 id="import-bulk-configuration">Import bulk configuration</h2>
+<p>Complete the following steps to import a bulk configuration:</p>
 <ol>
 <li>Access EdgeCmd utility through the command line.</li>
-<li><p>Type one of the following in the command line, replacing <code>&lt;componentId&gt;</code> with the ID of the component, and press Enter.</p>
-<pre><code class="lang-cmd">edgecmd Administration &lt;ComponentId&gt; Stop
-</code></pre><pre><code class="lang-cmd">edgecmd Administration &lt;ComponentId&gt; Start
+<li><p>Type the following in the command line, replacing <code>&lt;PathToJsonFile&gt;</code> with the path to the file, and press Enter.</p>
+<pre><code class="lang-cmd">edgecmd Configuration file=&lt;PathToJsonFile&gt;
+</code></pre></li>
+</ol>
+<h2 id="import-facet-specific-configuration">Import facet specific configuration</h2>
+<p>Complete the following steps to import a facet specific configuration file for a component:</p>
+<ol>
+<li>Access EdgeCmd utility through the command line.</li>
+<li><p>Type the following in the command line, replacing <code>&lt;componentId&gt;</code> with the ID of the component, <code>&lt;facetName&gt;</code> with the name of the facet, and <code>&lt;PathToJsonFile&gt;</code> with the path to the file. Then press Enter.</p>
+<pre><code class="lang-cmd">edgecmd Configuration &lt;componentId&gt; &lt;facetName&gt; file=&lt;PathToJsonFile&gt;
+</code></pre></li>
+</ol>
+<h2 id="import-facets-configuration-in-bulk">Import facets configuration in bulk</h2>
+<p>Complete the following steps to import a file with configuration for individual facets, but not individual values of a facet, as a bulk file import operation:<br><br>
+<strong>Note:</strong> The file must contain only information for the given component ID.</p>
+<ol>
+<li>Access EdgeCmd utility through the command line.</li>
+<li><p>Type the file name as shown in the <em>Logging.json</em> example and press Enter.</p>
+<pre><code class="lang-cmd">edgecmd Configuration file=&quot;~/Logging.json&quot;
+</code></pre><p><strong>Example:</strong></p>
+<pre><code class="lang-json">{
+   &quot;Modbus1&quot;: {
+     &quot;Logging&quot;: {
+       &quot;logLevel&quot;: &quot;Warning&quot;,
+       &quot;logFileSizeLimitBytes&quot;: 19283,
+       &quot;logFileCountLimit&quot;: 999
+      }
+   }
+}
+</code></pre><p><strong>Note:</strong> The command only affects the specified key=value pairs for the &#39;Logging&#39; facet in the &#39;Modbus1&#39; component, it does not change any other components or facets. However, import affects all key=value pairs in the facet. If you import the following example JSON file, the &#39;logLevel&#39; and &#39;logFileSizeLimitBytes&#39; values will be modified and the remaining values in the &#39;Logging&#39; facet will be reset to their default values (logFileCountLimit).</p>
+<pre><code class="lang-json">{
+   &quot;Modbus1&quot;: {
+     &quot;Logging&quot;: {
+       &quot;logLevel&quot;: &quot;Warning&quot;,
+       &quot;logFileSizeLimitBytes&quot;: 19283
+      }
+   }
+}
 </code></pre></li>
 </ol>
 </article>
@@ -105,7 +133,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/osisoft/Edgecmd-Docs/blob/master/V1.1/Administration/Start or stop a component_1-1.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/osisoft/Edgecmd-Docs/blob/master/V1.1/Configuration/Configure an adapter with JSON files_1-1.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

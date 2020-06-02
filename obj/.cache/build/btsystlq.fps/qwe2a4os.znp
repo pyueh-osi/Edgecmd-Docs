@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
   
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
     <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../">
     
@@ -66,11 +66,37 @@
         </div>
       </div>
       <div role="main" class="container body-content hide-when-search">
-        <div class="article row grid">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="EdgecmdUtility1-0">
-<h1 id="edgecmd-utility">EdgeCmd utility</h1>
+            <article class="content wrap" id="_content" data-uid="index">
+<h1 id="edgecmd-utility" sourcefile="V1.1/index.md" sourcestartlinenumber="5" sourceendlinenumber="5">EdgeCmd utility</h1>
 
+<p sourcefile="V1.1/index.md" sourcestartlinenumber="7" sourceendlinenumber="7">Use OSIsoft&#39;s proprietary tool, EdgeCmd utility, to configure and administer OSIsoft adapters on Linux and Windows using command line arguments. Because EdgeCmd utility is a command line tool, you can make adjustments to the configuration on the fly without programming. If you prefer, you can perform all tasks available in EdgeCmd utility using REST APIs. Use EdgeCmd utility to make one-off changes; use REST APIs to configure multiple systems the same way programmatically.</p>
+<p sourcefile="V1.1/index.md" sourcestartlinenumber="9" sourceendlinenumber="9"><strong>Note:</strong> Configuration and administrative REST interfaces are generally exposed through the command line.</p>
+<!--
+# EdgeCmd utility
+
+=======
+
+- [EdgeCmd utility](xref:EdgecmdUtility1-1)
+- [Configuration](xref:Configuration1-1)
+  - [Configure adapter](xref:ConfigureAdapter1-1)
+  - [Configure adapter component](xref:ConfigureAdapterComponent1-1)
+- [Administration](xref:Administration1-1)
+  - [Delete configuration](xref:DeleteConfiguration1-1)
+  - [Start or stop a component](xref:StartOrStopAComponent1-1)
+- [Reference](xref:Reference1-1)
+  - [Retrieve EdgeCmd utility help](xref:RetrieveEdgeCmdUtilityHelp1-1)
+  - [Retrieve existing configuration](xref:RetrieveExistingConfiguration1-1)
+  - [EdgeCmd commands](xref:EdgeCmdCommands1-1)
+-->
 </article>
           </div>
           
@@ -79,7 +105,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/osisoft/Edgecmd-Docs/blob/master/V1.0/EdgeCmd_utility_1.0.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/osisoft/Edgecmd-Docs/blob/master/V1.1/index.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

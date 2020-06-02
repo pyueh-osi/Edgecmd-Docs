@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
   
@@ -76,48 +76,48 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="RetrieveEdgeCmdUtilityHelp1-1">
-<h1 id="retrieve-edgecmd-utility-help">Retrieve EdgeCmd utility help</h1>
+<h1 id="retrieve-edgecmd-utility-help" sourcefile="V1.1/Reference/Retrieve EdgeCmd utility help_1-1.md" sourcestartlinenumber="5" sourceendlinenumber="5">Retrieve EdgeCmd utility help</h1>
 
-<p>The EdgeCmd utility provides instructions on how to use EdgeCmd utility.</p>
-<p><strong>Note:</strong> The examples in this topic are using the default port number <code>5590</code>. If you specified a different port number for your adapter, you need to add it in the command. For example:</p>
-<pre><code class="lang-cmd">edgecmd -help -port=5591 Configuration &lt;RestOfTheCommand&gt;
-</code></pre><p><strong>Note:</strong> If a command contains slashes, you must escape them as follows:<br> </p>
-<ul>
-<li><p>In <em>Windows</em>, add a second slash.<br> 
+<p sourcefile="V1.1/Reference/Retrieve EdgeCmd utility help_1-1.md" sourcestartlinenumber="7" sourceendlinenumber="7">The EdgeCmd utility provides instructions on how to use EdgeCmd utility.</p>
+<p sourcefile="V1.1/Reference/Retrieve EdgeCmd utility help_1-1.md" sourcestartlinenumber="9" sourceendlinenumber="9"><strong>Note:</strong> The examples in this topic are using the default port number <code>5590</code>. If you specified a different port number for your adapter, you need to add it in the command. For example:</p>
+<pre sourcefile="V1.1/Reference/Retrieve EdgeCmd utility help_1-1.md" sourcestartlinenumber="11" sourceendlinenumber="13"><code class="lang-cmd">edgecmd -help -port=5591 Configuration &lt;RestOfTheCommand&gt;
+</code></pre><p sourcefile="V1.1/Reference/Retrieve EdgeCmd utility help_1-1.md" sourcestartlinenumber="15" sourceendlinenumber="15"><strong>Note:</strong> If a command contains slashes, you must escape them as follows:<br> </p>
+<ul sourcefile="V1.1/Reference/Retrieve EdgeCmd utility help_1-1.md" sourcestartlinenumber="16" sourceendlinenumber="20">
+<li sourcefile="V1.1/Reference/Retrieve EdgeCmd utility help_1-1.md" sourcestartlinenumber="16" sourceendlinenumber="17"><p sourcefile="V1.1/Reference/Retrieve EdgeCmd utility help_1-1.md" sourcestartlinenumber="16" sourceendlinenumber="17">In <em>Windows</em>, add a second slash.<br> 
    Example: <code>TestUser\OilCompany</code> becomes <code>TestUser\\OilCompany</code></p>
 </li>
-<li><p>In <em>Linux</em>, add three slashes.<br>
+<li sourcefile="V1.1/Reference/Retrieve EdgeCmd utility help_1-1.md" sourcestartlinenumber="19" sourceendlinenumber="20"><p sourcefile="V1.1/Reference/Retrieve EdgeCmd utility help_1-1.md" sourcestartlinenumber="19" sourceendlinenumber="20">In <em>Linux</em>, add three slashes.<br>
    Example: <code>TestUser\OilCompany</code> becomes <code>TestUser\\\\OilCompany</code></p>
 </li>
 </ul>
-<h2 id="view-general-help-instructions">View general help instructions</h2>
-<p>Complete the following steps to view help instructions on how to use the Edgecmd utility:</p>
-<ol>
-<li>Access EdgeCmd utility through the command line.</li>
-<li><p>Type the following in the command line and press Enter.</p>
-<pre><code class="lang-cmd">edgecmd -help
+<h2 id="view-general-help-instructions" sourcefile="V1.1/Reference/Retrieve EdgeCmd utility help_1-1.md" sourcestartlinenumber="22" sourceendlinenumber="22">View general help instructions</h2>
+<p sourcefile="V1.1/Reference/Retrieve EdgeCmd utility help_1-1.md" sourcestartlinenumber="24" sourceendlinenumber="24">Complete the following steps to view help instructions on how to use the Edgecmd utility:</p>
+<ol sourcefile="V1.1/Reference/Retrieve EdgeCmd utility help_1-1.md" sourcestartlinenumber="26" sourceendlinenumber="31">
+<li sourcefile="V1.1/Reference/Retrieve EdgeCmd utility help_1-1.md" sourcestartlinenumber="26" sourceendlinenumber="26">Access EdgeCmd utility through the command line.</li>
+<li sourcefile="V1.1/Reference/Retrieve EdgeCmd utility help_1-1.md" sourcestartlinenumber="27" sourceendlinenumber="31"><p sourcefile="V1.1/Reference/Retrieve EdgeCmd utility help_1-1.md" sourcestartlinenumber="27" sourceendlinenumber="27">Type the following in the command line and press Enter.</p>
+<pre sourcefile="V1.1/Reference/Retrieve EdgeCmd utility help_1-1.md" sourcestartlinenumber="29" sourceendlinenumber="31"><code class="lang-cmd">edgecmd -help
 </code></pre></li>
 </ol>
-<h2 id="view-component-help-instructions">View component help instructions</h2>
-<p>Complete the following steps to view help instructions for configuration of a registered component that the adapter supports:</p>
-<ol>
-<li>Access EdgeCmd utility through the command line.</li>
-<li><p>Type the following in the command line, replacing <code>&lt;componentId&gt;</code> with the value that you want, and press Enter.</p>
-<pre><code class="lang-cmd">edgecmd -help Configuration &lt;componentId&gt;
-</code></pre><p>Under <a href="#examples">Examples</a>, see <strong>Configuration help for the System component</strong>.</p>
-<p><strong>Note:</strong> The help output also provides examples of commands that you can run to configure the component.</p>
+<h2 id="view-component-help-instructions" sourcefile="V1.1/Reference/Retrieve EdgeCmd utility help_1-1.md" sourcestartlinenumber="33" sourceendlinenumber="33">View component help instructions</h2>
+<p sourcefile="V1.1/Reference/Retrieve EdgeCmd utility help_1-1.md" sourcestartlinenumber="35" sourceendlinenumber="35">Complete the following steps to view help instructions for configuration of a registered component that the adapter supports:</p>
+<ol sourcefile="V1.1/Reference/Retrieve EdgeCmd utility help_1-1.md" sourcestartlinenumber="37" sourceendlinenumber="46">
+<li sourcefile="V1.1/Reference/Retrieve EdgeCmd utility help_1-1.md" sourcestartlinenumber="37" sourceendlinenumber="37">Access EdgeCmd utility through the command line.</li>
+<li sourcefile="V1.1/Reference/Retrieve EdgeCmd utility help_1-1.md" sourcestartlinenumber="38" sourceendlinenumber="46"><p sourcefile="V1.1/Reference/Retrieve EdgeCmd utility help_1-1.md" sourcestartlinenumber="38" sourceendlinenumber="38">Type the following in the command line, replacing <code>&lt;componentId&gt;</code> with the value that you want, and press Enter.</p>
+<pre sourcefile="V1.1/Reference/Retrieve EdgeCmd utility help_1-1.md" sourcestartlinenumber="40" sourceendlinenumber="42"><code class="lang-cmd">edgecmd -help Configuration &lt;componentId&gt;
+</code></pre><p sourcefile="V1.1/Reference/Retrieve EdgeCmd utility help_1-1.md" sourcestartlinenumber="44" sourceendlinenumber="44">Under <a href="#examples" data-raw-source="[Examples](#examples)" sourcefile="V1.1/Reference/Retrieve EdgeCmd utility help_1-1.md" sourcestartlinenumber="44" sourceendlinenumber="44">Examples</a>, see <strong>Configuration help for the System component</strong>.</p>
+<p sourcefile="V1.1/Reference/Retrieve EdgeCmd utility help_1-1.md" sourcestartlinenumber="46" sourceendlinenumber="46"><strong>Note:</strong> The help output also provides examples of commands that you can run to configure the component.</p>
 </li>
 </ol>
-<h2 id="view-component-facet-help-instructions">View component facet help instructions</h2>
-<p>Complete the following steps to view configuration help instructions for a specific facet within a component that the adapter supports:</p>
-<ol>
-<li>Access EdgeCmd utility through the command line.</li>
-<li><p>Type the following in the command line, replacing <code>&lt;componentId&gt;</code> and <code>&lt;facetName&gt;</code> with the value that you want, and press Enter.</p>
-<pre><code class="lang-cmd">edgecmd -help Configuration &lt;componentId&gt; &lt;facetName&gt;
-</code></pre><p>Under <a href="#examples">Examples</a>, see <strong>Configuration help for the buffering facet within the System component</strong>.</p>
+<h2 id="view-component-facet-help-instructions" sourcefile="V1.1/Reference/Retrieve EdgeCmd utility help_1-1.md" sourcestartlinenumber="48" sourceendlinenumber="48">View component facet help instructions</h2>
+<p sourcefile="V1.1/Reference/Retrieve EdgeCmd utility help_1-1.md" sourcestartlinenumber="50" sourceendlinenumber="50">Complete the following steps to view configuration help instructions for a specific facet within a component that the adapter supports:</p>
+<ol sourcefile="V1.1/Reference/Retrieve EdgeCmd utility help_1-1.md" sourcestartlinenumber="52" sourceendlinenumber="59">
+<li sourcefile="V1.1/Reference/Retrieve EdgeCmd utility help_1-1.md" sourcestartlinenumber="52" sourceendlinenumber="52">Access EdgeCmd utility through the command line.</li>
+<li sourcefile="V1.1/Reference/Retrieve EdgeCmd utility help_1-1.md" sourcestartlinenumber="53" sourceendlinenumber="59"><p sourcefile="V1.1/Reference/Retrieve EdgeCmd utility help_1-1.md" sourcestartlinenumber="53" sourceendlinenumber="53">Type the following in the command line, replacing <code>&lt;componentId&gt;</code> and <code>&lt;facetName&gt;</code> with the value that you want, and press Enter.</p>
+<pre sourcefile="V1.1/Reference/Retrieve EdgeCmd utility help_1-1.md" sourcestartlinenumber="55" sourceendlinenumber="57"><code class="lang-cmd">edgecmd -help Configuration &lt;componentId&gt; &lt;facetName&gt;
+</code></pre><p sourcefile="V1.1/Reference/Retrieve EdgeCmd utility help_1-1.md" sourcestartlinenumber="59" sourceendlinenumber="59">Under <a href="#examples" data-raw-source="[Examples](#examples)" sourcefile="V1.1/Reference/Retrieve EdgeCmd utility help_1-1.md" sourcestartlinenumber="59" sourceendlinenumber="59">Examples</a>, see <strong>Configuration help for the buffering facet within the System component</strong>.</p>
 </li>
 </ol>
-<h3 id="examples">Examples</h3>
+<h3 id="examples" sourcefile="V1.1/Reference/Retrieve EdgeCmd utility help_1-1.md" sourcestartlinenumber="61" sourceendlinenumber="61">Examples</h3>
 <details>
     <summary>Configuration help for the System component</summary>
     <pre>

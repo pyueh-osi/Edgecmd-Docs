@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
   
@@ -76,25 +76,25 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="StartOrStopAComponent1-1">
-<h1 id="start-or-stop-a-component">Start or stop a component</h1>
+<h1 id="start-or-stop-a-component" sourcefile="V1.1/Administration/Start or stop a component_1-1.md" sourcestartlinenumber="5" sourceendlinenumber="5">Start or stop a component</h1>
 
-<p>Complete the following steps to either start or stop a component.</p>
-<p><strong>Note:</strong> The examples in this topic are using the default port number <code>5590</code>. If you specified a different port number for your adapter, you need to add it in the command. For example:</p>
-<pre><code class="lang-cmd">edgecmd -port=5591 Administration &lt;RestOfTheCommand&gt;
-</code></pre><p><strong>Note:</strong> If a command contains slashes, you must escape them as follows:<br> </p>
-<ul>
-<li><p>In <em>Windows</em>, add a second slash.<br> 
+<p sourcefile="V1.1/Administration/Start or stop a component_1-1.md" sourcestartlinenumber="7" sourceendlinenumber="7">Complete the following steps to either start or stop a component.</p>
+<p sourcefile="V1.1/Administration/Start or stop a component_1-1.md" sourcestartlinenumber="9" sourceendlinenumber="9"><strong>Note:</strong> The examples in this topic are using the default port number <code>5590</code>. If you specified a different port number for your adapter, you need to add it in the command. For example:</p>
+<pre sourcefile="V1.1/Administration/Start or stop a component_1-1.md" sourcestartlinenumber="11" sourceendlinenumber="13"><code class="lang-cmd">edgecmd -port=5591 Administration &lt;RestOfTheCommand&gt;
+</code></pre><p sourcefile="V1.1/Administration/Start or stop a component_1-1.md" sourcestartlinenumber="15" sourceendlinenumber="15"><strong>Note:</strong> If a command contains slashes, you must escape them as follows:<br> </p>
+<ul sourcefile="V1.1/Administration/Start or stop a component_1-1.md" sourcestartlinenumber="16" sourceendlinenumber="20">
+<li sourcefile="V1.1/Administration/Start or stop a component_1-1.md" sourcestartlinenumber="16" sourceendlinenumber="17"><p sourcefile="V1.1/Administration/Start or stop a component_1-1.md" sourcestartlinenumber="16" sourceendlinenumber="17">In <em>Windows</em>, add a second slash.<br> 
    Example: <code>TestUser\OilCompany</code> becomes <code>TestUser\\OilCompany</code></p>
 </li>
-<li><p>In <em>Linux</em>, add three slashes.<br>
+<li sourcefile="V1.1/Administration/Start or stop a component_1-1.md" sourcestartlinenumber="19" sourceendlinenumber="20"><p sourcefile="V1.1/Administration/Start or stop a component_1-1.md" sourcestartlinenumber="19" sourceendlinenumber="20">In <em>Linux</em>, add three slashes.<br>
    Example: <code>TestUser\OilCompany</code> becomes <code>TestUser\\\\OilCompany</code></p>
 </li>
 </ul>
-<ol>
-<li>Access EdgeCmd utility through the command line.</li>
-<li><p>Type one of the following in the command line, replacing <code>&lt;componentId&gt;</code> with the ID of the component, and press Enter.</p>
-<pre><code class="lang-cmd">edgecmd Administration &lt;ComponentId&gt; Stop
-</code></pre><pre><code class="lang-cmd">edgecmd Administration &lt;ComponentId&gt; Start
+<ol sourcefile="V1.1/Administration/Start or stop a component_1-1.md" sourcestartlinenumber="22" sourceendlinenumber="31">
+<li sourcefile="V1.1/Administration/Start or stop a component_1-1.md" sourcestartlinenumber="22" sourceendlinenumber="22">Access EdgeCmd utility through the command line.</li>
+<li sourcefile="V1.1/Administration/Start or stop a component_1-1.md" sourcestartlinenumber="23" sourceendlinenumber="31"><p sourcefile="V1.1/Administration/Start or stop a component_1-1.md" sourcestartlinenumber="23" sourceendlinenumber="23">Type one of the following in the command line, replacing <code>&lt;componentId&gt;</code> with the ID of the component, and press Enter.</p>
+<pre sourcefile="V1.1/Administration/Start or stop a component_1-1.md" sourcestartlinenumber="25" sourceendlinenumber="27"><code class="lang-cmd">edgecmd Administration &lt;ComponentId&gt; Stop
+</code></pre><pre sourcefile="V1.1/Administration/Start or stop a component_1-1.md" sourcestartlinenumber="29" sourceendlinenumber="31"><code class="lang-cmd">edgecmd Administration &lt;ComponentId&gt; Start
 </code></pre></li>
 </ol>
 </article>

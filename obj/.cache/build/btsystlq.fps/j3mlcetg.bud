@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
   
@@ -76,22 +76,22 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="EdgeCmdCommands1-1">
-<h1 id="edgecmd-commands">EdgeCmd commands</h1>
+<h1 id="edgecmd-commands" sourcefile="V1.1/Reference/EdgeCmd commands_1-1.md" sourcestartlinenumber="5" sourceendlinenumber="5">EdgeCmd commands</h1>
 
-<p>The following tables provide a description of every command available in EdgeCmd utility. Every command used with the EdgeCmd utility has to be preceded by <code>edgecmd</code>.</p>
-<p><strong>Note:</strong> The examples in this topic are using the default port number <code>5590</code>. If you specified a different port number for your adapter, you need to add it in the command. For example:</p>
-<pre><code class="lang-cmd">edgecmd -port=5591 Configuration &lt;RestOfTheCommand&gt;
-</code></pre><p><strong>Note:</strong> If a command contains slashes, you must escape them as follows:<br> </p>
-<ul>
-<li><p>In <em>Windows</em>, add a second slash.<br> 
+<p sourcefile="V1.1/Reference/EdgeCmd commands_1-1.md" sourcestartlinenumber="7" sourceendlinenumber="7">The following tables provide a description of every command available in EdgeCmd utility. Every command used with the EdgeCmd utility has to be preceded by <code>edgecmd</code>.</p>
+<p sourcefile="V1.1/Reference/EdgeCmd commands_1-1.md" sourcestartlinenumber="9" sourceendlinenumber="9"><strong>Note:</strong> The examples in this topic are using the default port number <code>5590</code>. If you specified a different port number for your adapter, you need to add it in the command. For example:</p>
+<pre sourcefile="V1.1/Reference/EdgeCmd commands_1-1.md" sourcestartlinenumber="11" sourceendlinenumber="13"><code class="lang-cmd">edgecmd -port=5591 Configuration &lt;RestOfTheCommand&gt;
+</code></pre><p sourcefile="V1.1/Reference/EdgeCmd commands_1-1.md" sourcestartlinenumber="15" sourceendlinenumber="15"><strong>Note:</strong> If a command contains slashes, you must escape them as follows:<br> </p>
+<ul sourcefile="V1.1/Reference/EdgeCmd commands_1-1.md" sourcestartlinenumber="16" sourceendlinenumber="20">
+<li sourcefile="V1.1/Reference/EdgeCmd commands_1-1.md" sourcestartlinenumber="16" sourceendlinenumber="17"><p sourcefile="V1.1/Reference/EdgeCmd commands_1-1.md" sourcestartlinenumber="16" sourceendlinenumber="17">In <em>Windows</em>, add a second slash.<br> 
    Example: <code>TestUser\OilCompany</code> becomes <code>TestUser\\OilCompany</code></p>
 </li>
-<li><p>In <em>Linux</em>, add three slashes.<br>
+<li sourcefile="V1.1/Reference/EdgeCmd commands_1-1.md" sourcestartlinenumber="19" sourceendlinenumber="20"><p sourcefile="V1.1/Reference/EdgeCmd commands_1-1.md" sourcestartlinenumber="19" sourceendlinenumber="20">In <em>Linux</em>, add three slashes.<br>
    Example: <code>TestUser\OilCompany</code> becomes <code>TestUser\\\\OilCompany</code></p>
 </li>
 </ul>
-<h2 id="help">Help</h2>
-<table>
+<h2 id="help" sourcefile="V1.1/Reference/EdgeCmd commands_1-1.md" sourcestartlinenumber="22" sourceendlinenumber="22">Help</h2>
+<table sourcefile="V1.1/Reference/EdgeCmd commands_1-1.md" sourcestartlinenumber="24" sourceendlinenumber="28">
 <thead>
 <tr>
 <th>edgecmd command</th>
@@ -117,9 +117,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="configuration">Configuration</h2>
-<h3 id="system">System</h3>
-<table>
+<h2 id="configuration" sourcefile="V1.1/Reference/EdgeCmd commands_1-1.md" sourcestartlinenumber="30" sourceendlinenumber="30">Configuration</h2>
+<h3 id="system" sourcefile="V1.1/Reference/EdgeCmd commands_1-1.md" sourcestartlinenumber="32" sourceendlinenumber="32">System</h3>
+<table sourcefile="V1.1/Reference/EdgeCmd commands_1-1.md" sourcestartlinenumber="34" sourceendlinenumber="39">
 <thead>
 <tr>
 <th>edgecmd command</th>
@@ -150,8 +150,8 @@
 </tr>
 </tbody>
 </table>
-<h3 id="components">Components</h3>
-<table>
+<h3 id="components" sourcefile="V1.1/Reference/EdgeCmd commands_1-1.md" sourcestartlinenumber="41" sourceendlinenumber="41">Components</h3>
+<table sourcefile="V1.1/Reference/EdgeCmd commands_1-1.md" sourcestartlinenumber="43" sourceendlinenumber="50">
 <thead>
 <tr>
 <th>edgecmd command</th>
@@ -178,12 +178,12 @@
 <tr>
 <td><code>edgecmd Configuration &lt;componentId&gt; DataSource</code></td>
 <td>Configure the data source for the adapter.</td>
-<td>For examples, see <a href="https://osisoft.github.io/OSIsoft-Adapter-OPC-UA-Docs/V1/Configuration/OSIsoft%20Adapter%20for%20OPC%20UA%20data%20source%20configuration.html">OSIsoft Adapter for OPC UA data source configuration</a> and <a href="https://osisoft.github.io/OSIsoft-Adapter-Modbus-Docs/V1/Configuration/OSIsoft%20Adapter%20for%20Modbus%20TCP%20data%20source%20configuration.html">OSIsoft Adapter For Modbus TCP data source configuration</a>.</td>
+<td>For examples, see <a href="https://osisoft.github.io/OSIsoft-Adapter-OPC-UA-Docs/V1/Configuration/OSIsoft%20Adapter%20for%20OPC%20UA%20data%20source%20configuration.html" data-raw-source="[OSIsoft Adapter for OPC UA data source configuration](https://osisoft.github.io/OSIsoft-Adapter-OPC-UA-Docs/V1/Configuration/OSIsoft%20Adapter%20for%20OPC%20UA%20data%20source%20configuration.html)" sourcefile="V1.1/Reference/EdgeCmd commands_1-1.md" sourcestartlinenumber="48" sourceendlinenumber="48">OSIsoft Adapter for OPC UA data source configuration</a> and <a href="https://osisoft.github.io/OSIsoft-Adapter-Modbus-Docs/V1/Configuration/OSIsoft%20Adapter%20for%20Modbus%20TCP%20data%20source%20configuration.html" data-raw-source="[OSIsoft Adapter For Modbus TCP data source configuration](https://osisoft.github.io/OSIsoft-Adapter-Modbus-Docs/V1/Configuration/OSIsoft%20Adapter%20for%20Modbus%20TCP%20data%20source%20configuration.html)" sourcefile="V1.1/Reference/EdgeCmd commands_1-1.md" sourcestartlinenumber="48" sourceendlinenumber="48">OSIsoft Adapter For Modbus TCP data source configuration</a>.</td>
 </tr>
 <tr>
 <td><code>edgecmd Configuration &lt;componentId&gt; DataSelection</code></td>
 <td>Configure the data selection for the adapter.</td>
-<td>For examples, see <a href="https://osisoft.github.io/OSIsoft-Adapter-OPC-UA-Docs/V1/Configuration/OSIsoft%20Adapter%20for%20OPC%20UA%20data%20selection%20configuration.html">OSIsoft Adapter for OPC UA data selection configuration</a> and <a href="https://osisoft.github.io/OSIsoft-Adapter-Modbus-Docs/V1/Configuration/OSIsoft%20Adapter%20for%20Modbus%20TCP%20data%20selection%20configuration.html">OSIsoft Adapter for Modbus TCP data selection configuration</a>.</td>
+<td>For examples, see <a href="https://osisoft.github.io/OSIsoft-Adapter-OPC-UA-Docs/V1/Configuration/OSIsoft%20Adapter%20for%20OPC%20UA%20data%20selection%20configuration.html" data-raw-source="[OSIsoft Adapter for OPC UA data selection configuration](https://osisoft.github.io/OSIsoft-Adapter-OPC-UA-Docs/V1/Configuration/OSIsoft%20Adapter%20for%20OPC%20UA%20data%20selection%20configuration.html)" sourcefile="V1.1/Reference/EdgeCmd commands_1-1.md" sourcestartlinenumber="49" sourceendlinenumber="49">OSIsoft Adapter for OPC UA data selection configuration</a> and <a href="https://osisoft.github.io/OSIsoft-Adapter-Modbus-Docs/V1/Configuration/OSIsoft%20Adapter%20for%20Modbus%20TCP%20data%20selection%20configuration.html" data-raw-source="[OSIsoft Adapter for Modbus TCP data selection configuration](https://osisoft.github.io/OSIsoft-Adapter-Modbus-Docs/V1/Configuration/OSIsoft%20Adapter%20for%20Modbus%20TCP%20data%20selection%20configuration.html)" sourcefile="V1.1/Reference/EdgeCmd commands_1-1.md" sourcestartlinenumber="49" sourceendlinenumber="49">OSIsoft Adapter for Modbus TCP data selection configuration</a>.</td>
 </tr>
 <tr>
 <td><code>edgecmd Configuration &lt;componentId&gt; Logging</code></td>
@@ -192,8 +192,8 @@
 </tr>
 </tbody>
 </table>
-<h2 id="configuration-with-json-files">Configuration with JSON files</h2>
-<table>
+<h2 id="configuration-with-json-files" sourcefile="V1.1/Reference/EdgeCmd commands_1-1.md" sourcestartlinenumber="52" sourceendlinenumber="52">Configuration with JSON files</h2>
+<table sourcefile="V1.1/Reference/EdgeCmd commands_1-1.md" sourcestartlinenumber="54" sourceendlinenumber="57">
 <thead>
 <tr>
 <th>edgecmd command</th>
@@ -214,8 +214,8 @@
 </tr>
 </tbody>
 </table>
-<h2 id="administration">Administration</h2>
-<table>
+<h2 id="administration" sourcefile="V1.1/Reference/EdgeCmd commands_1-1.md" sourcestartlinenumber="59" sourceendlinenumber="59">Administration</h2>
+<table sourcefile="V1.1/Reference/EdgeCmd commands_1-1.md" sourcestartlinenumber="61" sourceendlinenumber="64">
 <thead>
 <tr>
 <th>edgecmd command</th>
