@@ -102,7 +102,7 @@
 <pre sourcefile="V1.1/Installation/Installation_1-1.md" sourcestartlinenumber="44" sourceendlinenumber="46"><code class="lang-bash">sudo apt install ./EdgeCmd_linux-arm.deb
 </code></pre><p sourcefile="V1.1/Installation/Installation_1-1.md" sourcestartlinenumber="48" sourceendlinenumber="48"> <strong>Debian 9 or later (Raspberry PI 3,4: Ubuntu ARM64 Server, Google Coral Dev Board, Nvidia Nano Jetson)</strong></p>
 <pre sourcefile="V1.1/Installation/Installation_1-1.md" sourcestartlinenumber="50" sourceendlinenumber="52"><code class="lang-bash">sudo apt install ./EdgeCmd_linux-arm64.deb
-</code></pre><p sourcefile="V1.1/Installation/Installation_1-1.md" sourcestartlinenumber="54" sourceendlinenumber="54"> A validation check for prerequisites will be completed.</p>
+</code></pre><p sourcefile="V1.1/Installation/Installation_1-1.md" sourcestartlinenumber="54" sourceendlinenumber="54"> A validation check for prerequisites is completed.</p>
 </li>
 <li sourcefile="V1.1/Installation/Installation_1-1.md" sourcestartlinenumber="56" sourceendlinenumber="58"><p sourcefile="V1.1/Installation/Installation_1-1.md" sourcestartlinenumber="56" sourceendlinenumber="56">After the check for prerequisites succeeds, you are prompted with the option to change the default port of the adapter, which is <code>5590</code>.</p>
 <p sourcefile="V1.1/Installation/Installation_1-1.md" sourcestartlinenumber="58" sourceendlinenumber="58"> If the Linux OS is up to date, the install will succeed and the EdgeCmd utility is running on your device.</p>
