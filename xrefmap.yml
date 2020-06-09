@@ -16,7 +16,7 @@ references:
 - uid: ConfigureAnAdapterWithinCommands1-1
   name: Configure an adapter within commands
   href: V1.1/Configuration/Configure%20an%20adapter%20within%20commands_1-1.html
-- uid: ConfigureAnAdapterWithJsonFiles
+- uid: ConfigureAnAdapterWithJsonFiles1-1
   name: Configure an adapter with JSON Files
   href: V1.1/Configuration/Configure%20an%20adapter%20with%20JSON%20files_1-1.html
 - uid: DeleteConfiguration1-1
