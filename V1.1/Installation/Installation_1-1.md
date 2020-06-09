@@ -51,7 +51,7 @@ Complete the following steps to install the EdgeCmd utility on Linux:
     sudo apt install ./EdgeCmd_linux-arm64.deb
     ```
 
-    A validation check for prerequisites will be completed.
+    A validation check for prerequisites is completed.
 
 2. After the check for prerequisites succeeds, you are prompted with the option to change the default port of the adapter, which is `5590`.
 

@@ -60,7 +60,7 @@ Complete the following steps to import a file with configuration for individual 
    }
     ```
 
-   **Note:** The command only affects the specified key=value pairs for the 'Logging' facet in the 'Modbus1' component, it does not change any other components or facets. However, import affects all key=value pairs in the facet. If you import the following example JSON file, the 'logLevel' and 'logFileSizeLimitBytes' values will be modified and the remaining values in the 'Logging' facet will be reset to their default values (logFileCountLimit).
+   **Note:** The command only affects the specified key=value pairs for the 'Logging' facet in the 'Modbus1' component, it does not change any other components or facets. However, import affects all key=value pairs in the facet. If you import the following example JSON file, the 'logLevel' and 'logFileSizeLimitBytes' values are modified and the remaining values in the 'Logging' facet are reset to their default values (logFileCountLimit).
 
    ```json
    {

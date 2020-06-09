@@ -58,4 +58,4 @@ Complete the following steps to add an entry to a collection configuration:
    edgecmd Configuration Modbus1 HealthEndpoints Id=endpoint_1 Endpoint=endpointURL UserName=UserName Password=Password
    ```
 
-   **Note:** If an entry with the specified ID already exists, it will be updated based on the new key=value pairs.
+   **Note:** If an entry with the specified ID already exists, it is updated based on the new key=value pairs.
