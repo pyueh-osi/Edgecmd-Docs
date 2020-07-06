@@ -13,9 +13,6 @@ references:
 - uid: ConfigureAdapterComponent1-1
   name: Configure adapter component
   href: V1.1/Configuration/Configure%20adapter%20component_1-1.html
-- uid: ConfigureAdapterDataSelectionWithCSVFiles
-  name: Configure adapter data selection with CSV files
-  href: V1.1/Configuration/Configure%20adapter%20data%20selection%20with%20CSV%20files.html
 - uid: ConfigureAnAdapterWithinCommands1-1
   name: Configure an adapter within commands
   href: V1.1/Configuration/Configure%20an%20adapter%20within%20commands_1-1.html

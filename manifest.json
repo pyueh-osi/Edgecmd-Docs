@@ -98,18 +98,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1.1/Configuration/Configure adapter data selection with CSV files.md",
-      "output": {
-        ".html": {
-          "relative_path": "V1.1/Configuration/Configure adapter data selection with CSV files.html",
-          "hash": "e8W3GIkSMyamhrhqposScw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "V1.1/Configuration/Configure an adapter with JSON files_1-1.md",
       "output": {
         ".html": {
@@ -278,7 +266,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 18,
+          "total_file_count": 17,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
