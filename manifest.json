@@ -18,7 +18,7 @@
       "output": {
         ".html": {
           "relative_path": "README.html",
-          "hash": "mjZbHJr/CHivUHqU79xyZw=="
+          "hash": "lRqYeHVbUR4WDj5ce6/q/g=="
         }
       },
       "is_incremental": false,
@@ -30,7 +30,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.0/EdgeCmd_utility_1.0.html",
-          "hash": "lSd9OppljcbOe0KkCUi2ow=="
+          "hash": "28q5io0Sv+1fDmZP6OnS7Q=="
         }
       },
       "is_incremental": false,
@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.1/Administration/Administration_1-1.html",
-          "hash": "+uTO5QUhleiCdyX5vKprbw=="
+          "hash": "E14QXbfCgHW9i3o1CiINWA=="
         }
       },
       "is_incremental": false,
@@ -54,7 +54,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.1/Administration/Delete configuration_1-1.html",
-          "hash": "RD4Es7A+ONA3lFazs/X2YQ=="
+          "hash": "x+AAQf9GjUfPLNkbNWaWYA=="
         }
       },
       "is_incremental": false,
@@ -66,7 +66,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.1/Administration/Start or stop a component_1-1.html",
-          "hash": "suOMF81e+JVs/q79qCYzzw=="
+          "hash": "0m6kN0tpx73O8aPV6n505w=="
         }
       },
       "is_incremental": false,
@@ -78,7 +78,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.1/Configuration/Configuration_1-1.html",
-          "hash": "kuFY/LoNiNO5JnCEGUutWA=="
+          "hash": "E8ghMWqhEssggUXEh0Qqdg=="
         }
       },
       "is_incremental": false,
@@ -90,7 +90,19 @@
       "output": {
         ".html": {
           "relative_path": "V1.1/Configuration/Configure adapter component_1-1.html",
-          "hash": "Ubg5hARC9bgjtRWp3Zll3g=="
+          "hash": "7qmDiYw38gafXySntp9HMA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "V1.1/Configuration/Configure adapter data selection with CSV files.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1.1/Configuration/Configure adapter data selection with CSV files.html",
+          "hash": "e8W3GIkSMyamhrhqposScw=="
         }
       },
       "is_incremental": false,
@@ -102,7 +114,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.1/Configuration/Configure an adapter with JSON files_1-1.html",
-          "hash": "RBm1ZKFicv30hduW/k346Q=="
+          "hash": "fs+CI27fRJCy0yTNZHklqw=="
         }
       },
       "is_incremental": false,
@@ -114,19 +126,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.1/Configuration/Configure an adapter within commands_1-1.html",
-          "hash": "2+9atTbg9JGCDpqLgRQqQg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "V1.1/Configuration/csvsupport.md",
-      "output": {
-        ".html": {
-          "relative_path": "V1.1/Configuration/csvsupport.html",
-          "hash": "1PgOGPs1IU934VlQpMBjOg=="
+          "hash": "+LqEoNymg8K95UPlywL+NA=="
         }
       },
       "is_incremental": false,
@@ -138,7 +138,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.1/EdgeCmd_utility_1-1.html",
-          "hash": "G1Xy0S8bYtQ47XLCemBqkQ=="
+          "hash": "LqAaco4YH6iSztn0hwEXWg=="
         }
       },
       "is_incremental": false,
@@ -150,7 +150,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.1/Installation/Access EdgeCmd utility_1-1.html",
-          "hash": "s/CN9VNFLiPREZECm0famw=="
+          "hash": "i6aigtJQ+qTVRphlbjAboA=="
         }
       },
       "is_incremental": false,
@@ -162,7 +162,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.1/Installation/Installation_1-1.html",
-          "hash": "1jMNFKuTeMd1GVx/knizYA=="
+          "hash": "LiKDG1F1IBK7aDLCIm8l/Q=="
         }
       },
       "is_incremental": false,
@@ -174,7 +174,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.1/Reference/EdgeCmd commands_1-1.html",
-          "hash": "LhJu89mYzjg+hXJRAZ3UBQ=="
+          "hash": "7oP6nBtjw/uRZQCmFrlQwA=="
         }
       },
       "is_incremental": false,
@@ -186,7 +186,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.1/Reference/Reference_1-1.html",
-          "hash": "rbotuDKmy2mVD6cXCUnF8w=="
+          "hash": "PYBU7T7tKa9WhPg/TzC+Qg=="
         }
       },
       "is_incremental": false,
@@ -198,7 +198,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.1/Reference/Retrieve EdgeCmd utility help_1-1.html",
-          "hash": "9BHCzkPe6jJyeFTJzljeaA=="
+          "hash": "k+AxXtduRy54/kf9Y341qA=="
         }
       },
       "is_incremental": false,
@@ -210,7 +210,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.1/Reference/Retrieve existing configuration_1-1.html",
-          "hash": "DKynLYcsjl78KAamPXmXig=="
+          "hash": "wmX2xTbJlR+ZawGIYW0ryg=="
         }
       },
       "is_incremental": false,
@@ -233,7 +233,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.1/index.html",
-          "hash": "wxLvDIL+mkoB+/dsrmEuzA=="
+          "hash": "Wle1wLb1k8UOxVVy9x9TbA=="
         }
       },
       "is_incremental": false,
