@@ -4,7 +4,7 @@ uid: ConfigureAdapterDataSelectionWithCSVFiles
 
 # Configure adapter data selection with CSV files
 
-Use EdgeCmd utility to import the adapter's data selection from and export it into a CSV (comma-separated value) file.
+Use EdgeCmd utility to import data selection from, and export it into, a CSV (comma-separated value) file.
 
 EdgeCmd utility recognizes the content in CSV format from the specified file path and converts it.
 
