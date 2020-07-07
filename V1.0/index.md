@@ -13,7 +13,7 @@ Use OSIsoft's proprietary tool, EdgeCmd utility, to configure and administer Edg
 
 =======
 
-- [EdgeCmd utility](xref:EdgecmdUtility1-1)
+- [EdgeCmd utility](xref:EdgecmdUtility1-0)
   - [Install EdgeCmd utility](xref:Installation1-0)
   - [Access EdgeCmd utility](xref:AccessEdgeCmdUtility1-0)
   - [Retrieve EdgeCmd utility help](xref:RetrieveEdgeCmdUtilityHelp1-0)
