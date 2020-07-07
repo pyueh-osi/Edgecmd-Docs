@@ -1,5 +1,5 @@
 ---
-uid: Installedgecmd1-0
+uid: EdgecmdUtility1-0
 ---
 
 # EdgeCmd utility
