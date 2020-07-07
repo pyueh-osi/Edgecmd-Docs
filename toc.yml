@@ -1,3 +1,6 @@
+- name: EdgeCmd utility
+  href: index.md
+  homepage: index.md
 - name: EdgeCmd utility versions
   dropdown: true
   items:

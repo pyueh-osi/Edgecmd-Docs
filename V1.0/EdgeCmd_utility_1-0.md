@@ -8,3 +8,19 @@ Use OSIsoft's proprietary tool, EdgeCmd utility, to configure and administer Edg
 
 **Note:** Configuration and administrative REST interfaces are generally exposed through the command line. Read/write capabilities to the EDS storage component, OMF ingress, and SDS read/write capabilities are only available using the REST API.
 
+<!--
+# EdgeCmd utility
+
+=======
+
+- [EdgeCmd utility](xref:EdgecmdUtility1-0)
+  - [Install EdgeCmd utility](xref:Installation1-0)
+  - [Access EdgeCmd utility](xref:AccessEdgeCmdUtility1-0)
+  - [Retrieve EdgeCmd utility help](xref:RetrieveEdgeCmdUtilityHelp1-0)
+  - [Retrieve existing configuration](xref:RetrieveExistingConfiguration1-0)
+  - [Configure Edge Data Store](xref:ConfigureEdgeDataStore1-0)
+  - [Configure Edge Data Store component](xref:ConfigureEdgeDataStoreComponent1-0)
+  - [Configure port](xref:ConfigurePort1-0)
+  - [Delete configuration](xref:DeleteConfiguration1-0)
+  - [EdgeCmd commands](xref:EdgeCmdCommands1-0)
+-->
