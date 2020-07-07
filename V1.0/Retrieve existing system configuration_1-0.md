@@ -1,8 +1,8 @@
 ---
-uid: RetrieveExistingSystemConfiguration1-0
+uid: RetrieveExistingConfiguration1-0
 ---
 
-# Retrieve existing system configuration
+# Retrieve existing configuration
 
 Use the EdgeCmd utility to view the configuration for the components of Edge Data Store.
 

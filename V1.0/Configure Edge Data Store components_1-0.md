@@ -1,8 +1,8 @@
 ---
-uid: ConfigureEdgeDataStoreComponents1-0
+uid: ConfigureEdgeDataStoreComponent1-0
 ---
 
-# Configure Edge Data Store components
+# Configure Edge Data Store component
 
 Use the EdgeCmd utility to add, configure, and delete Edge Data Store components.
 
