@@ -1,6 +1,6 @@
 - name: EdgeCmd utility
   href: index_1-0.md
-  homepage: index.md
+  homepage: index_1-0.md
   - name: Access EdgeCmd utility
     href: Access EdgeCmd utility_1-0.md
   - name: Retrieve EdgeCmd utility help
