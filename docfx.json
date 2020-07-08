@@ -19,9 +19,9 @@
     "content": [
       {
         "files": [
-          "V1.1/**/toc.yml",
-          "V1.1/**/**.md",
-          "V1.1/toc.yml",
+          "V*/**/toc.yml",
+          "V*/**/**.md",
+          "V*/toc.yml",
           "toc.yml",
           "**.md"
         ]
