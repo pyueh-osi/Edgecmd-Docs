@@ -3,4 +3,4 @@
 - name: Retrieve existing configuration
   href: Retrieve existing configuration_1-0.md
 - name: EdgeCmd commands
-  href: EdgeCmd commands_1-0.md
+  href: EdgeCmdCommands_1-0.md
