@@ -37,15 +37,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "UidNotFound"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1.0/Configuration/Configure Edge Data Store components_1-0.md",
       "output": {
         ".html": {
           "relative_path": "V1.0/Configuration/Configure Edge Data Store components_1-0.html",
-          "hash": "PbNHy1QFVTpVfce2rK1JMA=="
+          "hash": "2QUqILXsWytJ+Av6QHY3uw=="
         }
       },
       "is_incremental": false,
