@@ -1,5 +1,5 @@
 ---
-uid: index
+uid: index1-1
 ---
 
 # EdgeCmd utility
