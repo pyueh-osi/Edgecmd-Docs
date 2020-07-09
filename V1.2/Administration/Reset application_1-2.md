@@ -1,10 +1,10 @@
 ---
-uid: StartOrStopAComponent1-2
+uid: ResetApplication1-2
 ---
 
-# Start or stop a component
+# Reset application
 
-Complete the following steps to either start or stop a component.
+Use the EdgeCmd utility to reset the entire application and the storage in EDS.
 
 **Note:** The examples in this topic are using the default port number `5590`. If you specified a different port number for your adapter, you need to add it in the command. For example:
 
@@ -12,8 +12,7 @@ Complete the following steps to either start or stop a component.
 edgecmd -port=5591 <RestOfTheCommand>
 ```
 
-**Note:** If a command contains slashes, you must escape them as follows:<br>
-
+**Note:** If a command contains slashes, you must escape them as follows:<br> 
   - In *Windows*, add a second slash.<br> 
        Example: `TestUser\OilCompany` becomes `TestUser\\OilCompany`
 
@@ -21,12 +20,11 @@ edgecmd -port=5591 <RestOfTheCommand>
        Example: `TestUser\OilCompany` becomes `TestUser\\\\OilCompany`
 
 1. Access EdgeCmd utility through the command line.
-2. Type one of the following in the command line, replacing `<componentId>` with the ID of the component, and press Enter.
+2. Run the following command:
 
-   ```cmd
-   edgecmd stop -cid <ComponentId>
-   ```
-  
-   ```cmd
-   edgecmd start -cid <ComponentId>
-   ```
+    ```cmd
+    edgecmd reset application
+    ```
+3. Answer prompt to confirm the reset.
+
+    **Note:** You can specify the `-y` parameter in the command to skip the confirmation prompt.

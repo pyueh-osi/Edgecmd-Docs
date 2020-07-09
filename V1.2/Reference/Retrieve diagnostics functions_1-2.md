@@ -1,10 +1,10 @@
 ---
-uid: StartOrStopAComponent1-2
+uid: RetrieveDiagnosticsFunctions1-2
 ---
 
-# Start or stop a component
+# Retrieve diagnostics functions
 
-Complete the following steps to either start or stop a component.
+Use EdgeCmd utility to retrieve diagnostics functions of the platform and components.
 
 **Note:** The examples in this topic are using the default port number `5590`. If you specified a different port number for your adapter, you need to add it in the command. For example:
 
@@ -12,21 +12,27 @@ Complete the following steps to either start or stop a component.
 edgecmd -port=5591 <RestOfTheCommand>
 ```
 
-**Note:** If a command contains slashes, you must escape them as follows:<br>
-
+**Note:** If a command contains slashes, you must escape them as follows:<br> 
   - In *Windows*, add a second slash.<br> 
        Example: `TestUser\OilCompany` becomes `TestUser\\OilCompany`
 
   - In *Linux*, add three slashes.<br>
        Example: `TestUser\OilCompany` becomes `TestUser\\\\OilCompany`
 
-1. Access EdgeCmd utility through the command line.
-2. Type one of the following in the command line, replacing `<componentId>` with the ID of the component, and press Enter.
+## Retrieve diagnostics
 
-   ```cmd
-   edgecmd stop -cid <ComponentId>
-   ```
-  
-   ```cmd
-   edgecmd start -cid <ComponentId>
-   ```
+1. Access EdgeCmd utility through the command line.
+2. Run the following command:
+
+    ```cmd
+    edgecmd get Diagnostics
+    ```
+
+## Retrieve version
+
+1. Access EdgeCmd utility through the command line.
+2. Run the following command:
+
+    ```cmd
+    edgecmd get Version
+    ```

@@ -4,12 +4,12 @@ uid: RetrieveEdgeCmdUtilityHelp1-2
 
 # Retrieve EdgeCmd utility help
 
-The EdgeCmd utility provides instructions on how to use EdgeCmd utility.
+The EdgeCmd utility provides you with help output for any operation and from any component running within an Adapter.
 
 **Note:** The examples in this topic are using the default port number `5590`. If you specified a different port number for your adapter, you need to add it in the command. For example:
 
 ```cmd
-edgecmd -help -port=5591 Configuration <RestOfTheCommand>
+edgecmd -help -port=5591 <Command>
 ```
 
 **Note:** If a command contains slashes, you must escape them as follows:<br> 
@@ -19,13 +19,17 @@ edgecmd -help -port=5591 Configuration <RestOfTheCommand>
   - In *Linux*, add three slashes.<br>
        Example: `TestUser\OilCompany` becomes `TestUser\\\\OilCompany`
 
-## View general help instructions
+## View application help instructions
 
-Complete the following steps to view help instructions on how to use the Edgecmd utility:
+Complete the following steps to view help instructions for the entire application:
 
 1. Access EdgeCmd utility through the command line.
-2. Type the following in the command line and press Enter.
+2. Type one of the following in the command line and press Enter.
 
+    ```cmd
+    edgecmd
+    ```
+    
     ```cmd
     edgecmd -help
     ```
@@ -35,10 +39,10 @@ Complete the following steps to view help instructions on how to use the Edgecmd
 Complete the following steps to view help instructions for configuration of a registered component that the adapter supports:
 
 1. Access EdgeCmd utility through the command line.
-2. Type the following in the command line, replacing `<componentId>` with the value that you want, and press Enter.
+2. Type the following in the command line, replacing `<componentId>` with ID of the component for which you want to see help output. Then press Enter.
 
    ```cmd
-   edgecmd -help Configuration <componentId>
+   edgecmd help -cid <componentId>
    ```
 
  Under [Examples](#examples), see **Configuration help for the System component**.
@@ -50,10 +54,10 @@ Complete the following steps to view help instructions for configuration of a re
 Complete the following steps to view configuration help instructions for a specific facet within a component that the adapter supports:
 
 1. Access EdgeCmd utility through the command line.
-2. Type the following in the command line, replacing `<componentId>` and `<facetName>` with the value that you want, and press Enter.
+2. Type the following in the command line, replacing `<facet>` with the facet name and `<componentId>` with the ID of the component for which you want to see help output. Then press Enter.
 
    ```cmd
-   edgecmd -help Configuration <componentId> <facetName>
+   edgecmd help <facet> -cid <ComponentId>
    ```
 
  Under [Examples](#examples), see **Configuration help for the buffering facet within the System component**.
@@ -64,7 +68,7 @@ Complete the following steps to view configuration help instructions for a speci
     <summary>Configuration help for the System component</summary>
     <pre>
 
-    edgecmd -help Configuration System
+    edgecmd help -cid System
 
     -------------------------------------------------------------------------------------------------
     Component System command-line options => 'Logging'
@@ -118,7 +122,7 @@ Complete the following steps to view configuration help instructions for a speci
     <summary>Configuration help for the Buffering facet within the System component</summary>
     <pre>
 
-    edgecmd -help Configuration System Buffering
+    edgecmd help Buffering -cid System
 
     ---------------------------------------------------------------------------------------------------------
     Component System command-line options => 'Buffering'

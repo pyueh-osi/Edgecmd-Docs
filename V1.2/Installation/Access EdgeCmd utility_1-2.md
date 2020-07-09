@@ -16,7 +16,7 @@ Complete the following steps to access EdgeCmd utility on Windows:
 2. Change to the following directory: `C:\Program Files\OSIsoft\EdgeCmd`
 3. Type `edgecmd.exe` and press Enter.
 
-   **Note:** Specify the full path when you use EdgeCmd utility on Windows.
+   **Note:** Specify the full path when you use EdgeCmd utility on Windows. If you installed EdgeCmd utility in a different location, specify that path accordingly.
 
 ## Access EdgeCmd utility on Linux
 

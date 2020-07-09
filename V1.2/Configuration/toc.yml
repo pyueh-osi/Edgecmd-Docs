@@ -4,3 +4,5 @@
   href: Configure an adapter with JSON files_1-2.md
 - name: Configure adapter component
   href: Configure adapter component_1-2.md
+- name: Configure adapter data selection with CSV files
+  href: Configure adapter data selection with CSV files_1-2.md

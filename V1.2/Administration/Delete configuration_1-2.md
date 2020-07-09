@@ -9,7 +9,7 @@ Use the EdgeCmd utility to delete adapter configuration entries or files that ar
 **Note:** The examples in this topic are using the default port number `5590`. If you specified a different port number for your adapter, you need to add it in the command. For example:
 
 ```cmd
-edgecmd -port=5591 Configuration <RestOfTheCommand>
+edgecmd -port=5591 <RestOfTheCommand>
 ```
 
 **Note:** If a command contains slashes, you must escape them as follows:<br> 
@@ -24,13 +24,19 @@ edgecmd -port=5591 Configuration <RestOfTheCommand>
 Complete the following steps to delete a configuration entry from a collection configuration. For example, you can delete a single health endpoint of the 'HealthEndpoints' facet within the 'System' component.
 
 1. Access EdgeCmd utility through the command line.
-2. Type the `componentId` and `facetName` followed by the ID of the entry to be removed.
-3. Add the `delete` keyword and press Enter.
+2. Type the `remove` keyword.
+3. Add the `facetName` and `componentId` followed by the ID of the entry to be removed press Enter.
 
-   **Example:** Delete endpoint_1 of the HealthEndpoints facet from the System:
+   **Example:** Delete 'endpoint_1' of the 'HealthEndpoints' facet in the 'System' component:
 
    ```cmd
-   edgecmd Configuration System HealthEndpoints Id=endpoint_1 delete
+   edgecmd remove HealthEndpoints -cid System -id endpoint_1
+   ```
+
+   **Note:** If the facet is part of a system or a single component, the command does not require `componentId`.
+
+   ```cmd
+   edgecmd remove HealthEndpoints -id OcsEndpoint
    ```
 
 ## Delete configuration file
@@ -38,11 +44,11 @@ Complete the following steps to delete a configuration entry from a collection c
 Complete the following steps to delete a configuration file. For example, you can delete the configuration file of the 'HealthEndpoints' facet within the 'System' component.
 
 1. Access EdgeCmd utility through the command line.
-2. Type the `componentId` and `facetName`.
-3. Add the `delete` keyword and press Enter.
+2. Type the `remove` keyword.
+3. Add the `facetName` and `componentId` and press Enter.
 
-   **Example:** Delete the HealthEndpoints facet configuration file:
+   **Example:** Delete the 'HealthEndpoints' facet configuration file from the 'System' component:
 
    ```cmd
-   edgecmd Configuration System HealthEndpoints delete
+   edgecmd remove HealthEndpoints -cid System
    ```

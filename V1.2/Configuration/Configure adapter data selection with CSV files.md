@@ -15,7 +15,7 @@ EdgeCmd utility recognizes the content in CSV format from the specified file pat
 Complete the following steps to import data selection from a CSV file
 
 1. Access EdgeCmd utility through the command line.
-2. Run the following command:
+2. Type the following in the command line, replacing `<componentId>` with the ID of the component and `<PathToCsvFile>` with the path to the CSV file from which you want to import the data selection. Then press Enter.
 
     ```cmd
     edgecmd set DataSelection -id <componentId> -file <PathToCsvFile> -csv
@@ -26,7 +26,7 @@ Complete the following steps to import data selection from a CSV file
 Complete the following steps to export data selection into a CSV file
 
 1. Access EdgeCmd utility through the command line.
-2. Run the following command:
+2. Type the following in the command line, replacing `<componentId>` with the ID of the component for which you want to export the data selection. Then press Enter.
 
     ```cmd
     edgecmd get DataSelection -id <componentId> [-file <PathToCsvFile>] -csv
