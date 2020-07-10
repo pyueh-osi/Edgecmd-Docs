@@ -29,23 +29,23 @@ Changes from version 1.0 (Mayflower to Atlantis)
 
 * Command line arguments no longer require a specific order. 
 
-* Reduces the amount of command line arguments by not requiring full path to facets.  For example, for egress (PI Adapters) and storage (EDS), no component id is required. 
+* Reduces the amount of command line arguments by not requiring full path to facets.  For example, for egress (PI Adapters) and storage (EDS), no component ID is required. 
 
 * Help output is improved in the following ways:
     * It is more comprehensive for overall program operation.
-    * If a PI Adapter is available the help output shows available facets.
+    * If a PI adapter is available, the help output shows available facets.
     * Available command line flagwords are defined.
-    * Command line examples are shown in a highlighted color to stand out better.
+    * Command line examples are shown in bright color to stand out better.
 
 * The command line syntax uses *-port* instead of *port* to instruct edgecmd which TCP port to use.  
 
-* Administration support is added to start, stop components and reset configurations to initial values. 
+* Administration support is added to start and stop components, and reset configurations to initial values. 
 
 * Diagnostics support is added.   
 
 * Support for CSV configuration for data selection, for both reading and writing.  
 
-* No change to actual routes for setting or reading configuration although the PI Adapter's REST API port can no longer be modified via edgecmd.
+* No change to actual routes for setting or reading configuration although the PI Adapter's REST API port can no longer be modified through edgecmd.
 
 ## Known issues
 
