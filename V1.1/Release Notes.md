@@ -4,14 +4,13 @@ uid: releaseNotes
 
 # Release Notes
 
-EdgeCmd v1.1<br>
-© 2020 OSIsoft, LLC. All rights reserved.
+edgecmd v1.1<br>
 
 ## Overview
 
 Edge Data Store (EDS) and PI Adapters have a REST API that allows user interaction. Configuration is one of the most common interactions. This command line tool, edgecmd, utilizes this REST API to apply all changes and administration functions to EDS and PI Adapters. Specifically, the edgecmd's command line interface uses configuration and administration functions of the REST API without the user having to know the REST routes. Edgecmd thus improves the user experience and facilitates easier scripting experiences, as well as provides built-in help. 
 
-For more information see edgecmd overview.
+For more information see [edgecmd overview](xref:EdgeCmdUtility).
 
 ## Fixes and enhancements
 
@@ -21,7 +20,7 @@ The command line syntax and processing of edgecmd v1.1 has been entirely reworke
 
 ### Enhancements
 
-Changes from version 1.0 (Mayflower to Atlantis) 
+Changes from version 1.0 
 
 * A simpler command line syntax is now used. 
 
