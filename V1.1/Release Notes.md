@@ -9,7 +9,7 @@ EdgeCmd v1.1<br>
 
 ## Overview
 
-Edge Data Store (EDS) and PI Adapters have a REST API that allows user interaction. Configuration is one of the most common interactions. This command line tool, edgecmd, utilizes this REST API to apply all changes and administration functions to EDS and PI Adapters. Specifically, the edgecmd's command line interface uses configuration and administration functions of the REST API without the user having to know the REST routes. Edgecmd thus improves the user experience and facilitates easier scripting experiences, as well as provides built-in help. 
+Edge Data Store (EDS) and PI Adapters have a REST API that allows user interaction. Configuration is one of the most common interactions. This command line tool, edgecmd, uses this REST API to apply all changes and administration functions to EDS and PI adapters. Specifically, the edgecmd's command line interface uses configuration and administration functions of the REST API, so the user does not need to know the REST routes. Edgecmd thus improves the user experience, facilitates easier scripting experiences and provides built-in help. 
 
 For more information see edgecmd overview.
 
