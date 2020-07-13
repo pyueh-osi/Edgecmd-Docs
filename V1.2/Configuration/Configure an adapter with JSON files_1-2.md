@@ -9,7 +9,7 @@ Use EdgeCmd utility to  import a JSON file that contains the adapter configurati
 **Note:** The examples in this topic are using the default port number `5590`. If you specified a different port number for your adapter, you need to add it in the command. For example:
 
 ```cmd
-edgecmd -port=5591 <RestOfTheCommand>
+edgecmd -port 5591 <RestOfTheCommand>
 ```
 
 ## Import bulk configuration

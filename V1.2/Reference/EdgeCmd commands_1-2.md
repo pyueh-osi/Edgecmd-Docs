@@ -9,7 +9,7 @@ The following tables provide a description of every command available in EdgeCmd
 **Note:** The examples in this topic are using the default port number `5590`. If you specified a different port number for your adapter, you need to add it in the command. For example:
 
 ```cmd
-edgecmd -port=5591 Configuration <RestOfTheCommand>
+edgecmd -port 5591 Configuration <RestOfTheCommand>
 ```
 
 **Note:** If a command contains slashes, you must escape them as follows:<br> 
