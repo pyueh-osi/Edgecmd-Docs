@@ -8,7 +8,7 @@ edgecmd v1.1<br>
 
 ## Overview
 
-Edge Data Store (EDS) and PI Adapters have a REST API that allows user interaction. Configuration is one of the most common interactions. This command line tool, edgecmd, utilizes this REST API to apply all changes and administration functions to EDS and PI Adapters. Specifically, the edgecmd's command line interface uses configuration and administration functions of the REST API without the user having to know the REST routes. Edgecmd thus improves the user experience and facilitates easier scripting experiences, as well as provides built-in help. 
+Edge Data Store (EDS) and PI Adapters have a REST API that allows user interaction. Configuration is one of the most common interactions. This command line tool, edgecmd, uses this REST API to apply all changes and administration functions to EDS and PI adapters. Specifically, the edgecmd's command line interface uses configuration and administration functions of the REST API, so the user does not need to know the REST routes. Edgecmd thus improves the user experience, facilitates easier scripting experiences and provides built-in help. 
 
 For more information see [edgecmd overview](xref:EdgeCmdUtility).
 
@@ -28,23 +28,23 @@ Changes from version 1.0
 
 * Command line arguments no longer require a specific order. 
 
-* Reduces the amount of command line arguments by not requiring full path to facets.  For example, for egress (PI Adapters) and storage (EDS), no component id is required. 
+* Reduces the amount of command line arguments by not requiring full path to facets.  For example, for egress (PI Adapters) and storage (EDS), no component ID is required. 
 
 * Help output is improved in the following ways:
     * It is more comprehensive for overall program operation.
-    * If a PI Adapter is available the help output shows available facets.
+    * If a PI adapter is available, the help output shows available facets.
     * Available command line flagwords are defined.
-    * Command line examples are shown in a highlighted color to stand out better.
+    * Command line examples are shown in bright color to stand out better.
 
 * The command line syntax uses *-port* instead of *port* to instruct edgecmd which TCP port to use.  
 
-* Administration support is added to start, stop components and reset configurations to initial values. 
+* Administration support is added to start and stop components, and reset configurations to initial values. 
 
 * Diagnostics support is added.   
 
 * Support for CSV configuration for data selection, for both reading and writing.  
 
-* No change to actual routes for setting or reading configuration although the PI Adapter's REST API port can no longer be modified via edgecmd.
+* No change to actual routes for setting or reading configuration although the PI Adapter's REST API port can no longer be modified through edgecmd.
 
 ## Known issues
 
