@@ -90,7 +90,16 @@ Complete the following steps to view the configuration of a specific facet entry
     <pre>
 
       edgecmd get application
+      
       {
+        "OmfEgress": {
+          "Logging": {
+            "logLevel": "Information",
+            "logFileSizeLimitBytes": 34636833,
+            "logFileCountLimit": 31
+          },
+          "DataEndpoints": []
+        },
         "System": {
           "Logging": {
             "logLevel": "Information",
@@ -98,45 +107,43 @@ Complete the following steps to view the configuration of a specific facet entry
             "logFileCountLimit": 31
           },
           "HealthEndpoints": [],
-          "Diagnostics": {
-            "enableDiagnostics": true
-          },
           "Components": [
             {
-              "componentId": "Modbus1",
-              "componentType": "Modbus"
+              "componentId": "OmfEgress",
+              "componentType": "OmfEgress"
             },
             {
-              "componentId": "Egress",
-              "componentType": "OmfEgress"
+              "componentId": "OpcUaTest",
+              "componentType": "OpcUa"
             }
           ],
           "Buffering": {
-            "bufferLocation": "C:/ProgramData/OSIsoft/Adapters/Modbus/Modbus/Buffers",
-            "maxBufferSizeMB": -1,
-            "enableBuffering": true
+            "bufferLocation": "C:/ProgramData/OSIsoft/Adapters/OpcUa/Buffers",
+            "maxBufferSizeMB": 1024,
+            "enablePersistentBuffering": true
+          },
+          "General": {
+            "enableDiagnostics": true,
+            "metadataLevel": "Medium"
           }
         },
-        "Modbus1": {
+        "OpcUaTest": {
           "Logging": {
             "logLevel": "Information",
             "logFileSizeLimitBytes": 34636833,
             "logFileCountLimit": 31
           },
           "DataSource": {},
-          "DataSelection": []
-        },
-        "OmfEgress": {
-          "Logging": {
-            "logLevel": "Information",
-            "logFileSizeLimitBytes": 34636833,
-            "logFileCountLimit": 31
-          },
-          "DataEndpoints": [],
-          "Buffering": {
-            "onDiskBufferLocation": "C:/ProgramData/OSIsoft/Adapters/Modbus/Modbus/Buffers",
-            "onDiskMaxBufferSizeMB": -1
-          }
+          "DataFilters": [
+            {
+              "id": "DuplicateData",
+              "absoluteDeadband": 0,
+              "percentChange": null,
+              "expirationPeriod": "1:00:00"
+            }
+          ],
+          "DataSelection": [],
+          "ClientSettings": {}
         }
       }
 
@@ -147,33 +154,34 @@ Complete the following steps to view the configuration of a specific facet entry
     <summary>View the configuration of the System component</summary>
     <pre>
 
-    edgecmd get component -cid System
+    edgecmd get component System
     {
       "Logging": {
         "logLevel": "Information",
         "logFileSizeLimitBytes": 34636833,
         "logFileCountLimit": 31
+    },
+    "HealthEndpoints": [],
+    "Components": [
+      {
+        "componentId": "OmfEgress",
+        "componentType": "OmfEgress"
       },
-      "HealthEndpoints": [],
-      "Diagnostics": {
-        "enableDiagnostics": true
-      },
-      "Components": [
-        {
-          "componentId": "Modbus1",
-          "componentType": "Modbus"
-        },
-        {
-          "componentId": "Egress",
-          "componentType": "OmfEgress"
-        }
-      ],
-      "Buffering": {
-        "bufferLocation": "C:/ProgramData/OSIsoft/Adapters/Modbus/Modbus/Buffers",
-        "maxBufferSizeMB": -1,
-        "enableBuffering": true
+      {
+        "componentId": "OpcUaTest",
+        "componentType": "OpcUa"
       }
+    ],
+    "Buffering": {
+      "bufferLocation": "C:/ProgramData/OSIsoft/Adapters/OpcUa/Buffers",
+      "maxBufferSizeMB": 1024,
+      "enablePersistentBuffering": true
+    },
+    "General": {
+      "enableDiagnostics": true,
+      "metadataLevel": "Medium"
     }
+  }
 
  </pre>
 </details>
@@ -182,7 +190,7 @@ Complete the following steps to view the configuration of a specific facet entry
     <summary>View the configuration of the Logging facet within the OmfEgress component</summary>
     <pre>
 
-      edgecmd get Logging -cid  OmfEgress
+      edgecmd get Logging -cid OmfEgress
       {
         "logLevel": "Information",
         "logFileSizeLimitBytes": 34636833,
@@ -196,11 +204,11 @@ Complete the following steps to view the configuration of a specific facet entry
     <summary>View the configuration of a specific entry in the HealthEndpoints facet within the System component</summary>
     <pre>
 
-      edgecmd get HealthEndpoints -cid System -id Endpoint_1
+      edgecmd get HealthEndpoints -cid System -id PWA
       {
-        "id": "Endpoint_1",
+        "id": "PWA",
         "endpoint": "https://localhost:5821",
-        "userName": "user_54",
+        "userName": "user-54",
         "password": "***************",
         "clientId": null,
         "clientSecret": null,
