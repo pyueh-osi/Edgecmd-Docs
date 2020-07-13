@@ -2,7 +2,7 @@
 uid: ReleaseNotes1-2
 ---
 
-# Release Notes
+# Release notes
 
 EdgeCmd utility v1.2
 
