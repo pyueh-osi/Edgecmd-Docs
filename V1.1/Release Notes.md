@@ -4,19 +4,19 @@ uid: releaseNotes
 
 # Release Notes
 
-edgecmd v1.1<br>
+EdgeCmd utility v1.2<br>
 
 ## Overview
 
-Edge Data Store (EDS) and PI Adapters have a REST API that allows user interaction. Configuration is one of the most common interactions. This command line tool, edgecmd, uses this REST API to apply all changes and administration functions to EDS and PI adapters. Specifically, the edgecmd's command line interface uses configuration and administration functions of the REST API, so the user does not need to know the REST routes. Edgecmd thus improves the user experience, facilitates easier scripting experiences and provides built-in help. 
+Edge Data Store (EDS) and PI Adapters have a REST API that allows user interaction. Configuration is one of the most common interactions. This command line tool, EdgeCmd utility, uses this REST API to apply all changes and administration functions to EDS and PI adapters. Specifically, the EdgeCmd utility's command line interface uses configuration and administration functions of the REST API, so the user does not need to know the REST routes. EdgeCmd utility thus improves the user experience, facilitates easier scripting experiences and provides built-in help. 
 
-For more information see [edgecmd overview](xref:EdgeCmdUtility).
+For more information, see [EdgeCmd utility](xref:index).
 
 ## Fixes and enhancements
 
 ### Fixes
 
-The command line syntax and processing of edgecmd v1.1 has been entirely reworked from scratch, so there are no specific fixes.
+The command line syntax and processing of EdgeCmd utility v1.2 has been entirely reworked from scratch, so there are no specific fixes.
 
 ### Enhancements
 
@@ -36,7 +36,7 @@ Changes from version 1.0
     * Available command line flagwords are defined.
     * Command line examples are shown in bright color to stand out better.
 
-* The command line syntax uses *-port* instead of *port* to instruct edgecmd which TCP port to use.  
+* The command line syntax uses *-port* instead of *port* to instruct EdgeCmd utility which TCP port to use.  
 
 * Administration support is added to start and stop components, and reset configurations to initial values. 
 
@@ -44,7 +44,7 @@ Changes from version 1.0
 
 * Support for CSV configuration for data selection, for both reading and writing.  
 
-* No change to actual routes for setting or reading configuration although the PI Adapter's REST API port can no longer be modified through edgecmd.
+* No change to actual routes for setting or reading configuration although the PI Adapter's REST API port can no longer be modified through EdgeCmd utility.
 
 ## Known issues
 
@@ -56,7 +56,7 @@ Refer to [System requirements](xref:SystemRequirements).
 
 ### Installation and upgrade
 
-Refer to [Install edgecmd](xref:InstallTheAdapter).
+Refer to [Installation](xref:Installation).
 
 ### Uninstallation
 
@@ -66,7 +66,7 @@ Refer to [Uninstall edgecmd](xref:UninstallTheAdapter).
 
 ### OSIsoft’s commitment
 
-Because the PI System often serves as a barrier protecting control system networks and mission-critical infrastructure assets, OSIsoft is committed to (1) delivering a high-quality product and (2) communicating clearly what security issues have been addressed. This release of *edgecmd* is the highest quality and most secure version of the *edgecmd* released to date. OSIsoft's commitment to improving the PI System is ongoing, and each future version should raise the quality and security bar even further.
+Because the PI System often serves as a barrier protecting control system networks and mission-critical infrastructure assets, OSIsoft is committed to (1) delivering a high-quality product and (2) communicating clearly what security issues have been addressed. This release of *EdgeCmd utility* is the highest quality and most secure version of the *EdgeCmd utility* released to date. OSIsoft's commitment to improving the PI System is ongoing, and each future version should raise the quality and security bar even further.
 
 ### Vulnerability communication
 
@@ -82,13 +82,13 @@ OSIsoft has selected the Common Vulnerability Scoring System (CVSS) to quantify 
 
 ### Overview of new vulnerabilities found or fixed
 
-This section is intended to provide relevant security-related information to guide your installation or upgrade decision. OSIsoft is proactively disclosing aggregate information about the number and severity of edgecmd security vulnerabilities that are fixed in this release.
+This section is intended to provide relevant security-related information to guide your installation or upgrade decision. OSIsoft is proactively disclosing aggregate information about the number and severity of EdgeCmd utility security vulnerabilities that are fixed in this release.
 
 No security-related information is applicable to this release.
 
 ## Documentation overview
 
-**EdgeCmd User Guide:** Provides an overview and explains the functions of the edgecmd interface.
+**EdgeCmd utility User Guide:** Provides an overview and explains the functions of the EdgeCmd utility interface.
 
 ## Technical Support and Resources
 
