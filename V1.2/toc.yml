@@ -13,3 +13,7 @@
 - name: Reference
   href: Reference/toc.yml
   topicHref: Reference/Reference_1-2.md
+- name: Release notes
+  href: Release notes_1-2.md
+- name: Technical support and feedback
+  href: ../Technical support and feedback.md
