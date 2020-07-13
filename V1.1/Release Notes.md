@@ -4,11 +4,11 @@ uid: releaseNotes
 
 # Release Notes
 
-EdgeCmd utility v1.2<br>
+EdgeCmd utility v1.2
 
 ## Overview
 
-Edge Data Store (EDS) and PI Adapters have a REST API that allows user interaction. Configuration is one of the most common interactions. This command line tool, EdgeCmd utility, uses this REST API to apply all changes and administration functions to EDS and PI adapters. Specifically, the EdgeCmd utility's command line interface uses configuration and administration functions of the REST API, so the user does not need to know the REST routes. EdgeCmd utility thus improves the user experience, facilitates easier scripting experiences and provides built-in help. 
+Edge Data Store (EDS) and PI Adapters have a REST API that allows user interaction. Configuration is one of the most common interactions. This command line tool, EdgeCmd utility, uses this REST API to apply all changes and administration functions to EDS and PI adapters. Specifically, the EdgeCmd utility's command line interface uses configuration and administration functions of the REST API, so the user does not need to know the REST routes. EdgeCmd utility thus improves the user experience, facilitates easier scripting experiences and provides built-in help.
 
 For more information, see [EdgeCmd utility](xref:index).
 
@@ -20,27 +20,28 @@ The command line syntax and processing of EdgeCmd utility v1.2 has been entirely
 
 ### Enhancements
 
-Changes from version 1.0 
+Changes from version 1.0
 
-* A simpler command line syntax is now used. 
+* A simpler command line syntax is now used.
 
-* A verb (operation) is added to remove ambiguity between reading, writing, adding or editing. 
+* A verb (operation) is added to remove ambiguity between reading, writing, adding or editing.
 
-* Command line arguments no longer require a specific order. 
+* Command line arguments no longer require a specific order.
 
-* Reduces the amount of command line arguments by not requiring full path to facets.  For example, for egress (PI Adapters) and storage (EDS), no component ID is required. 
+* Reduces the amount of command line arguments by not requiring full path to facets.  For example, for egress (PI Adapters) and storage (EDS), no component ID is required.
 
 * Help output is improved in the following ways:
-    * It is more comprehensive for overall program operation.
-    * If a PI adapter is available, the help output shows available facets.
-    * Available command line flagwords are defined.
-    * Command line examples are shown in bright color to stand out better.
+
+  * It is more comprehensive for overall program operation.
+  * If a PI adapter is available, the help output shows available facets.
+  * Available command line flag words are defined.
+  * Command line examples are shown in bright color to stand out better.
 
 * The command line syntax uses *-port* instead of *port* to instruct EdgeCmd utility which TCP port to use.  
 
-* Administration support is added to start and stop components, and reset configurations to initial values. 
+* Administration support is added to start and stop components, and reset configurations to initial values.
 
-* Diagnostics support is added.   
+* Diagnostics support is added.
 
 * Support for CSV configuration for data selection, for both reading and writing.  
 
@@ -52,15 +53,15 @@ There are no known issues at this time.
 
 ### System requirements
 
-Refer to [System requirements](xref:SystemRequirements).
+Refer to [System requirements](xref:SystemRequirements1-2).
 
 ### Installation and upgrade
 
-Refer to [Installation](xref:Installation).
+Refer to [Install EdgeCmd utility](xref:InstallEdgeCmdUtility1-2).
 
 ### Uninstallation
 
-Refer to [Uninstall edgecmd](xref:UninstallTheAdapter).
+Refer to [Uninstall EdgeCmd utility](xref:UninstallEdgeCmdUtility1-2).
 
 ## Security information and guidance
 
