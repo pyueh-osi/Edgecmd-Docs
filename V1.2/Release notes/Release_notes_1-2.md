@@ -87,10 +87,6 @@ This section is intended to provide relevant security-related information to gui
 
 No security-related information is applicable to this release.
 
-## Documentation overview
-
-**EdgeCmd utility User Guide:** Provides an overview and explains the functions of the EdgeCmd utility interface.
-
-## Technical Support and Resources
+## Technical support and resources
 
 Refer to [Technical support and feedback](xref:TechnicalSupportAndFeedback).
