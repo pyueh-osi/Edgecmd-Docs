@@ -156,6 +156,8 @@ EdgeCmd command| Description | Examples |
 ---------------|-------------|----------|
 `edgecmd get DataSelection -cid <componentId> [-file <filepath>]` | Display data selection configuration for specified component. | `edgecmd get DataSelection -cid Modbus1 -file C:\Users\TestUser\DataSelection\Configuration.json`
 `edgecmd set DataSelection -cid <componentId> [-file <filepath>]` | Import data selection configuration for specified component. | `edgecmd set DataSelection -cid OpcUa1`
+`edgecmd get DataSelection -cid <componentId> [-file <filepath>] -csv` | Display data selection configuration for specified component in CSV format. | `edgecmd get DataSelection -cid Modbus1 -file C:\Users\TestUser\DataSelection\Configuration.csv -csv`
+`edgecmd set DataSelection -cid <componentId> [-file <filepath>] -csv` | Import data selection configuration for specified component in CSV format. | `edgecmd set DataSelection -cid OpcUa1 -csv`
 `edgecmd add  DataSelection -cid <componentId> -id <itemid>] [-<adapterSpecificParameter> <value>]`  | Add data selection configuration for specified component. | `edgecmd add DataSelection -cid OpcUa1 -id Custom1 -Name RandomName` 
 `edgecmd edit DataSelection -cid <componentId> [-id <itemid>] [-<adapterSpecificParameter> <value>]` | Change data selection configuration for specified component. | `edgecmd edit DataSelection -cid Modbus1 -Selected true`
 `edgecmd remove  DataSelection -cid <componentId> [-id <itemid>] [-y]`| Remove data selection configuration for item in specified component. | `edgecmd remove DataSelection -cid OpcUa1 -id Random1`
