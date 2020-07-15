@@ -12,14 +12,6 @@ Use EdgeCmd utility to view the configuration for each part of the adapter.
 edgecmd -port=5591 Configuration <RestOfTheCommand>
 ```
 
-**Note:** If a command contains slashes, you must escape them as follows:<br>
-
-  - In *Windows*, add a second slash.<br> 
-       Example: `TestUser\OilCompany` becomes `TestUser\\OilCompany`
-
-  - In *Linux*, add three slashes.<br>
-       Example: `TestUser\OilCompany` becomes `TestUser\\\\OilCompany`
-
 ## View adapter configuration
 
 Complete the following steps to view the configuration for the adapter:
@@ -113,7 +105,7 @@ Complete the following steps to view the configuration of a specific facet entry
               "componentType": "OmfEgress"
             },
             {
-              "componentId": "OpcUaTest",
+              "componentId": "OpcUa1",
               "componentType": "OpcUa"
             }
           ],
@@ -127,7 +119,7 @@ Complete the following steps to view the configuration of a specific facet entry
             "metadataLevel": "Medium"
           }
         },
-        "OpcUaTest": {
+        "OpcUa1": {
           "Logging": {
             "logLevel": "Information",
             "logFileSizeLimitBytes": 34636833,
@@ -168,7 +160,7 @@ Complete the following steps to view the configuration of a specific facet entry
         "componentType": "OmfEgress"
       },
       {
-        "componentId": "OpcUaTest",
+        "componentId": "OpcUa1",
         "componentType": "OpcUa"
       }
     ],
@@ -207,7 +199,7 @@ Complete the following steps to view the configuration of a specific facet entry
       edgecmd get HealthEndpoints -cid System -id PWA
       {
         "id": "PWA",
-        "endpoint": "https://localhost:5821",
+        "endpoint": "https://localhost:5821/piwebapi/omf",
         "userName": "user-54",
         "password": "***************",
         "clientId": null,

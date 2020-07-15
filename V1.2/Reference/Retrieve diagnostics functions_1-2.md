@@ -12,13 +12,6 @@ Use EdgeCmd utility to retrieve diagnostics functions of the platform and compon
 edgecmd -port 5591 <RestOfTheCommand>
 ```
 
-**Note:** If a command contains slashes, you must escape them as follows:<br> 
-  - In *Windows*, add a second slash.<br> 
-       Example: `TestUser\OilCompany` becomes `TestUser\\OilCompany`
-
-  - In *Linux*, add three slashes.<br>
-       Example: `TestUser\OilCompany` becomes `TestUser\\\\OilCompany`
-
 ## Retrieve diagnostics
 
 1. Access EdgeCmd utility through the command line.

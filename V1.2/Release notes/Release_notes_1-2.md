@@ -4,7 +4,7 @@ uid: ReleaseNotes1-2
 
 # Release notes
 
-EdgeCmd utility v1.2
+EdgeCmd utility v1.1
 
 ## Overview
 
@@ -24,7 +24,7 @@ Changes from version 1.0
 
 * A simpler command line syntax is now used.
 
-* A verb (operation) is added to remove ambiguity between reading, writing, adding or editing.
+* A verb (operation) is added to remove ambiguity between reading, writing, adding, removing, or editing.
 
 * Command line arguments no longer require a specific order.
 
@@ -34,7 +34,7 @@ Changes from version 1.0
 
   * It is more comprehensive for overall program operation.
   * If a PI adapter is available, the help output shows available facets.
-  * Available command line flag words are defined.
+  * Available command line arguments are defined.
   * Command line examples are shown in bright color to stand out better.
 
 * The command line syntax uses *-port* instead of *port* to instruct EdgeCmd utility which TCP port to use.  
