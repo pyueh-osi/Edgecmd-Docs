@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Delete configuration </title>
+    <title>Configure an adapter with JSON Files </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Delete configuration ">
+    <meta name="title" content="Configure an adapter with JSON Files ">
     <meta name="generator" content="docfx 2.56.1.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -75,39 +75,54 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="DeleteConfiguration1-1">
-<h1 id="delete-configuration">Delete configuration</h1>
+            <article class="content wrap" id="_content" data-uid="ConfigureAnAdapterWithJsonFiles1-1-unreleased">
+<h1 id="configure-an-adapter-with-json-files">Configure an adapter with JSON Files</h1>
 
-<p>Use the EdgeCmd utility to delete adapter configuration entries or files that are no longer needed.</p>
+<p>Use EdgeCmd utility to  import a JSON file that contains the adapter configuration into the adapter. A file import completely replaces the existing configurations; therefore, you cannot use it to change individual values in a facet without modifying others.</p>
 <p><strong>Note:</strong> The examples in this topic are using the default port number <code>5590</code>. If you specified a different port number for your adapter, you need to add it in the command. For example:</p>
 <pre><code class="lang-cmd">edgecmd -port=5591 Configuration &lt;RestOfTheCommand&gt;
-</code></pre><p><strong>Note:</strong> If a command contains slashes, you must escape them as follows:<br> </p>
-<ul>
-<li><p>In <em>Windows</em>, add a second slash.<br> 
-   Example: <code>TestUser\OilCompany</code> becomes <code>TestUser\\OilCompany</code></p>
-</li>
-<li><p>In <em>Linux</em>, add three slashes.<br>
-   Example: <code>TestUser\OilCompany</code> becomes <code>TestUser\\\\OilCompany</code></p>
-</li>
-</ul>
-<h2 id="delete-configuration-entry">Delete configuration entry</h2>
-<p>Complete the following steps to delete a configuration entry from a collection configuration. For example, you can delete a single health endpoint of the &#39;HealthEndpoints&#39; facet within the &#39;System&#39; component.</p>
+</code></pre><h2 id="import-bulk-configuration">Import bulk configuration</h2>
+<p>Complete the following steps to import a bulk configuration:</p>
 <ol>
 <li>Access EdgeCmd utility through the command line.</li>
-<li>Type the <code>componentId</code> and <code>facetName</code> followed by the ID of the entry to be removed.</li>
-<li><p>Add the <code>delete</code> keyword and press Enter.</p>
-<p><strong>Example:</strong> Delete endpoint_1 of the HealthEndpoints facet from the System:</p>
-<pre><code class="lang-cmd">edgecmd Configuration System HealthEndpoints Id=endpoint_1 delete
+<li><p>Type the following in the command line, replacing <code>&lt;PathToJsonFile&gt;</code> with the path to the file, and press Enter.</p>
+<pre><code class="lang-cmd">edgecmd Configuration file=&lt;PathToJsonFile&gt;
 </code></pre></li>
 </ol>
-<h2 id="delete-configuration-file">Delete configuration file</h2>
-<p>Complete the following steps to delete a configuration file. For example, you can delete the configuration file of the &#39;HealthEndpoints&#39; facet within the &#39;System&#39; component.</p>
+<h2 id="import-facet-specific-configuration">Import facet specific configuration</h2>
+<p>Complete the following steps to import a facet specific configuration file for a component:</p>
 <ol>
 <li>Access EdgeCmd utility through the command line.</li>
-<li>Type the <code>componentId</code> and <code>facetName</code>.</li>
-<li><p>Add the <code>delete</code> keyword and press Enter.</p>
-<p><strong>Example:</strong> Delete the HealthEndpoints facet configuration file:</p>
-<pre><code class="lang-cmd">edgecmd Configuration System HealthEndpoints delete
+<li><p>Type the following in the command line, replacing <code>&lt;componentId&gt;</code> with the ID of the component, <code>&lt;facetName&gt;</code> with the name of the facet, and <code>&lt;PathToJsonFile&gt;</code> with the path to the file. Then press Enter.</p>
+<pre><code class="lang-cmd">edgecmd Configuration &lt;componentId&gt; &lt;facetName&gt; file=&lt;PathToJsonFile&gt;
+</code></pre></li>
+</ol>
+<h2 id="import-facets-configuration-in-bulk">Import facets configuration in bulk</h2>
+<p>Complete the following steps to import a file with configuration for individual facets, but not individual values of a facet, as a bulk file import operation:<br><br>
+<strong>Note:</strong> The file must contain only information for the given component ID.</p>
+<ol>
+<li>Access EdgeCmd utility through the command line.</li>
+<li><p>Type the file name as shown in the <em>Logging.json</em> example and press Enter.</p>
+<pre><code class="lang-cmd">edgecmd Configuration file=&quot;~/Logging.json&quot;
+</code></pre><p><strong>Example:</strong></p>
+<pre><code class="lang-json">{
+   &quot;Modbus1&quot;: {
+     &quot;Logging&quot;: {
+       &quot;logLevel&quot;: &quot;Warning&quot;,
+       &quot;logFileSizeLimitBytes&quot;: 19283,
+       &quot;logFileCountLimit&quot;: 999
+      }
+   }
+}
+</code></pre><p><strong>Note:</strong> The command only affects the specified key=value pairs for the &#39;Logging&#39; facet in the &#39;Modbus1&#39; component, it does not change any other components or facets. However, import affects all key=value pairs in the facet. If you import the following example JSON file, the &#39;logLevel&#39; and &#39;logFileSizeLimitBytes&#39; values are modified and the remaining values in the &#39;Logging&#39; facet are reset to their default values (logFileCountLimit).</p>
+<pre><code class="lang-json">{
+   &quot;Modbus1&quot;: {
+     &quot;Logging&quot;: {
+       &quot;logLevel&quot;: &quot;Warning&quot;,
+       &quot;logFileSizeLimitBytes&quot;: 19283
+      }
+   }
+}
 </code></pre></li>
 </ol>
 </article>
@@ -118,7 +133,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/osisoft/Edgecmd-Docs/blob/master/V1.1/Administration/Delete configuration_1-1.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/osisoft/Edgecmd-Docs/blob/master/V1.1-unreleased/Configuration/Configure an adapter with JSON files_1-1-unreleased.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
