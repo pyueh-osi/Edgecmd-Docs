@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Configure an adapter within commands </title>
+    <title>Configure adapter data selection with CSV files </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Configure an adapter within commands ">
+    <meta name="title" content="Configure adapter data selection with CSV files ">
     <meta name="generator" content="docfx 2.56.1.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -75,49 +75,65 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="ConfigureAnAdapterWithinCommands1-1-unreleased">
-<h1 id="configure-an-adapter-within-commands">Configure an adapter within commands</h1>
+            <article class="content wrap" id="_content" data-uid="ConfigureAdapterDataSelectionWithCSVFiles1-1">
+<h1 id="configure-adapter-data-selection-with-csv-files">Configure adapter data selection with CSV files</h1>
 
-<p>Use EdgeCmd utility to configure an adapter using only commands or by pointing to JSON files. For more information, see <a class="xref" href="../../V1.1/Configuration/Configure%20an%20adapter%20with%20JSON%20files_1-1.html">Configure an adapter with JSON files</a>.</p>
-<p><strong>Note:</strong> The examples in this topic are using the default port number <code>5590</code>. If you specified a different port number for your adapter, you need to add it in the command. For example:</p>
-<pre><code class="lang-cmd">edgecmd -port=5591 Configuration &lt;RestOfTheCommand&gt;
-</code></pre><p><strong>Note:</strong> If a command contains slashes, you must escape them as follows:<br> </p>
-<ul>
-<li><p>In <em>Windows</em>, add a second slash.<br> 
-   Example: <code>TestUser\OilCompany</code> becomes <code>TestUser\\OilCompany</code></p>
-</li>
-<li><p>In <em>Linux</em>, add three slashes.<br>
-   Example: <code>TestUser\OilCompany</code> becomes <code>TestUser\\\\OilCompany</code></p>
-</li>
-</ul>
-<h2 id="change-all-values-of-a-facet">Change all values of a facet</h2>
-<p>Complete the following steps to change all values of a facet:</p>
+<p>Use EdgeCmd utility to import data selection from, and export it into, a CSV (comma-separated value) file.</p>
+<p>EdgeCmd utility recognizes the content in CSV format from the specified file path and converts it.</p>
+<p><strong>Note:</strong> The CSV file needs to include a header row.</p>
+<h2 id="import-data-selection-from-a-csv-file">Import data selection from a CSV file</h2>
+<p>Complete the following steps to import data selection from a CSV file</p>
 <ol>
 <li>Access EdgeCmd utility through the command line.</li>
-<li><p>Type <code>edgecmd Configuration</code> and then the <code>componentId</code> and <code>facetName</code>, followed by the key=value pairs. Then press Enter.</p>
-<p><strong>Example:</strong> Change all values in the &#39;Logging&#39; facet:</p>
-<pre><code class="lang-cmd">edgecmd Configuration Modbus1 Logging LogLevel=Warning LogFileSizeLimitBytes=32768 LogFileCountLimit=5
+<li><p>Type the following in the command line, replacing <code>&lt;componentId&gt;</code> with the ID of the component and <code>&lt;PathToCsvFile&gt;</code> with the path to the CSV file from which you want to import the data selection. Then press Enter.</p>
+<pre><code class="lang-cmd">edgecmd set DataSelection -cid &lt;componentId&gt; -file &lt;PathToCsvFile&gt; -csv
 </code></pre></li>
 </ol>
-<h2 id="configure-keyvalue-pairs-in-a-facet">Configure key=value pairs in a facet</h2>
-<p>Complete the following steps to configure any number of valid key=value pairs in a facet:</p>
+<h2 id="export-data-selection-into-a-csv-file">Export data selection into a CSV file</h2>
+<p>Complete the following steps to export data selection into a CSV file</p>
 <ol>
 <li>Access EdgeCmd utility through the command line.</li>
-<li><p>Type <code>edgecmd Configuration</code> and then the <code>componentId</code> and <code>facetName</code> followed by the key=value pairs to change, and press Enter.</p>
-<p><strong>Example:</strong> Change a single value in the &#39;Logging&#39; facet:</p>
-<pre><code class="lang-cmd">edgecmd Configuration Modbus1 Logging LogFileCountLimit=5
-</code></pre></li>
-</ol>
-<h2 id="add-an-entry-to-a-collection-configuration">Add an entry to a collection configuration</h2>
-<p>Complete the following steps to add an entry to a collection configuration:</p>
-<ol>
-<li>Access EdgeCmd utility through the command line.</li>
-<li><p>Type <code>edgecmd Configuration</code> and then the <code>componentId</code> and <code>facetName</code> followed by the key=value pairs, and press Enter.</p>
-<p><strong>Example:</strong> Add the &#39;Health Endpoints&#39; facet to the &#39;System&#39; component:</p>
-<pre><code class="lang-cmd">edgecmd Configuration Modbus1 HealthEndpoints Id=endpoint_1 Endpoint=endpointURL UserName=UserName Password=Password
-</code></pre><p><strong>Note:</strong> If an entry with the specified ID already exists, it is updated based on the new key=value pairs.</p>
+<li><p>Type the following in the command line, replacing <code>&lt;componentId&gt;</code> with the ID of the component for which you want to export the data selection. Then press Enter.</p>
+<pre><code class="lang-cmd">edgecmd get DataSelection -cid &lt;componentId&gt; [-file &lt;PathToCsvFile&gt;] -csv
+</code></pre><p> If you omit the optional parameter and its argument <code>-file</code> <code>PathToCsvFile</code>, the contents are written to the standard output terminal or console.</p>
+ <details>
+ <summary>Sample output</summary>
+ <pre>
+
+     edgecmd get DataSelection -cid OpcUa1 -csv
+
+     selected,name,nodeId,streamId,dataFilterId
+     True,Counter,ns=3;s=Counter,3.Counter,
+     True,ByteAnalogItem,ns=6;s=ByteAnalogItem,6.ByteAnalogItem,
+     True,DoubleAnalogItem,ns=6;s=DoubleAnalogItem,6.DoubleAnalogItem,
+     True,FloatAnalogItem,ns=6;s=FloatAnalogItem,6.FloatAnalogItem,
+     True,Int16AnalogItem,ns=6;s=Int16AnalogItem,6.Int16AnalogItem,
+     True,Int32AnalogItem,ns=6;s=Int32AnalogItem,6.Int32AnalogItem,
+     True,Int64AnalogItem,ns=6;s=Int64AnalogItem,6.Int64AnalogItem,
+     True,SByteAnalogItem,ns=6;s=SByteAnalogItem,6.SByteAnalogItem,
+     True,UInt16AnalogItem,ns=6;s=UInt16AnalogItem,6.UInt16AnalogItem,
+     True,UInt32AnalogItem,ns=6;s=UInt32AnalogItem,6.UInt32AnalogItem,
+     True,UInt64AnalogItem,ns=6;s=UInt64AnalogItem,6.UInt64AnalogItem,
+     True,BooleanDataItem,ns=6;s=BooleanDataItem,6.BooleanDataItem,
+     True,ByteDataItem,ns=6;s=ByteDataItem,6.ByteDataItem,
+     True,DateTimeDataItem,ns=6;s=DateTimeDataItem,6.DateTimeDataItem,
+     True,DoubleDataItem,ns=6;s=DoubleDataItem,6.DoubleDataItem,
+     True,FloatDataItem,ns=6;s=FloatDataItem,6.FloatDataItem,
+     True,Int16DataItem,ns=6;s=Int16DataItem,6.Int16DataItem,
+     True,Int32DataItem,ns=6;s=Int32DataItem,6.Int32DataItem,
+     True,Int64DataItem,ns=6;s=Int64DataItem,6.Int64DataItem,
+     True,SByteDataItem,ns=6;s=SByteDataItem,6.SByteDataItem,
+     True,StringDataItem,ns=6;s=StringDataItem,6.StringDataItem,
+     True,UInt16DataItem,ns=6;s=UInt16DataItem,6.UInt16DataItem,
+     True,UInt32DataItem,ns=6;s=UInt32DataItem,6.UInt32DataItem,
+     True,UInt64DataItem,ns=6;s=UInt64DataItem,6.UInt64DataItem,
+
+ </pre>
+ </details>
+
 </li>
 </ol>
+<p><strong>Note:</strong> EdgeCmd utility translates <code>null</code> values into an empty string for the <code>get</code> operation, while it interprets empty strings as <code>null</code> values for the <code>set</code> operation. To specify an empty string for the configuration, use double quotes <code>&quot;&quot;</code>.</p>
 </article>
           </div>
           
@@ -126,7 +142,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/osisoft/Edgecmd-Docs/blob/master/V1.1-unreleased/Configuration/Configure an adapter within commands_1-1-unreleased.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/osisoft/Edgecmd-Docs/blob/master/V1.1/Configuration/Configure adapter data selection with CSV files_1-1.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

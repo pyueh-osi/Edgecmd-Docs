@@ -30,7 +30,7 @@
       "output": {
         ".html": {
           "relative_path": "Technical support and feedback.html",
-          "hash": "O/VWKdVC2uL3/ovs9gqCpg=="
+          "hash": "cr1gjJ3MPsLN9XxVqnz4eA=="
         }
       },
       "is_incremental": false,
@@ -277,15 +277,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "UidNotFound"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1.1-unreleased/Configuration/Configure an adapter within commands_1-1-unreleased.md",
       "output": {
         ".html": {
           "relative_path": "V1.1-unreleased/Configuration/Configure an adapter within commands_1-1-unreleased.html",
-          "hash": "Yv/AOc+3Fz6zPKMaO/YSHQ=="
+          "hash": "gv3fMbK8jlglr44SX3QMow=="
         }
       },
       "is_incremental": false,
@@ -340,15 +337,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "UidNotFound"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1.1-unreleased/Reference/Reference_1-1-unreleased.md",
       "output": {
         ".html": {
           "relative_path": "V1.1-unreleased/Reference/Reference_1-1-unreleased.html",
-          "hash": "Ev4RGaafSmwXRvDt6QaY1A=="
+          "hash": "tHk7coeGy/TuTGhb+KrrSw=="
         }
       },
       "is_incremental": false,
@@ -407,11 +401,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1.2/Administration/Administration_1-2.md",
+      "source_relative_path": "V1.1/Administration/Administration_1-1.md",
       "output": {
         ".html": {
-          "relative_path": "V1.2/Administration/Administration_1-2.html",
-          "hash": "3TunDrXjDI5V60RW8d8foQ=="
+          "relative_path": "V1.1/Administration/Administration_1-1.html",
+          "hash": "cIKTzK0sYaOSTIZB8iEf/g=="
         }
       },
       "is_incremental": false,
@@ -419,11 +413,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1.2/Administration/Delete configuration_1-2.md",
+      "source_relative_path": "V1.1/Administration/Delete configuration_1-1.md",
       "output": {
         ".html": {
-          "relative_path": "V1.2/Administration/Delete configuration_1-2.html",
-          "hash": "5ZqFfkWjF9YgePAybwob0Q=="
+          "relative_path": "V1.1/Administration/Delete configuration_1-1.html",
+          "hash": "Oaw2z+5AlVRlVjm/1PnJjg=="
         }
       },
       "is_incremental": false,
@@ -431,11 +425,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1.2/Administration/Reset application_1-2.md",
+      "source_relative_path": "V1.1/Administration/Reset application_1-1.md",
       "output": {
         ".html": {
-          "relative_path": "V1.2/Administration/Reset application_1-2.html",
-          "hash": "IxnSS89VwJdlvlI8lcdJmg=="
+          "relative_path": "V1.1/Administration/Reset application_1-1.html",
+          "hash": "UmKuRKxuo+oMYJYbXW/1vw=="
         }
       },
       "is_incremental": false,
@@ -443,11 +437,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1.2/Administration/Start or stop a component_1-2.md",
+      "source_relative_path": "V1.1/Administration/Start or stop a component_1-1.md",
       "output": {
         ".html": {
-          "relative_path": "V1.2/Administration/Start or stop a component_1-2.html",
-          "hash": "ThKuSJPELk/IE2kMGPu/hg=="
+          "relative_path": "V1.1/Administration/Start or stop a component_1-1.html",
+          "hash": "bCrD258DswdDuEAlHKEltg=="
         }
       },
       "is_incremental": false,
@@ -455,11 +449,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1.2/Configuration/Configuration_1-2.md",
+      "source_relative_path": "V1.1/Configuration/Configuration_1-1.md",
       "output": {
         ".html": {
-          "relative_path": "V1.2/Configuration/Configuration_1-2.html",
-          "hash": "OsUj7RsN2W5ix5jNpQdA+Q=="
+          "relative_path": "V1.1/Configuration/Configuration_1-1.html",
+          "hash": "vjVIsA1nd3dCuTJn7GyzTA=="
         }
       },
       "is_incremental": false,
@@ -467,11 +461,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1.2/Configuration/Configure adapter component_1-2.md",
+      "source_relative_path": "V1.1/Configuration/Configure adapter component_1-1.md",
       "output": {
         ".html": {
-          "relative_path": "V1.2/Configuration/Configure adapter component_1-2.html",
-          "hash": "wsOhvil3Kz0DlAcVakBlyQ=="
+          "relative_path": "V1.1/Configuration/Configure adapter component_1-1.html",
+          "hash": "5RJkFsWJ+KSRAacT4LxAXw=="
         }
       },
       "is_incremental": false,
@@ -479,11 +473,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1.2/Configuration/Configure adapter data selection with CSV files_1-2.md",
+      "source_relative_path": "V1.1/Configuration/Configure adapter data selection with CSV files_1-1.md",
       "output": {
         ".html": {
-          "relative_path": "V1.2/Configuration/Configure adapter data selection with CSV files_1-2.html",
-          "hash": "V3lkTyUiKn0jfV323h4IYw=="
+          "relative_path": "V1.1/Configuration/Configure adapter data selection with CSV files_1-1.html",
+          "hash": "7KmMK60vPM0I+uRtaS1+1A=="
         }
       },
       "is_incremental": false,
@@ -491,11 +485,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1.2/Configuration/Configure an adapter with JSON files_1-2.md",
+      "source_relative_path": "V1.1/Configuration/Configure an adapter inside commands_1-1.md",
       "output": {
         ".html": {
-          "relative_path": "V1.2/Configuration/Configure an adapter with JSON files_1-2.html",
-          "hash": "//Fw8vtN4Hvjoaj6YQXcZA=="
+          "relative_path": "V1.1/Configuration/Configure an adapter inside commands_1-1.html",
+          "hash": "j/YMpSwWAfLuJ20pEqOqLw=="
         }
       },
       "is_incremental": false,
@@ -503,11 +497,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1.2/Configuration/Configure an adapter within commands_1-2.md",
+      "source_relative_path": "V1.1/Configuration/Configure an adapter with JSON files_1-1.md",
       "output": {
         ".html": {
-          "relative_path": "V1.2/Configuration/Configure an adapter within commands_1-2.html",
-          "hash": "lA4/hhLYu65sZZlILZPEbg=="
+          "relative_path": "V1.1/Configuration/Configure an adapter with JSON files_1-1.html",
+          "hash": "0RAv+hens6K6Txsp31ApUg=="
         }
       },
       "is_incremental": false,
@@ -515,11 +509,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1.2/EdgeCmd_utility_1-2.md",
+      "source_relative_path": "V1.1/EdgeCmd_utility_1-1.md",
       "output": {
         ".html": {
-          "relative_path": "V1.2/EdgeCmd_utility_1-2.html",
-          "hash": "8dd6meQbuUpslxk334JDsg=="
+          "relative_path": "V1.1/EdgeCmd_utility_1-1.html",
+          "hash": "qyrzXQTJJd9aWDUVEuHM9A=="
         }
       },
       "is_incremental": false,
@@ -527,41 +521,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1.2/Installation/Access EdgeCmd utility_1-2.md",
+      "source_relative_path": "V1.1/Installation/Access EdgeCmd utility_1-1.md",
       "output": {
         ".html": {
-          "relative_path": "V1.2/Installation/Access EdgeCmd utility_1-2.html",
-          "hash": "09XTRd9G/0R8k30BPTlEbQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "UidNotFound"
-      ],
-      "type": "Conceptual",
-      "source_relative_path": "V1.2/Installation/Install EdgeCmd utility_1-2.md",
-      "output": {
-        ".html": {
-          "relative_path": "V1.2/Installation/Install EdgeCmd utility_1-2.html",
-          "hash": "+PvbWHuUXLOHS/FsiYEFIw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "UidNotFound"
-      ],
-      "type": "Conceptual",
-      "source_relative_path": "V1.2/Installation/Installation_1-2.md",
-      "output": {
-        ".html": {
-          "relative_path": "V1.2/Installation/Installation_1-2.html",
-          "hash": "6Iatq2eIvAcG+3WzhChzzQ=="
+          "relative_path": "V1.1/Installation/Access EdgeCmd utility_1-1.html",
+          "hash": "NfqffWUzaZe5qlOMMI3bDw=="
         }
       },
       "is_incremental": false,
@@ -569,11 +533,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1.2/Installation/System requirements_1-2.md",
+      "source_relative_path": "V1.1/Installation/Install EdgeCmd utility_1-1.md",
       "output": {
         ".html": {
-          "relative_path": "V1.2/Installation/System requirements_1-2.html",
-          "hash": "9c8g8s+H9rEjF8DsQUligQ=="
+          "relative_path": "V1.1/Installation/Install EdgeCmd utility_1-1.html",
+          "hash": "dq9d1r8jpxTBnC52XftJTg=="
         }
       },
       "is_incremental": false,
@@ -581,11 +545,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1.2/Installation/Uninstall EdgeCmd utility_1-2.md",
+      "source_relative_path": "V1.1/Installation/Installation_1-1.md",
       "output": {
         ".html": {
-          "relative_path": "V1.2/Installation/Uninstall EdgeCmd utility_1-2.html",
-          "hash": "DVeqCqZWt9tmZisEDv8swA=="
+          "relative_path": "V1.1/Installation/Installation_1-1.html",
+          "hash": "eyg01LZcZVs4ysEGOFLPCg=="
         }
       },
       "is_incremental": false,
@@ -593,11 +557,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1.2/Reference/EDS configuration/Retrieve EDS configuration_1-2.md",
+      "source_relative_path": "V1.1/Installation/System requirements_1-1.md",
       "output": {
         ".html": {
-          "relative_path": "V1.2/Reference/EDS configuration/Retrieve EDS configuration_1-2.html",
-          "hash": "z+IuPG/6NDYHhuxtahycPQ=="
+          "relative_path": "V1.1/Installation/System requirements_1-1.html",
+          "hash": "8HBqP2QnCc1MZ09NN62IAQ=="
         }
       },
       "is_incremental": false,
@@ -605,11 +569,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1.2/Reference/EdgeCmd commands_1-2.md",
+      "source_relative_path": "V1.1/Installation/Uninstall EdgeCmd utility_1-1.md",
       "output": {
         ".html": {
-          "relative_path": "V1.2/Reference/EdgeCmd commands_1-2.html",
-          "hash": "WJtoAJdYwzU8UzRK7AXpKA=="
+          "relative_path": "V1.1/Installation/Uninstall EdgeCmd utility_1-1.html",
+          "hash": "uv4s89Yf840yOrExxKLi1Q=="
         }
       },
       "is_incremental": false,
@@ -617,11 +581,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1.2/Reference/Reference_1-2.md",
+      "source_relative_path": "V1.1/Reference/EDS configuration/Retrieve EDS configuration_1-1.md",
       "output": {
         ".html": {
-          "relative_path": "V1.2/Reference/Reference_1-2.html",
-          "hash": "aAMXdTxsZVCIdI67nuf3+Q=="
+          "relative_path": "V1.1/Reference/EDS configuration/Retrieve EDS configuration_1-1.html",
+          "hash": "0+BinH2wkVbRdAAP+AOW/w=="
         }
       },
       "is_incremental": false,
@@ -629,11 +593,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1.2/Reference/Retrieve EdgeCmd utility help_1-2.md",
+      "source_relative_path": "V1.1/Reference/EdgeCmd commands_1-1.md",
       "output": {
         ".html": {
-          "relative_path": "V1.2/Reference/Retrieve EdgeCmd utility help_1-2.html",
-          "hash": "zGaZlztXCGpmH6R/KratYA=="
+          "relative_path": "V1.1/Reference/EdgeCmd commands_1-1.html",
+          "hash": "zckaIfhScmR4fBMS/bxwmw=="
         }
       },
       "is_incremental": false,
@@ -641,11 +605,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1.2/Reference/Retrieve diagnostics functions_1-2.md",
+      "source_relative_path": "V1.1/Reference/Reference_1-1.md",
       "output": {
         ".html": {
-          "relative_path": "V1.2/Reference/Retrieve diagnostics functions_1-2.html",
-          "hash": "+i5MJDHfMiEsBi2dDPMrQA=="
+          "relative_path": "V1.1/Reference/Reference_1-1.html",
+          "hash": "Vm7K+korveT/MuNURWYjBA=="
         }
       },
       "is_incremental": false,
@@ -653,26 +617,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1.2/Reference/Retrieve existing configuration_1-2.md",
+      "source_relative_path": "V1.1/Reference/Retrieve EdgeCmd utility help_1-1.md",
       "output": {
         ".html": {
-          "relative_path": "V1.2/Reference/Retrieve existing configuration_1-2.html",
-          "hash": "YcLTausYE6r2A/WzYP7n7A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "UidNotFound"
-      ],
-      "type": "Conceptual",
-      "source_relative_path": "V1.2/Release notes/Release_notes_1-2.md",
-      "output": {
-        ".html": {
-          "relative_path": "V1.2/Release notes/Release_notes_1-2.html",
-          "hash": "RK060HniAihI3bd9MJfgAA=="
+          "relative_path": "V1.1/Reference/Retrieve EdgeCmd utility help_1-1.html",
+          "hash": "QphIqMLM+VdLeiYESwrwnw=="
         }
       },
       "is_incremental": false,
@@ -680,26 +629,70 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1.2/index_1-2.md",
+      "source_relative_path": "V1.1/Reference/Retrieve diagnostics functions_1-1.md",
       "output": {
         ".html": {
-          "relative_path": "V1.2/index_1-2.html",
-          "hash": "XgzzdD0t/bkuTs33SV5MQA=="
+          "relative_path": "V1.1/Reference/Retrieve diagnostics functions_1-1.html",
+          "hash": "h4a0wkG6+DkCVJkXzcnLXQ=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
+      "type": "Conceptual",
+      "source_relative_path": "V1.1/Reference/Retrieve existing configuration_1-1.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1.1/Reference/Retrieve existing configuration_1-1.html",
+          "hash": "WeJzaN/M7M5oGfbjFr1pmw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "V1.1/Release notes/Release notes_1-1.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1.1/Release notes/Release notes_1-1.html",
+          "hash": "3D+LTtLSGbyWsymd7G0CqQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "V1.1/images/atlas_icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "V1.1/images/atlas_icon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "V1.1/index_1-1.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1.1/index_1-1.html",
+          "hash": "+3IG6ddp43tzGG4KNj033A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Toc",
-      "source_relative_path": "V1.2/toc.yml",
+      "source_relative_path": "V1.1/toc.yml",
       "output": {
         ".html": {
-          "relative_path": "V1.2/toc.html",
-          "hash": "TIqJcfALSxK0QQMLnTXu4g=="
+          "relative_path": "V1.1/toc.html",
+          "hash": "DNdpJzPEXWflTzn7/T6EEg=="
         }
       },
       "is_incremental": false,
@@ -723,7 +716,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "iDXTLm1rCAddHOHqfPF9yg=="
+          "hash": "YkO8eaEGyYpj3XovL92FDg=="
         }
       },
       "is_incremental": false,
@@ -745,6 +738,13 @@
           "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 54,
+          "skipped_file_count": 0
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
