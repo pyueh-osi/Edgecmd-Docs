@@ -21,13 +21,14 @@ edgecmd -port 5591 Configuration <RestOfTheCommand>
 
 ## Help output
 
-The following commands display help output for the level specified.
+The following commands display help output for different levels of the application.
 
 EdgeCmd command| Description | Examples |
 ---------------|-------------|----------|
 `edgecmd help` | Display help output for the EdgeCmd application.
-`edgecmd help [<target>]` | Display configuration help output for any registered component.  | `edgecmd help System`
+`edgecmd help [<target>]` | Display configuration help output for System level targets, for example `application`, `healthendpoints`, and `logging`. | `edgecmd help System`
 `edgecmd  help <target> -cid <componentId>` | Display configuration help output for any registered component and facet.  | `edgecmd help DataSource -cid opcua1` 
+`edgecmd help -cid <componentId>` | Display configuration help output for any registered component. | `edgecmd help -cid OpcUa1`
 
 ## Port configuration
 

@@ -4,20 +4,13 @@ uid: DeleteConfiguration1-2
 
 # Delete configuration
 
-Use the EdgeCmd utility to delete adapter configuration entries or files that are no longer needed.
+Use the EdgeCmd utility to delete adapter or EDS configurations or configuration entries that you no longer need.
 
 **Note:** The examples in this topic are using the default port number `5590`. If you specified a different port number for your adapter, you need to add it in the command. For example:
 
 ```cmd
 edgecmd -port 5591 <RestOfTheCommand>
 ```
-
-**Note:** If a command contains slashes, you must escape them as follows:<br> 
-  - In *Windows*, add a second slash.<br> 
-       Example: `TestUser\OilCompany` becomes `TestUser\\OilCompany`
-
-  - In *Linux*, add three slashes.<br>
-       Example: `TestUser\OilCompany` becomes `TestUser\\\\OilCompany`
 
 ## Delete configuration entry
 
@@ -33,15 +26,15 @@ Complete the following steps to delete a configuration entry from a collection c
    edgecmd remove HealthEndpoints -cid System -id endpoint_1
    ```
 
-   **Note:** If the facet is part of a system or a single component, the command does not require `componentId`.
+   **Note:** If the facet is part of the System component, the command does not require `componentId`.
 
    ```cmd
    edgecmd remove HealthEndpoints -id OcsEndpoint
    ```
 
-## Delete configuration file
+## Delete entire configuration
 
-Complete the following steps to delete a configuration file. For example, you can delete the configuration file of the 'HealthEndpoints' facet within the 'System' component.
+Complete the following steps to delete the entire configuration of a system facet. For example, you can delete the configuration of the 'HealthEndpoints' facet within the 'System' component.
 
 1. Access EdgeCmd utility through the command line.
 2. Type the `remove` keyword.
@@ -52,3 +45,5 @@ Complete the following steps to delete a configuration file. For example, you ca
    ```cmd
    edgecmd remove HealthEndpoints -cid System
    ```
+
+   **Note:** To skip the confirmation prompt, specify the `-y` parameter in the command.

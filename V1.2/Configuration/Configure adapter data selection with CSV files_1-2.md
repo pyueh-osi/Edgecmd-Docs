@@ -38,7 +38,7 @@ Complete the following steps to export data selection into a CSV file
     <summary>Sample output</summary>
     <pre>
 
-        edgecmd get DataSelection -cid OpcUaTest -csv
+        edgecmd get DataSelection -cid OpcUa1 -csv
 
         selected,name,nodeId,streamId,dataFilterId
         True,Counter,ns=3;s=Counter,3.Counter,

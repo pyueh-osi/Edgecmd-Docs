@@ -4,7 +4,7 @@ uid: InstallEdgeCmd utility1-2
 
 # Install EdgeCmd utility
 
-You can install EdgeCmd utility on either a Windows or Linux operating system. Before installing EdgeCmd utility, see [System requirements](xref:SystemRequirements) to ensure your machine is properly configured to provide optimum adapter operation.
+You can install EdgeCmd utility on either a Windows or Linux operating system. For more information, see [System requirements](xref:SystemRequirements).
 
 ## Windows
 
@@ -56,7 +56,7 @@ Complete the following steps to install the EdgeCmd utility on Linux:
 
     A validation check for prerequisites is completed.
 
-    **Note:** The default installatation location is `\opt\osisoft\EdgeCmd`.
+    **Note:** The default installatation location is `/opt/OSIsoft/EdgeCmd`.
 
 2. After the check for prerequisites succeeds, you are prompted with the option to change the default port of the adapter, which is `5590`.
 

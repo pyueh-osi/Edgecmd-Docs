@@ -4,7 +4,7 @@ uid: ConfigureAdapterComponent1-2
 
 # Configure adapter component
 
-Use EdgeCmd utility to add and delete adapter components, and to configure facets of the components.
+Use EdgeCmd utility to add and remove adapter components, and to configure facets of the components.
 
 **Note:** The examples in this topic are using the default port number `5590`. If you specified a different port number for your adapter, you need to add it in the command. For example:
 
@@ -40,7 +40,7 @@ Complete the following steps to add a new component:
 
 ## Configure a facet of a component
 
-Adapters have the following configurable facets: data source, data selection, and logging. Complete the following steps to configure a facet:
+All adapters have different configurable facets. Complete the following steps to configure a facet:
 
 1. Access EdgeCmd utility through the command line.
 2. Type the following in the command line, replacing `<facetName>` and `<componentId>` with their values. Then press Enter.
@@ -52,17 +52,17 @@ Adapters have the following configurable facets: data source, data selection, an
 	**Example**: Configuration of the data source facet of a Modbus adapter
 
 	```cmd
-	edgecmd set DataSource -cid Modbus1 -file C:\Users\TestUser\Modbus1\DataSource
+	edgecmd set DataSource -cid Modbus1 -file C:\Users\TestUser\Modbus1\DataSource.json
 	```
 
-For detailed information on how to configure each adapter, see the respective adapter documentation.
+	**Note:** For more information on adapter specific facets, see the respective adapter documentation.
 
-## Delete a component
+## Remove a component
 
-Complete the following steps to delete a component from the adapter:
+Complete the following steps to remove a component from the adapter:
 
 1. Access EdgeCmd utility through the command line.
-2. Type the following in the command line, replacing `<componentId>` with the ID of the component to delete, and press Enter.
+2. Type the following in the command line, replacing `<componentId>` with the ID of the component to remove, and press Enter.
 
 	```cmd
 	edgecmd remove Components [-id <componentId] [-y]
@@ -74,4 +74,4 @@ Complete the following steps to delete a component from the adapter:
 	edgecmd remove Components -id Modbus1
 	```
 
-**Note:** You cannot delete the Egress component because it is required for Edge Data Store to operate.
+**Note:** You cannot remove the OmfEgress from PI adapters or the Storage component from EDS. They are required for the products to operate.

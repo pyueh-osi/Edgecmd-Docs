@@ -12,19 +12,13 @@ Use the EdgeCmd utility to reset the entire application and the storage in EDS.
 edgecmd -port 5591 <RestOfTheCommand>
 ```
 
-**Note:** If a command contains slashes, you must escape them as follows:<br> 
-  - In *Windows*, add a second slash.<br> 
-       Example: `TestUser\OilCompany` becomes `TestUser\\OilCompany`
-
-  - In *Linux*, add three slashes.<br>
-       Example: `TestUser\OilCompany` becomes `TestUser\\\\OilCompany`
-
 1. Access EdgeCmd utility through the command line.
 2. Run the following command:
 
     ```cmd
     edgecmd reset application
     ```
+
 3. Answer prompt to confirm the reset.
 
     **Note:** You can specify the `-y` parameter in the command to skip the confirmation prompt.

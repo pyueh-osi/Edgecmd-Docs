@@ -19,13 +19,12 @@ When you contact OSIsoft Technical Support, be prepared to provide this informat
 - Product name, version, and build numbers
 - Details about your computer platform (CPU type, operating system, and version number)
 - Time that the difficulty started
-- Log files at that time
 - Details of any environment changes prior to the start of the issue
 - Summary of the issue, including any relevant log files during the time the issue occurred
 
 ## Documentation feedback
 
-To submit documentation feedback for PI Adapters, send an email to [documentation@osisoft.com](mailto:documentation@osisoft.com?subject=EdgeCmd%20utility%20documentation&body=Product%20name%20and%20version%20-%20Documentation%20topic%20URL%20-%20Details%20of%20the%20suggestion%20or%20error). Be sure to include the following information with your feedback:
+To submit documentation feedback for EdgeCmd utility, send an email to [documentation@osisoft.com](mailto:documentation@osisoft.com?subject=EdgeCmd%20utility%20documentation&body=Product%20name%20and%20version%20-%20Documentation%20topic%20URL%20-%20Details%20of%20the%20suggestion%20or%20error). Be sure to include the following information with your feedback:
 
 - Product name and version
 - Documentation topic URL

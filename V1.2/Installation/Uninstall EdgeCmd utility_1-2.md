@@ -17,5 +17,5 @@ Complete the procedure corresponding to your specific operating system to uninst
 2. Run the following command:
 
     ```bash
-    sudo apt remove edgecmd
+    sudo apt remove osisoft.edgecmd
     ```

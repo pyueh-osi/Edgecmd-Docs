@@ -26,7 +26,7 @@ Complete the following steps to access EdgeCmd utility on Linux:
 2. Type the following path in the terminal and press Enter:
 
    ```cmd
-   /opt/OSIsoft/EdgeCmd/edgecmd
+   edgecmd
    ```
 
-   **Note:** You can access EdgeCmd utility without using the full path on Linux.
+   **Note:** You do not need to specify the full path `/opt/OSIsoft/EdgeCmd/` when you use EdgeCmd utility on Linux.
