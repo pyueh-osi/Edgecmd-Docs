@@ -1,0 +1,8 @@
+- name: System requirements
+  href: System requirements_1-2.md
+- name: Install EdgeCmd utility
+  href: Install EdgeCmd utility_1-2.md
+- name: Access EdgeCmd utility
+  href: Access EdgeCmd utility_1-2.md
+- name: Uninstall EdgeCmd utility
+  href: Uninstall EdgeCmd utility_1-2.md
