@@ -1,5 +1,5 @@
 ---
-uid: ConfigureAdapterComponent1-1
+uid: ConfigureAdapterComponent1-1-unreleased
 ---
 
 # Configure adapter component

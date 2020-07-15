@@ -1,5 +1,5 @@
 ---
-uid: ConfigureAnAdapterWithJsonFiles1-1
+uid: ConfigureAnAdapterWithJsonFiles1-1-unreleased
 ---
 
 # Configure an adapter with JSON Files

@@ -1,5 +1,5 @@
 ---
-uid: DeleteConfiguration1-1
+uid: DeleteConfiguration1-1-unreleased
 ---
 
 # Delete configuration

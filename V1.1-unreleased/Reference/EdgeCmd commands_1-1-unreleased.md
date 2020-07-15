@@ -1,5 +1,5 @@
 ---
-uid: EdgeCmdCommands1-1
+uid: EdgeCmdCommands1-1-unreleased
 ---
 
 # EdgeCmd commands

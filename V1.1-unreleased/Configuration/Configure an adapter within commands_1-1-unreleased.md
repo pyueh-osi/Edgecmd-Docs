@@ -1,5 +1,5 @@
 ---
-uid: ConfigureAnAdapterWithinCommands1-1
+uid: ConfigureAnAdapterWithinCommands1-1-unreleased
 ---
 
 # Configure an adapter within commands
