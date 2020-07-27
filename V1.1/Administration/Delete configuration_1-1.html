@@ -8,7 +8,7 @@
     <title>Delete configuration </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Delete configuration ">
-    <meta name="generator" content="docfx 2.56.1.0">
+    <meta name="generator" content="docfx 2.56.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -86,10 +86,12 @@
 <ol>
 <li>Access EdgeCmd utility through the command line.</li>
 <li>Type the <code>remove</code> keyword.</li>
-<li><p>Add the <code>facetName</code> and <code>componentId</code> followed by the ID of the entry to be removed press Enter.</p>
-<p><strong>Example:</strong> Delete &#39;endpoint_1&#39; of the &#39;HealthEndpoints&#39; facet in the &#39;System&#39; component:</p>
+<li>Add the <code>&lt;facetName&gt;</code> and <code>&lt;componentId&gt;</code>, replacing both with their respective values.</li>
+<li><p>Add the ID of the entry to be removed. Then press Enter.</p>
+<pre><code class="lang-cmd">edgecmd remove &lt;facetName&gt; -cid &lt;componentId&gt; -id &lt;entry&gt;
+</code></pre><p><strong>Example:</strong> Delete &#39;endpoint_1&#39; of the &#39;HealthEndpoints&#39; facet in the &#39;System&#39; component:</p>
 <pre><code class="lang-cmd">edgecmd remove HealthEndpoints -cid System -id endpoint_1
-</code></pre><p><strong>Note:</strong> If the facet is part of the System component, the command does not require <code>componentId</code>.</p>
+</code></pre><p><strong>Note:</strong> If the facet is part of the System component, the command does not require <code>&lt;componentId&gt;</code>, for example:</p>
 <pre><code class="lang-cmd">edgecmd remove HealthEndpoints -id OcsEndpoint
 </code></pre></li>
 </ol>
@@ -98,8 +100,9 @@
 <ol>
 <li>Access EdgeCmd utility through the command line.</li>
 <li>Type the <code>remove</code> keyword.</li>
-<li><p>Add the <code>facetName</code> and <code>componentId</code> and press Enter.</p>
-<p><strong>Example:</strong> Delete the &#39;HealthEndpoints&#39; facet configuration file from the &#39;System&#39; component:</p>
+<li><p>Add the <code>&lt;facetName&gt;</code> and <code>&lt;componentId&gt;</code>, replacing both with their respective values. Then press Enter.</p>
+<pre><code class="lang-cmd">edgecmd remove &lt;facetName&gt; -cid &lt;componentId&gt;
+</code></pre><p><strong>Example:</strong> Delete the &#39;HealthEndpoints&#39; facet configuration file from the &#39;System&#39; component:</p>
 <pre><code class="lang-cmd">edgecmd remove HealthEndpoints -cid System
 </code></pre><p><strong>Note:</strong> To skip the confirmation prompt, specify the <code>-y</code> parameter in the command.</p>
 </li>

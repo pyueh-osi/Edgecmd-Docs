@@ -8,7 +8,7 @@
     <title>Retrieve existing configuration </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Retrieve existing configuration ">
-    <meta name="generator" content="docfx 2.56.1.0">
+    <meta name="generator" content="docfx 2.56.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -111,8 +111,8 @@
 <p>Complete the following steps to view the configuration of a specific facet of an adapter component:</p>
 <ol>
 <li>Access EdgeCmd utility through the command line.</li>
-<li><p>Type the following in the command line, replacing <code>&lt;facet&gt;</code> with the name of the facet, and <code>&lt;componentId&gt;</code> with the ID of the component for which you want to see the configuration. Then press Enter.</p>
-<pre><code class="lang-cmd">edgecmd get &lt;facet&gt; -cid  &lt;componentId&gt;
+<li><p>Type the following in the command line, replacing <code>&lt;facetName&gt;</code> with the name of the facet, and <code>&lt;componentId&gt;</code> with the ID of the component for which you want to see the configuration. Then press Enter.</p>
+<pre><code class="lang-cmd">edgecmd get &lt;facetName&gt; -cid  &lt;componentId&gt;
 </code></pre><p>Under <a href="#examples">Examples</a>, see <strong>View the configuration of the Logging facet within the OmfEgress component</strong>.</p>
 </li>
 </ol>
@@ -120,8 +120,8 @@
 <p>Complete the following steps to view the configuration of a specific facet entry of a component:</p>
 <ol>
 <li>Access EdgeCmd utility through the command line.</li>
-<li><p>Type the following in the command line, replacing <code>&lt;facet&gt;</code> with the name of the facet, <code>&lt;componentId&gt;</code> with the ID of the component and <code>&lt;index&gt;</code> with the name of the facet entry for which you want to see the configuration.</p>
-<pre><code class="lang-cmd">edgecmd get &lt;facet&gt; -cid &lt;componentId&gt; -id &lt;index&gt;
+<li><p>Type the following in the command line, replacing <code>&lt;facetName&gt;</code> with the name of the facet, <code>&lt;componentId&gt;</code> with the ID of the component and <code>&lt;index&gt;</code> with the name of the facet entry for which you want to see the configuration.</p>
+<pre><code class="lang-cmd">edgecmd get &lt;facetName&gt; -cid &lt;componentId&gt; -id &lt;index&gt;
 </code></pre><p>Under <a href="#examples">Examples</a>, see <strong>View the configuration of a specific entry in the HealthEndpoints facet within the System component</strong>.</p>
 </li>
 </ol>
