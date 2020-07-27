@@ -4,7 +4,7 @@ uid: AccessEdgeCmdUtility1-1
 
 # Access EdgeCmd utility
 
-To use EdgeCmd utility, you can access it from a command prompt or terminal window.
+Access EdgeCmd utility using a command prompt or terminal window.
 
 The following procedures use the default installation location. If you specified a different location during installation, use that location in your commands.
 

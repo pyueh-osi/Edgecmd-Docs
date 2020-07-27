@@ -43,10 +43,10 @@ Complete the following steps to view help instructions for configuration of a re
 Complete the following steps to view configuration help instructions for a specific facet within a component that the adapter supports:
 
 1. Access EdgeCmd utility through the command line.
-2. Type the following in the command line, replacing `<facet>` with the facet name and `<componentId>` with the ID of the component for which you want to see help output. Then press Enter.
+2. Type the following in the command line, replacing `<facetName>` with the facet name and `<componentId>` with the ID of the component for which you want to see help output. Then press Enter.
 
    ```cmd
-   edgecmd help <facet> -cid <ComponentId>
+   edgecmd help <facetName> -cid <ComponentId>
    ```
 
  Under [Examples](#examples), see **Configuration help for the buffering facet within the System component**.

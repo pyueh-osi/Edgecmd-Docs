@@ -70,5 +70,3 @@ Complete the following steps to export data selection into a CSV file
     </details>
 
 **Note:** EdgeCmd utility translates `null` values into an empty string for the `get` operation, while it interprets empty strings as `null` values for the `set` operation. To specify an empty string for the configuration, use double quotes `""`.
-
-

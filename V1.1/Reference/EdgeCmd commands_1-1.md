@@ -12,7 +12,7 @@ The following tables provide a description of every command available in EdgeCmd
 edgecmd -port 5591 Configuration <RestOfTheCommand>
 ```
 
-**Note:** If a command contains slashes, you must escape them as follows:<br> 
+**Note:** If a command contains slashes, you must add escape characters as follows:<br> 
   - In *Windows*, add a second slash.<br> 
        Example: `TestUser\OilCompany` becomes `TestUser\\OilCompany`
 

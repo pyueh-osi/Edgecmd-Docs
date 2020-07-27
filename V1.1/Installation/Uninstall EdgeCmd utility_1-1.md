@@ -8,7 +8,7 @@ Complete the procedure corresponding to your specific operating system to uninst
 
 ## Windows
 
-1. From the Windows Control Panel open **Add or remove programs**.
+1. From the Windows Control Pane, open **Add or remove programs**.
 2. In the Apps & Features list, click **OSIsoft EdgeCmd Utility** > **Uninstall** > **Uninstall**.
 
 ## Linux

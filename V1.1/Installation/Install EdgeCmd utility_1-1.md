@@ -8,7 +8,7 @@ You can install EdgeCmd utility on either a Windows or Linux operating system. F
 
 ## Windows
 
-**Note:** You must have administrative privileges to run the installer.
+**Prerequisite:** Contact your IT department to ensure that you have administrative privileges necessary on the local machine to run the install kit.
 
 Complete the following steps to install the EdgeCmd utility on Windows:
 
@@ -58,7 +58,7 @@ Complete the following steps to install the EdgeCmd utility on Linux:
 
     **Note:** The default installatation location is `/opt/OSIsoft/EdgeCmd`.
 
-2. After the check for prerequisites succeeds, you are prompted with the option to change the default port of the adapter, which is `5590`.
+2. After the check for prerequisites succeeds, accept the default port number `5590` or change the port number.
 
     If the Linux OS is up to date, the install will succeed and the EdgeCmd utility is running on your device.
 

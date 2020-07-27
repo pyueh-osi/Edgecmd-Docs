@@ -18,7 +18,12 @@ Complete the following steps to delete a configuration entry from a collection c
 
 1. Access EdgeCmd utility through the command line.
 2. Type the `remove` keyword.
-3. Add the `facetName` and `componentId` followed by the ID of the entry to be removed press Enter.
+3. Add the `<facetName>` and `<componentId>`, replacing both with their respective values.
+4. Add the ID of the entry to be removed. Then press Enter.
+
+   ```cmd
+   edgecmd remove <facetName> -cid <componentId> -id <entry>
+   ```
 
    **Example:** Delete 'endpoint_1' of the 'HealthEndpoints' facet in the 'System' component:
 
@@ -26,7 +31,7 @@ Complete the following steps to delete a configuration entry from a collection c
    edgecmd remove HealthEndpoints -cid System -id endpoint_1
    ```
 
-   **Note:** If the facet is part of the System component, the command does not require `componentId`.
+   **Note:** If the facet is part of the System component, the command does not require `<componentId>`, for example:
 
    ```cmd
    edgecmd remove HealthEndpoints -id OcsEndpoint
@@ -38,7 +43,11 @@ Complete the following steps to delete the entire configuration of a system face
 
 1. Access EdgeCmd utility through the command line.
 2. Type the `remove` keyword.
-3. Add the `facetName` and `componentId` and press Enter.
+3. Add the `<facetName>` and `<componentId>`, replacing both with their respective values. Then press Enter.
+
+   ```cmd
+   edgecmd remove <facetName> -cid <componentId>
+   ```
 
    **Example:** Delete the 'HealthEndpoints' facet configuration file from the 'System' component:
 

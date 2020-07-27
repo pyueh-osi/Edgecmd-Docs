@@ -12,7 +12,7 @@ Use EdgeCmd utility to add and remove adapter components, and to configure facet
 edgecmd -port 5591 <RestOfTheCommand>
 ```
 
-**Note:** If a command contains slashes, you must escape them as follows:<br> 
+**Note:** If a command contains slashes, you must add escape characters as follows:<br> 
   - In *Windows*, add a second slash.<br> 
        Example: `TestUser\OilCompany` becomes `TestUser\\OilCompany`
 
@@ -43,7 +43,7 @@ Complete the following steps to add a new component:
 All adapters have different configurable facets. Complete the following steps to configure a facet:
 
 1. Access EdgeCmd utility through the command line.
-2. Type the following in the command line, replacing `<facetName>` and `<componentId>` with their values. Then press Enter.
+2. Type the following in the command line, replacing `<facetName>` and `<componentId>` with their respective values. Then press Enter.
 
 	```cmd
 	edgecmd set <facetName> -cid <componentId> [-file <filepath>]

@@ -23,6 +23,12 @@ Complete the following steps to import a bulk configuration:
    edgecmd set application -file <PathToJsonFile>
    ```
 
+   **Example:**
+
+   ```cmd
+   edgecmd set application -file C:\Users\TestUser\Adapter\BulkConfiguration.json
+   ```
+
 ## Import component configuration
 
 Complete the following steps to import a configuration file for a component:
@@ -34,15 +40,25 @@ Complete the following steps to import a configuration file for a component:
    edgecmd set -cid <componentId> -file <PathToJsonFile>
    ```
 
+   **Example:**
+
+   ```cmd
+   edgecmd set -cid OpcUa1 -file C:\Users\TestUser\Adapter\ComponentConfiguration.json
+   ```
+
 ## Import facet specific configuration
 
 Complete the following steps to import a facet specific configuration file for a component:
 
 1. Access EdgeCmd utility through the command line.
-2. Type the following in the command line, replacing `<facet>` with the name of the facet, `<componentId>` with the ID of the component, and `<PathToJsonFile>` with the path to the JSON file that contains the component facet configuration. Then press Enter.
+2. Type the following in the command line, replacing `<facetName>` with the name of the facet, `<componentId>` with the ID of the component, and `<PathToJsonFile>` with the path to the JSON file that contains the component facet configuration. Then press Enter.
 
    ```cmd
-   edgecmd set <facet> -cid <componentId> file <PathToJsonFile>
+   edgecmd set <facetName> -cid <componentId> file <PathToJsonFile>
    ```
 
+   **Example:**
 
+   ```cmd
+   edgecmd set Logging -cid OpcUa1 file C:\Users\TestUser\Adapter\FacetConfiguration.json
+   ```
