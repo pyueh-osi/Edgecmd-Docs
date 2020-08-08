@@ -15,8 +15,8 @@ jobs:
       vmImage: 'vs2017-win2016'
     steps:
       - script: |
-          choco install DocFX
-        displayName: 'Install DocFX'
+          choco install DocFX 2.56.2
+        displayName: 'Install DocFX 2.56.2'
 
       - script: |
           echo "Clone source"
@@ -37,3 +37,11 @@ jobs:
           echo "Complete!"
         workingDirectory: 'C:\'
         displayName: 'Publish DocFX'
+
+- task: WindowsMachineFileCopy@2
+  inputs:
+    SourcePath: '.\_site'
+    MachineNames: 'clguild01'
+    AdminUserName: 'osi\pyueh'
+    AdminPassword: '$(adminPassword)'
+    TargetPath: 'C:\inetpub\wwwroot\en\Edgecmd-Docs-PeterPdf1'
