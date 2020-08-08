@@ -40,7 +40,7 @@ jobs:
 
       - task: WindowsMachineFileCopy@2
         inputs:
-          SourcePath: '.\_site'
+          SourcePath: '$(Build.ArtifactStagingDirectory)\_site'
           MachineNames: 'clguild01'
           AdminUserName: 'osi\pyueh'
           AdminPassword: '$(adminPassword)'
