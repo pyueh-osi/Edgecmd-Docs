@@ -15,7 +15,7 @@ jobs:
       vmImage: 'vs2017-win2016'
     steps:
       - script: |
-          choco install DocFX 2.56.2
+          choco install DocFX --version=2.56.2
         displayName: 'Install DocFX 2.56.2'
 
       - script: |
