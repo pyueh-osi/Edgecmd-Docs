@@ -38,10 +38,10 @@ jobs:
         workingDirectory: 'C:\'
         displayName: 'Publish DocFX'
 
-  - task: WindowsMachineFileCopy@2
-    inputs:
-      SourcePath: '.\_site'
-      MachineNames: 'clguild01'
-      AdminUserName: 'osi\pyueh'
-      AdminPassword: '$(adminPassword)'
-      TargetPath: 'C:\inetpub\wwwroot\en\Edgecmd-Docs-PeterPdf1'
+      - task: WindowsMachineFileCopy@2
+        inputs:
+          SourcePath: '.\_site'
+          MachineNames: 'clguild01'
+          AdminUserName: 'osi\pyueh'
+          AdminPassword: '$(adminPassword)'
+          TargetPath: 'C:\inetpub\wwwroot\en\Edgecmd-Docs-PeterPdf1'
