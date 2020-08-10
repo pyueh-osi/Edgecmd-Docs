@@ -41,7 +41,7 @@ jobs:
       - task: WindowsMachineFileCopy@2
         inputs:
           SourcePath: '$(Build.ArtifactStagingDirectory)\_site'
-          MachineNames: 'clguild01'
+          MachineNames: 'clguild01.dev.osisoft.int'
           AdminUserName: 'osi\pyueh'
           AdminPassword: '$(adminPassword)'
           TargetPath: 'C:\inetpub\wwwroot\en\Edgecmd-Docs-PeterPdf1'
