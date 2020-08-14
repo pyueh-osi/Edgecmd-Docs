@@ -45,6 +45,33 @@ edgecmd -port 5591 <RestOfTheCommand>
     </pre>
     </details>
 
+<div>
+    <input type="checkbox" id="title1" />
+    <label class="expandable" for="title1">Sample output</label>
+    <div class="content">
+        <pre>
+
+        {
+            "timestamp": "2020-07-15T18:27:59.4804167Z",
+            "processIdentifier": 5744,
+            "startTime": "2020-07-20T21:26:45.9662964Z",
+            "workingSet": 41.90625,
+            "totalProcessorTime": 137.578125,
+            "totalUserProcessorTime": 73.53125,
+            "totalPrivilegedProcessorTime": 64.046875,
+            "threadCount": 23,
+            "handleCount": 628,
+            "managedMemorySize": 8.916587829589844,
+            "privateMemorySize": 49.54296875,
+            "peakPagedMemorySize": 57.21484375,
+            "storageTotalSize": 486699.0859375,
+            "storageFreeSpace": 365912.98828125
+        }
+
+        </pre>
+    </div>
+</div>
+
 ## Retrieve version
 
 1. Access EdgeCmd utility through the command line.
@@ -56,6 +83,7 @@ edgecmd -port 5591 <RestOfTheCommand>
 
     <details>
     <summary>Sample output</summary>
+    
     <pre>
 
         {

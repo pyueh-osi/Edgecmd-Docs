@@ -49,6 +49,10 @@
         ]
       }
     ],
-    "dest": "_site_pdf"
+    "dest": "_site_pdf",
+    "template": [
+      "pdf.default",
+      "_exported_templates/pdf.default"
+    ]
   }
 }
