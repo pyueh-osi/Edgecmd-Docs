@@ -15,8 +15,8 @@ jobs:
       vmImage: 'vs2017-win2016'
     steps:
       - script: |
-          choco install DocFX
-        displayName: 'Install DocFX'
+          choco install DocFX --version=2.56.2
+        displayName: 'Install DocFX 2.56.2'
 
       - script: |
           echo "Clone source"
@@ -30,33 +30,18 @@ jobs:
           echo "Run DocFX"
           docfx.exe ./docfx.json
 
-#          echo "Set up Git"
-#          git config user.name az-pipeline
-#          git config user.email samples@osisoft.com
-
           echo "Move output files"
           mv .\_site $(Build.ArtifactStagingDirectory)\_site
           git clean -fd
 
-#          echo "Check out gh-pages branch"
-#          git checkout gh-pages
-#          git rm *
-
-          # echo "Copy DocFX output into branch"
-          # Xcopy /E /I $(Build.ArtifactStagingDirectory)\_site\* .
-          # rmdir obj /s /q
-
-          # echo "Stage changes"
-          # git add .
-          # git checkout gh-pages
-          # git branch
-
-          # echo "Commit changes"
-          # git commit -m "Build Agent Modified DocFX Site"
-
-          # echo "Push changes"
-          # git push --verbose
-
-          # echo "Complete!"
+          echo "Complete!"
         workingDirectory: 'C:\'
         displayName: 'Publish DocFX'
+
+      - task: WindowsMachineFileCopy@2
+        inputs:
+          SourcePath: '$(Build.ArtifactStagingDirectory)\_site'
+          MachineNames: 'clguild01.dev.osisoft.int'
+          AdminUserName: 'osi\pyueh'
+          AdminPassword: '$(adminPassword)'
+          TargetPath: 'C:\inetpub\wwwroot\en\Edgecmd-Docs-PeterPdf1'
