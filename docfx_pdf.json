@@ -1,6 +1,8 @@
 {
 "pdf": {
-    "content": [
+  "noStdin": true,
+  "name": "Edgecmd-Docs",
+  "content": [
       {
         "files": [
           "api/**.yml",
