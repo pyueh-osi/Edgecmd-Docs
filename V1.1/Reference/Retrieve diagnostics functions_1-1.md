@@ -45,11 +45,17 @@ edgecmd -port 5591 <RestOfTheCommand>
     </pre>
     </details>
 
-<div>
-    <input type="checkbox" id="title1" />
-    <label class="expandable" for="title1">Sample output</label>
-    <div class="content">
-        <pre>
+3. This expandable should be indented
+
+    ```cmd
+    edgecmd get Diagnostics
+    ```
+
+    <div class="expandable">
+        <input type="checkbox" id="title1" checked/>
+        <label class="expandable" for="title1">Sample output 1</label>
+        <div class="content">
+            <pre>
 
         {
             "timestamp": "2020-07-15T18:27:59.4804167Z",
@@ -68,7 +74,18 @@ edgecmd -port 5591 <RestOfTheCommand>
             "storageFreeSpace": 365912.98828125
         }
 
-        </pre>
+            </pre>
+        </div>
+    </div>
+
+This expandable is back to regular left margin.
+<div class="expandable">
+    <input type="checkbox" id="title2"/>
+    <label class="expandable" for="title2">Sample output 2</label>
+    <div class="content">
+        <p>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
     </div>
 </div>
 
