@@ -53,4 +53,4 @@ jobs:
           azureSubscription: 'PYueh-Visual Studio Enterprise Subscription(94e67d6d-a3e6-425f-b9af-16971682c94c)'
           Destination: 'AzureBlob'
           storage: 'petersandbox1'
-          ContainerName: '`$web'
+          ContainerName: '$web'
