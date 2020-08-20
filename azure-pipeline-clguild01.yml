@@ -31,17 +31,25 @@ jobs:
           docfx.exe ./docfx.json
 
           echo "Move output files"
-          mv .\_site $(Build.ArtifactStagingDirectory)\_site
+          mv .\_site 
           git clean -fd
 
           echo "Complete!"
         workingDirectory: 'C:\'
         displayName: 'Publish DocFX'
 
-      - task: WindowsMachineFileCopy@2
+#      - task: WindowsMachineFileCopy@2
+#        inputs:
+#          SourcePath: '$(Build.ArtifactStagingDirectory)\_site'
+#          MachineNames: 'clguild01.dev.osisoft.int'
+#          AdminUserName: 'osi\pyueh'
+#          AdminPassword: '$(adminPassword)'
+#          TargetPath: 'C:\inetpub\wwwroot\en\Edgecmd-Docs-PeterPdf1'
+
+      - task: AzureFileCopy@4
         inputs:
           SourcePath: '$(Build.ArtifactStagingDirectory)\_site'
-          MachineNames: 'clguild01.dev.osisoft.int'
-          AdminUserName: 'osi\pyueh'
-          AdminPassword: '$(adminPassword)'
-          TargetPath: 'C:\inetpub\wwwroot\en\Edgecmd-Docs-PeterPdf1'
+          azureSubscription: 'PYueh-Visual Studio Enterprise Subscription(94e67d6d-a3e6-425f-b9af-16971682c94c)'
+          Destination: 'AzureBlob'
+          storage: 'petersandbox1'
+          ContainerName: '$web'
