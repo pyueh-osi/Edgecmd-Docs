@@ -12,7 +12,8 @@ variables:
 jobs:
   - job: Publish
     pool:
-      vmImage: 'vs2017-win2016'
+      name: 00-OSIManaged-Containers
+      demands: AgentType -equals osimanagedagent
     steps:
       - script: |
           choco install DocFX --version=2.56.2
