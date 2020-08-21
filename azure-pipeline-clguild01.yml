@@ -34,10 +34,6 @@ jobs:
           echo "*** Run DocFX ***"
           echo.
           docfx.exe ./docfx.json
-#           echo "Move output files"
-#           mv .\_site 
-#           git clean -fd
-
           echo.
           echo "*** Contents of _site ***"
           echo.
@@ -47,7 +43,6 @@ jobs:
           echo.
         workingDirectory: 'C:\'
         displayName: 'Publish DocFX'
-
       - task: PublishBuildArtifacts@1
         inputs:
           PathtoPublish: '_site'
