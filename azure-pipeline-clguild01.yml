@@ -20,7 +20,9 @@ jobs:
       #  displayName: 'Install DocFX 2.56.2'
 
       - script: |
-          echo "Clone source"
+          echo.
+          echo "*** Clone source ***"
+          echo.
           mkdir source
           cd source
           git clone https://user:$(gitToken)@github.com/osisoft/$(gitRepo).git --recurse-submodules
@@ -28,16 +30,29 @@ jobs:
           cd $(gitRepo)
           dir
 
-          echo "Run DocFX"
+          echo.
+          echo "*** Run DocFX ***"
+          echo.
           docfx.exe ./docfx.json
+#           echo "Move output files"
+#           mv .\_site 
+#           git clean -fd
 
-          echo "Move output files"
-          mv .\_site 
-          git clean -fd
-
+          echo.
+          echo "*** Contents of _site ***"
+          echo.
+          dir
+          echo.
           echo "Complete!"
+          echo.
         workingDirectory: 'C:\'
         displayName: 'Publish DocFX'
+
+      - task: PublishBuildArtifacts@1
+        inputs:
+          PathtoPublish: '_site'
+          ArtifactName: 'drop'
+          publishLocation: 'Container'
 
 #      - task: WindowsMachineFileCopy@2
 #        inputs:
@@ -49,8 +64,9 @@ jobs:
 
       - task: AzureFileCopy@4
         inputs:
-          SourcePath: '$(Build.ArtifactStagingDirectory)\_site'
+          SourcePath: '$(Build.ArtifactStagingDirectory)'
           azureSubscription: 'PYueh-Visual Studio Enterprise Subscription(94e67d6d-a3e6-425f-b9af-16971682c94c)'
           Destination: 'AzureBlob'
           storage: 'petersandbox1'
           ContainerName: '$web'
+          BlobPrefix: 'en-test'
