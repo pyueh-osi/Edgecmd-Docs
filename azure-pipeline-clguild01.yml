@@ -28,14 +28,18 @@ jobs:
           echo.
           mkdir source
           cd source
-          git clone https://user:$(gitToken)@github.com/osisoft/$(gitRepo).git --recurse-submodules
+          git clone -b peter-pdf-1 https://user:$(gitToken)@github.com/osisoft/$(gitRepo).git --recurse-submodules
           dir
           cd $(gitRepo)
           dir
           echo.
-          echo "*** Run DocFX ***"
+          echo "*** Build DocFx site ***"
           echo.
           docfx.exe ./docfx.json
+          echo.
+          echo "*** Build DocFx PDF ***"
+          echo.
+          docfx.exe pdf ./docfx_pdf.json
           echo.
           echo "*** Contents of _site ***"
           echo.
