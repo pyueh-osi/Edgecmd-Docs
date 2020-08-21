@@ -45,7 +45,7 @@ jobs:
         displayName: 'Publish DocFX'
       - task: PublishBuildArtifacts@1
         inputs:
-          PathtoPublish: '_site'
+          PathtoPublish: 'C:\source\_site'
           ArtifactName: 'drop'
           publishLocation: 'Container'
 
