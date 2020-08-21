@@ -21,6 +21,9 @@ jobs:
 
       - script: |
           echo.
+          dir
+          echo.
+          echo.
           echo "*** Clone source ***"
           echo.
           mkdir source
@@ -29,7 +32,6 @@ jobs:
           dir
           cd $(gitRepo)
           dir
-
           echo.
           echo "*** Run DocFX ***"
           echo.
@@ -37,7 +39,7 @@ jobs:
           echo.
           echo "*** Contents of _site ***"
           echo.
-          dir
+          dir "C:\source\Edgecmd-Docs\_site"
           echo.
           echo "Complete!"
           echo.
@@ -45,7 +47,7 @@ jobs:
         displayName: 'Publish DocFX'
       - task: PublishBuildArtifacts@1
         inputs:
-          PathtoPublish: 'C:\source\_site'
+          PathtoPublish: 'C:\source\Edgecmd-Docs\_site'
           ArtifactName: 'drop'
           publishLocation: 'Container'
 
