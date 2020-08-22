@@ -18,9 +18,9 @@ jobs:
       # - script: |
       #    choco install DocFX --version=2.56.2
       #  displayName: 'Install DocFX 2.56.2'
-      - script: |
-          choco install wkhtmltopdf --version=0.12.5
-        displayName: 'Install wkhtmltopdf 0.12.5'
+      # - script: |
+      #    choco install wkhtmltopdf --version=0.12.5
+      #  displayName: 'Install wkhtmltopdf 0.12.5'
 
       - script: |
           echo.
@@ -52,19 +52,12 @@ jobs:
           echo.
         workingDirectory: 'C:\'
         displayName: 'Publish DocFX'
+
       - task: PublishBuildArtifacts@1
         inputs:
           PathtoPublish: 'C:\source\Edgecmd-Docs\_site'
           ArtifactName: 'drop'
           publishLocation: 'Container'
-
-#      - task: WindowsMachineFileCopy@2
-#        inputs:
-#          SourcePath: '$(Build.ArtifactStagingDirectory)\_site'
-#          MachineNames: 'clguild01.dev.osisoft.int'
-#          AdminUserName: 'osi\pyueh'
-#          AdminPassword: '$(adminPassword)'
-#          TargetPath: 'C:\inetpub\wwwroot\en\Edgecmd-Docs-PeterPdf1'
 
       - task: AzureFileCopy@4
         inputs:
