@@ -64,14 +64,14 @@ jobs:
           azureSubscription: 'PYueh-Visual Studio Enterprise Subscription(94e67d6d-a3e6-425f-b9af-16971682c94c)'
           scriptType: 'ps'
           scriptLocation: 'inlineScript'
-          inlineScript: 'az storage blob delete-batch --source "`$web" --account-name "petersandbox1" --pattern "en-test/V1.0/Installation/*"'
+          inlineScript: 'az storage blob delete-batch --source "`$web" --account-name "petersandbox1" --pattern "en-test/*"'
 
-#      - task: AzureFileCopy@4
-#        inputs:
-#          # SourcePath: '$(Build.ArtifactStagingDirectory)'
-#          SourcePath: 'C:\source\Edgecmd-Docs\_site\**'
-#          azureSubscription: 'PYueh-Visual Studio Enterprise Subscription(94e67d6d-a3e6-425f-b9af-16971682c94c)'
-#          Destination: 'AzureBlob'
-#          storage: 'petersandbox1'
-#          ContainerName: '$web'
-#          BlobPrefix: 'en-test/Edgecmd-Docs'
+      - task: AzureFileCopy@4
+        inputs:
+          # SourcePath: '$(Build.ArtifactStagingDirectory)'
+          SourcePath: 'C:\source\Edgecmd-Docs\_site\**'
+          azureSubscription: 'PYueh-Visual Studio Enterprise Subscription(94e67d6d-a3e6-425f-b9af-16971682c94c)'
+          Destination: 'AzureBlob'
+          storage: 'petersandbox1'
+          ContainerName: '$web'
+          BlobPrefix: 'en-test/Edgecmd-Docs'
