@@ -1,9 +1,3 @@
-trigger:
-  batch: false
-  branches:
-    include:
-      - peter-pdf-1
-
 variables:
   - group: product-readiness.docfx
   - name: gitRepo
