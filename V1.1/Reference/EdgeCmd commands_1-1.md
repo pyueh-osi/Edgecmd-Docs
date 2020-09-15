@@ -81,7 +81,7 @@ EdgeCmd command| Description | Examples |
 `edgecmd remove HealthEndpoints [-id <string>] [-y]`| Remove health endpoint. | `edgecmd remove HealthEndpoints -id OCS`
 `edgecmd help HealthEndpoints` | Display help output for health endpoints configuration.
 
-## OmfEgress data endpoints facet configuration
+## OMF egress data endpoints facet configuration
 
 EdgeCmd command| Description | Examples |
 ---------------|-------------|----------|
