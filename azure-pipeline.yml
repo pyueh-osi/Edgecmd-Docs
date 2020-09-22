@@ -12,11 +12,11 @@ variables:
 jobs:
   - job: Publish
     pool:
-      vmImage: 'vs2017-win2016'
+      vmImage: "vs2017-win2016"
     steps:
       - script: |
           choco install DocFX
-        displayName: 'Install DocFX'
+        displayName: "Install DocFX"
 
       - script: |
           echo "Clone source"
@@ -24,8 +24,20 @@ jobs:
           cd source
           git clone https://user:$(gitToken)@github.com/osisoft/$(gitRepo).git --recurse-submodules
           dir
+
+          echo "Submodule setup"
           cd $(gitRepo)
           dir
+          git submodule init
+          git submodule update
+
+          echo "Submodule checkout/pull - V1\main"
+          cd V1\main
+          git checkout master
+          git pull
+          git rev-parse HEAD
+          dir
+          cd ..\..
 
           echo "Run DocFX"
           docfx.exe ./docfx.json --template ./_exported_templates/default
@@ -37,19 +49,23 @@ jobs:
           echo "Move output files"
           mv .\_site $(Build.ArtifactStagingDirectory)\_site
           git clean -fd
+          rmdir V1\main /s /q
 
           echo "Check out gh-pages branch"
           git checkout gh-pages
-          git rm *
+
+          echo "Check branch"
+          for /f %%i in ('git branch --show-current') do set BRANCH=%%i
+          if not %BRANCH%==gh-pages exit /b 1
+          git branch
 
           echo "Copy DocFX output into branch"
+          git rm *
           Xcopy /E /I $(Build.ArtifactStagingDirectory)\_site\* .
           rmdir obj /s /q
 
           echo "Stage changes"
           git add .
-          git checkout gh-pages
-          git branch
 
           echo "Commit changes"
           git commit -m "Build Agent Modified DocFX Site"
@@ -59,4 +75,4 @@ jobs:
 
           echo "Complete!"
         workingDirectory: 'C:\'
-        displayName: 'Publish DocFX'
+        displayName: "Publish DocFX"
