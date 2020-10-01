@@ -1,11 +1,11 @@
 - name: EdgeCmd utility
-  href: index_1-0.md
+  href: index.md
 - name: Installation
   href: Installation/toc.yml
-  topicHref: Installation/Installation_1-0.md
+  topicHref: Installation/installation.md
 - name: Configuration
   href: Configuration/toc.yml
-  topicHref: Configuration/Configuration_1-0.md
+  topicHref: Configuration/configuration.md
 - name: Reference
   href: Reference/toc.yml
-  topicHref: Reference/Reference_1-0.md
+  topicHref: Reference/reference.md

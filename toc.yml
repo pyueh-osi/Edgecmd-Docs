@@ -3,7 +3,7 @@
   items:
   - name: EdgeCmd utility 1.0
     href: V1.0/
-    topicHref: V1.0/EdgeCmd_utility_1-0.md
+    topicHref: V1.0/edgecmd-utility.md
   - name: EdgeCmd utility 1.1
     href: V1.1/
-    topicHref: V1.1/EdgeCmd_utility_1-1.md
+    topicHref: V1.1/edgecmd-utility.md

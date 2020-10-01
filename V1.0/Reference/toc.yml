@@ -1,6 +1,6 @@
 - name: Retrieve EdgeCmd utility help
-  href: Retrieve EdgeCmd utility help_1-0.md
+  href: retrieve-edgecmd-utility-help.md
 - name: Retrieve existing configuration
-  href: Retrieve existing configuration_1-0.md
+  href: retrieve-existing-configuration.md
 - name: EdgeCmd commands
-  href: EdgeCmdCommands_1-0.md
+  href: edgecmd-commands.md
