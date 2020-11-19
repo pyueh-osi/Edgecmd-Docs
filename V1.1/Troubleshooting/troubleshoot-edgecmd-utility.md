@@ -14,4 +14,4 @@ To troubleshoot issues with EdgeCmd utility, you can start with the following tr
 
 3. Check if the adapter is running.<br>EdgeCmd utility makes REST calls against an active adapter. If the adapter is not running, there is nothing to respond to those REST requests.
 4. If you run a command like `Reset`, add a data source configuration, or edit a large data selection, and so on. Wait 20 to 60 seconds before you attempt to make more calls; the adapter needs time to process the request.
-5. If a command is not working in EdgeCmd utility, verify that the command does not work in other REST clients like Postman either.
+5. If a command is not working in EdgeCmd utility, verify the command does not work in other REST clients like Postman either.
