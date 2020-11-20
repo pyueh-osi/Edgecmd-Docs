@@ -10,6 +10,8 @@
 - name: Administration
   href: Administration/toc.yml
   topicHref: Administration/administration.md
+- name: Troubleshoot EdgeCmd utility
+  href: Troubleshooting/troubleshoot-edgecmd-utility.md
 - name: Reference
   href: Reference/toc.yml
   topicHref: Reference/reference.md
